@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+    <uri id="Imports Wizard Entry" name="http://emmc.info/emmo-all" uri="https://raw.githubusercontent.com/emmo-repo/EMMO/v0.9.10/emmo/emmo-all.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+</catalog>

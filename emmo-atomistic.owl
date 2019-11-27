@@ -8,7 +8,7 @@ Prefix(emmo-geometry:=<http://emmc.info/emmo-atomistic#>)
 
 
 Ontology(<http://emmc.info/emmo-atomistic>
-Import(<http://emmc.info/emmo-material>)
+Import(<http://emmc.info/emmo-all>)
 
 
 )
