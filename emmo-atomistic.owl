@@ -1,14 +1,27 @@
-Prefix(:=<http://emmc.info/emmo-atomistic>)
+Prefix(:=<http://emmc.info/emmo-atomistic#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(emmo-geometry:=<http://emmc.info/emmo-atomistic#>)
+Prefix(emmo-atomistic:=<http://emmc.info/emmo-atomistic#>)
 
 
 Ontology(<http://emmc.info/emmo-atomistic>
-Import(<http://emmc.info/emmo-all>)
+Import(<http://emmc.info/emmo>)
+Import(<http://emmc.info/emmo-material>)
+
+Declaration(Class(emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4))
+
+
+############################
+#   Classes
+############################
+
+# Class: emmo-geometry:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 (unit_cell)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 "unit_cell"@en)
+SubClassOf(emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 <http://emmc.info/emmo-material#EMMO_174cf221_9d16_427c_abea_e217a948969b>)
 
 
 )
