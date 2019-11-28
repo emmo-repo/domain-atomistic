@@ -11,17 +11,38 @@ Ontology(<http://emmc.info/emmo-atomistic>
 Import(<http://emmc.info/emmo>)
 Import(<http://emmc.info/emmo-material>)
 
+Declaration(Class(emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8))
 Declaration(Class(emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4))
+Declaration(Class(emmo-atomistic:EMMO_6b8b2a0c_0fa9_49eb_8ade_b0865f44ec14))
+
 
 
 ############################
 #   Classes
 ############################
 
-# Class: emmo-geometry:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 (unit_cell)
+# Class: emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 (atomic_ensemble)
+
+AnnotationAssertion(<http://emmc.info/emmo-core#EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84> emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 "An ensemble of at least one atom. Atoms may be bonded  or not bonded.")
+AnnotationAssertion(rdfs:comment emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 "Atomistic simulations are performed on a collection of atoms, that are not necessarily bonded in one molecule. Fruthermore molecule must have at least two atoms according to IUPAC. 
+
+Atomic_ensemble may have part molecule (not necessarily, since atomic_ensemble may be a single atom or a collection of single atoms).")
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 "atomic_ensemble"@en)
+SubClassOf(emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 <http://emmc.info/emmo-material#EMMO_174cf221_9d16_427c_abea_e217a948969b>)
+SubClassOf(emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 ObjectSomeValuesFrom(<http://emmc.info/emmo-granularity#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> <http://emmc.info/emmo-material#EMMO_eb77076b_a104_42ac_a065_798b2d2809ad>))
+
+# Class: emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 (unit_cell)
 
 AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 "unit_cell"@en)
-SubClassOf(emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 <http://emmc.info/emmo-material#EMMO_174cf221_9d16_427c_abea_e217a948969b>)
+SubClassOf(emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8)
+SubClassOf(emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 ObjectSomeValuesFrom(<http://emmc.info/emmo-granularity#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> <http://emmc.info/emmo-material#EMMO_1067b97a_84f8_4d22_8ace_b842b8ce355c>))
+SubClassOf(emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 ObjectSomeValuesFrom(<http://emmc.info/emmo-granularity#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> <http://emmc.info/emmo-material#EMMO_8303a247_f9d9_4616_bdcd_f5cbd7b298e3>))
+
+# Class: emmo-atomistic:EMMO_6b8b2a0c_0fa9_49eb_8ade_b0865f44ec14 (crystal)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_6b8b2a0c_0fa9_49eb_8ade_b0865f44ec14 "crystal"@en)
+SubClassOf(emmo-atomistic:EMMO_6b8b2a0c_0fa9_49eb_8ade_b0865f44ec14 <http://emmc.info/emmo-material#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1>)
+SubClassOf(emmo-atomistic:EMMO_6b8b2a0c_0fa9_49eb_8ade_b0865f44ec14 ObjectExactCardinality(1 <http://emmc.info/emmo-granularity#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4))
 
 
 )
