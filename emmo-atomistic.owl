@@ -9,11 +9,77 @@ Prefix(emmo-atomistic:=<http://emmc.info/emmo-atomistic#>)
 
 Ontology(<http://emmc.info/emmo-atomistic>
 Import(<http://emmc.info/emmo>)
+Import(<http://emmc.info/emmo-geometry>)
 Import(<http://emmc.info/emmo-material>)
+Import(<http://emmc.info/emmo-models>)
+Import(<http://emmc.info/emmo-physical-properties>)
 
+Declaration(Class(emmo-atomistic:EMMO_0c88f73b_9bd9_49b7_ba62_aabaa0f29d58))
+Declaration(Class(emmo-atomistic:EMMO_0ff9c3cb_fccc_4655_ac25_34ea49ae70f3))
+Declaration(Class(emmo-atomistic:EMMO_12898425_eae9_4663_8120_bd83131749f4))
 Declaration(Class(emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8))
+Declaration(Class(emmo-atomistic:EMMO_1b9acb0f_153b_403f_bc84_821f88f997f3))
+Declaration(Class(emmo-atomistic:EMMO_1f2d9cd4_4d48_4a3e_8458_dc84536c18cd))
+Declaration(Class(emmo-atomistic:EMMO_209a72fb_9ba8_4d84_b9d0_0f6356dcb45f))
+Declaration(Class(emmo-atomistic:EMMO_27676e85_935b_4578_9664_6bcec1816b80))
+Declaration(Class(emmo-atomistic:EMMO_2f40d678_1379_455a_948b_0af0726a30ca))
+Declaration(Class(emmo-atomistic:EMMO_3731e97c_2f68_48e8_abaa_130d6a9ce9cc))
+Declaration(Class(emmo-atomistic:EMMO_3d4a5eba_eaf9_4fc1_8fb9_6e67877bbc13))
+Declaration(Class(emmo-atomistic:EMMO_3f502d13_b621_4b2d_a225_ac5ee6da929c))
+Declaration(Class(emmo-atomistic:EMMO_462743ce_6912_4c84_a15f_f2fc23108c3b))
 Declaration(Class(emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4))
+Declaration(Class(emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587))
+Declaration(Class(emmo-atomistic:EMMO_63aae48d_ec56_4a33_8e06_499ef0e948bd))
 Declaration(Class(emmo-atomistic:EMMO_6b8b2a0c_0fa9_49eb_8ade_b0865f44ec14))
+Declaration(Class(emmo-atomistic:EMMO_81ea94d4_4297_4df0_a547_b66371607900))
+Declaration(Class(emmo-atomistic:EMMO_84d456a8_e7be_455e_973b_a218e152e880))
+Declaration(Class(emmo-atomistic:EMMO_8722d8b3_40b3_4137_8be6_3e8e437dc1f7))
+Declaration(Class(emmo-atomistic:EMMO_8db07414_a578_4b83_8b83_ce2d226489af))
+Declaration(Class(emmo-atomistic:EMMO_8f80ec76_6821_4bcb_983b_eff80a397ae8))
+Declaration(Class(emmo-atomistic:EMMO_91dbccb4_ce0e_4e75_b881_aa946e7befc3))
+Declaration(Class(emmo-atomistic:EMMO_959aea07_eab5_4678_a0fe_f19ec00037e1))
+Declaration(Class(emmo-atomistic:EMMO_9e0cba6d_71ee_463f_81d5_d63487481530))
+Declaration(Class(emmo-atomistic:EMMO_b19d704b_67eb_41e0_ae6f_fa23fe2cf0f9))
+Declaration(Class(emmo-atomistic:EMMO_b224f178_e7f5_4a5b_89da_60c4949c0a4a))
+Declaration(Class(emmo-atomistic:EMMO_b464c8d5_1d77_4d52_a94e_934ee8eef26e))
+Declaration(Class(emmo-atomistic:EMMO_b96cbd60_018c_45e4_ad33_df873289633e))
+Declaration(Class(emmo-atomistic:EMMO_f3e6c812_b1d5_4d7f_bd93_90d541b5ddcf))
+Declaration(Class(emmo-atomistic:EMMO_f83e6970_07c0_4eb5_8781_ee4e2a7f87a6))
+Declaration(Class(emmo-atomistic:EMMO_fe557be6_adc2_477a_85f7_7d6c6cf4b2b3))
+Declaration(ObjectProperty(emmo-atomistic:EMMO_531f027c_0d9e_4d39_bd2b_785501447f8a))
+Declaration(ObjectProperty(emmo-atomistic:EMMO_655c3d90_bfdd_4034_bb3e_7082ebd09c0e))
+Declaration(ObjectProperty(emmo-atomistic:EMMO_bd881c8f_2e53_4141_b2f1_c8dcf07e0bdf))
+Declaration(ObjectProperty(emmo-atomistic:EMMO_e3b1b88e_203c_4b27_a1a3_756cb831b421))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: emmo-atomistic:EMMO_531f027c_0d9e_4d39_bd2b_785501447f8a (next_dimension)
+
+AnnotationAssertion(rdfs:comment emmo-atomistic:EMMO_531f027c_0d9e_4d39_bd2b_785501447f8a "next_dimension is used to describe multi-dimensionality.")
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_531f027c_0d9e_4d39_bd2b_785501447f8a "next_dimension"@en)
+SubObjectPropertyOf(emmo-atomistic:EMMO_531f027c_0d9e_4d39_bd2b_785501447f8a <http://emmc.info/emmo-semiotics#EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b>)
+ObjectPropertyDomain(emmo-atomistic:EMMO_531f027c_0d9e_4d39_bd2b_785501447f8a emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587)
+ObjectPropertyRange(emmo-atomistic:EMMO_531f027c_0d9e_4d39_bd2b_785501447f8a emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587)
+
+# Object Property: emmo-atomistic:EMMO_655c3d90_bfdd_4034_bb3e_7082ebd09c0e (has_value)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_655c3d90_bfdd_4034_bb3e_7082ebd09c0e "has_value"@en)
+SubObjectPropertyOf(emmo-atomistic:EMMO_655c3d90_bfdd_4034_bb3e_7082ebd09c0e <http://emmc.info/emmo-core#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f>)
+
+# Object Property: emmo-atomistic:EMMO_bd881c8f_2e53_4141_b2f1_c8dcf07e0bdf (has_unit)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_bd881c8f_2e53_4141_b2f1_c8dcf07e0bdf "has_unit"@en)
+SubObjectPropertyOf(emmo-atomistic:EMMO_bd881c8f_2e53_4141_b2f1_c8dcf07e0bdf <http://emmc.info/emmo-core#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f>)
+ObjectPropertyDomain(emmo-atomistic:EMMO_bd881c8f_2e53_4141_b2f1_c8dcf07e0bdf <http://emmc.info/emmo-physical-properties#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819>)
+ObjectPropertyRange(emmo-atomistic:EMMO_bd881c8f_2e53_4141_b2f1_c8dcf07e0bdf <http://emmc.info/emmo-physical-properties#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4>)
+
+# Object Property: emmo-atomistic:EMMO_e3b1b88e_203c_4b27_a1a3_756cb831b421 (has_dimension)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_e3b1b88e_203c_4b27_a1a3_756cb831b421 "has_dimension"@en)
+SubObjectPropertyOf(emmo-atomistic:EMMO_e3b1b88e_203c_4b27_a1a3_756cb831b421 <http://emmc.info/emmo-semiotics#EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b>)
+ObjectPropertyRange(emmo-atomistic:EMMO_e3b1b88e_203c_4b27_a1a3_756cb831b421 emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587)
 
 
 
@@ -21,15 +87,77 @@ Declaration(Class(emmo-atomistic:EMMO_6b8b2a0c_0fa9_49eb_8ade_b0865f44ec14))
 #   Classes
 ############################
 
+# Class: emmo-atomistic:EMMO_0c88f73b_9bd9_49b7_ba62_aabaa0f29d58 (derived_unit)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_0c88f73b_9bd9_49b7_ba62_aabaa0f29d58 "derived_unit"@en)
+SubClassOf(emmo-atomistic:EMMO_0c88f73b_9bd9_49b7_ba62_aabaa0f29d58 emmo-atomistic:EMMO_f83e6970_07c0_4eb5_8781_ee4e2a7f87a6)
+
+# Class: emmo-atomistic:EMMO_0ff9c3cb_fccc_4655_ac25_34ea49ae70f3 (mole)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_0ff9c3cb_fccc_4655_ac25_34ea49ae70f3 "mole"@en)
+SubClassOf(emmo-atomistic:EMMO_0ff9c3cb_fccc_4655_ac25_34ea49ae70f3 emmo-atomistic:EMMO_9e0cba6d_71ee_463f_81d5_d63487481530)
+
+# Class: emmo-atomistic:EMMO_12898425_eae9_4663_8120_bd83131749f4 (real)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_12898425_eae9_4663_8120_bd83131749f4 "real"@en)
+SubClassOf(emmo-atomistic:EMMO_12898425_eae9_4663_8120_bd83131749f4 emmo-atomistic:EMMO_1b9acb0f_153b_403f_bc84_821f88f997f3)
+
 # Class: emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 (atomic_ensemble)
 
 AnnotationAssertion(<http://emmc.info/emmo-core#EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84> emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 "An ensemble of at least one atom. Atoms may be bonded  or not bonded.")
-AnnotationAssertion(rdfs:comment emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 "Atomistic simulations are performed on a collection of atoms, that are not necessarily bonded in one molecule. Fruthermore molecule must have at least two atoms according to IUPAC. 
+AnnotationAssertion(rdfs:comment emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 "Atomistic simulations are performed on a collection of atoms, that are not necessarily bonded in one molecule. Fruthermore molecule must have at least two atoms according to IUPAC.
 
 Atomic_ensemble may have part molecule (not necessarily, since atomic_ensemble may be a single atom or a collection of single atoms).")
 AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 "atomic_ensemble"@en)
 SubClassOf(emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 <http://emmc.info/emmo-material#EMMO_174cf221_9d16_427c_abea_e217a948969b>)
 SubClassOf(emmo-atomistic:EMMO_1639574a_a086_496d_a9e4_926f6f1053d8 ObjectSomeValuesFrom(<http://emmc.info/emmo-granularity#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> <http://emmc.info/emmo-material#EMMO_eb77076b_a104_42ac_a065_798b2d2809ad>))
+
+# Class: emmo-atomistic:EMMO_1b9acb0f_153b_403f_bc84_821f88f997f3 (number)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_1b9acb0f_153b_403f_bc84_821f88f997f3 "number"@en)
+SubClassOf(emmo-atomistic:EMMO_1b9acb0f_153b_403f_bc84_821f88f997f3 emmo-atomistic:EMMO_fe557be6_adc2_477a_85f7_7d6c6cf4b2b3)
+
+# Class: emmo-atomistic:EMMO_1f2d9cd4_4d48_4a3e_8458_dc84536c18cd (mass)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_1f2d9cd4_4d48_4a3e_8458_dc84536c18cd "mass"@en)
+SubClassOf(emmo-atomistic:EMMO_1f2d9cd4_4d48_4a3e_8458_dc84536c18cd <http://emmc.info/emmo-physical-properties#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819>)
+
+# Class: emmo-atomistic:EMMO_209a72fb_9ba8_4d84_b9d0_0f6356dcb45f (objective_property)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_209a72fb_9ba8_4d84_b9d0_0f6356dcb45f "objective_property"@en)
+SubClassOf(emmo-atomistic:EMMO_209a72fb_9ba8_4d84_b9d0_0f6356dcb45f <http://emmc.info/emmo-properties#EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba>)
+
+# Class: emmo-atomistic:EMMO_27676e85_935b_4578_9664_6bcec1816b80 (kelvin)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_27676e85_935b_4578_9664_6bcec1816b80 "kelvin"@en)
+SubClassOf(emmo-atomistic:EMMO_27676e85_935b_4578_9664_6bcec1816b80 emmo-atomistic:EMMO_9e0cba6d_71ee_463f_81d5_d63487481530)
+
+# Class: emmo-atomistic:EMMO_2f40d678_1379_455a_948b_0af0726a30ca (meter)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_2f40d678_1379_455a_948b_0af0726a30ca "meter"@en)
+SubClassOf(emmo-atomistic:EMMO_2f40d678_1379_455a_948b_0af0726a30ca emmo-atomistic:EMMO_9e0cba6d_71ee_463f_81d5_d63487481530)
+
+# Class: emmo-atomistic:EMMO_3731e97c_2f68_48e8_abaa_130d6a9ce9cc (physical dimension)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_3731e97c_2f68_48e8_abaa_130d6a9ce9cc "physical dimension"@en)
+SubClassOf(emmo-atomistic:EMMO_3731e97c_2f68_48e8_abaa_130d6a9ce9cc emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587)
+SubClassOf(emmo-atomistic:EMMO_3731e97c_2f68_48e8_abaa_130d6a9ce9cc <http://emmc.info/emmo-physical-properties#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819>)
+
+# Class: emmo-atomistic:EMMO_3d4a5eba_eaf9_4fc1_8fb9_6e67877bbc13 (joule)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_3d4a5eba_eaf9_4fc1_8fb9_6e67877bbc13 "joule"@en)
+SubClassOf(emmo-atomistic:EMMO_3d4a5eba_eaf9_4fc1_8fb9_6e67877bbc13 emmo-atomistic:EMMO_0c88f73b_9bd9_49b7_ba62_aabaa0f29d58)
+
+# Class: emmo-atomistic:EMMO_3f502d13_b621_4b2d_a225_ac5ee6da929c (descriptive_property)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_3f502d13_b621_4b2d_a225_ac5ee6da929c "descriptive_property"@en)
+SubClassOf(emmo-atomistic:EMMO_3f502d13_b621_4b2d_a225_ac5ee6da929c emmo-atomistic:EMMO_b19d704b_67eb_41e0_ae6f_fa23fe2cf0f9)
+
+# Class: emmo-atomistic:EMMO_462743ce_6912_4c84_a15f_f2fc23108c3b (crystal structure)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_462743ce_6912_4c84_a15f_f2fc23108c3b "crystal structure"@en)
+SubClassOf(emmo-atomistic:EMMO_462743ce_6912_4c84_a15f_f2fc23108c3b emmo-atomistic:EMMO_b464c8d5_1d77_4d52_a94e_934ee8eef26e)
+SubClassOf(emmo-atomistic:EMMO_462743ce_6912_4c84_a15f_f2fc23108c3b ObjectExactCardinality(1 emmo-atomistic:EMMO_655c3d90_bfdd_4034_bb3e_7082ebd09c0e emmo-atomistic:EMMO_81ea94d4_4297_4df0_a547_b66371607900))
 
 # Class: emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 (unit_cell)
 
@@ -38,11 +166,106 @@ SubClassOf(emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 emmo-atomist
 SubClassOf(emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 ObjectSomeValuesFrom(<http://emmc.info/emmo-granularity#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> <http://emmc.info/emmo-material#EMMO_1067b97a_84f8_4d22_8ace_b842b8ce355c>))
 SubClassOf(emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4 ObjectSomeValuesFrom(<http://emmc.info/emmo-granularity#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> <http://emmc.info/emmo-material#EMMO_8303a247_f9d9_4616_bdcd_f5cbd7b298e3>))
 
+# Class: emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587 (dimension)
+
+AnnotationAssertion(rdfs:comment emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587 "A dimension of an array.")
+AnnotationAssertion(rdfs:comment emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587 "The next_dimension relationship can be used to describe an ordered list of multible dimensions.")
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587 "dimension"@en)
+SubClassOf(emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587 emmo-atomistic:EMMO_3f502d13_b621_4b2d_a225_ac5ee6da929c)
+SubClassOf(emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587 ObjectExactCardinality(1 emmo-atomistic:EMMO_655c3d90_bfdd_4034_bb3e_7082ebd09c0e emmo-atomistic:EMMO_63aae48d_ec56_4a33_8e06_499ef0e948bd))
+SubClassOf(emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587 ObjectMaxCardinality(1 emmo-atomistic:EMMO_531f027c_0d9e_4d39_bd2b_785501447f8a emmo-atomistic:EMMO_61265ce0_ccc2_41a0_90fc_019000524587))
+
+# Class: emmo-atomistic:EMMO_63aae48d_ec56_4a33_8e06_499ef0e948bd (integer)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_63aae48d_ec56_4a33_8e06_499ef0e948bd "integer"@en)
+SubClassOf(emmo-atomistic:EMMO_63aae48d_ec56_4a33_8e06_499ef0e948bd emmo-atomistic:EMMO_1b9acb0f_153b_403f_bc84_821f88f997f3)
+
 # Class: emmo-atomistic:EMMO_6b8b2a0c_0fa9_49eb_8ade_b0865f44ec14 (crystal)
 
 AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_6b8b2a0c_0fa9_49eb_8ade_b0865f44ec14 "crystal"@en)
 SubClassOf(emmo-atomistic:EMMO_6b8b2a0c_0fa9_49eb_8ade_b0865f44ec14 <http://emmc.info/emmo-material#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1>)
-SubClassOf(emmo-atomistic:EMMO_6b8b2a0c_0fa9_49eb_8ade_b0865f44ec14 ObjectExactCardinality(1 <http://emmc.info/emmo-granularity#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4))
+SubClassOf(emmo-atomistic:EMMO_6b8b2a0c_0fa9_49eb_8ade_b0865f44ec14 ObjectSomeValuesFrom(<http://emmc.info/emmo-granularity#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> emmo-atomistic:EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4))
+
+# Class: emmo-atomistic:EMMO_81ea94d4_4297_4df0_a547_b66371607900 (spacegroup_number)
+
+AnnotationAssertion(rdfs:comment emmo-atomistic:EMMO_81ea94d4_4297_4df0_a547_b66371607900 "A spacegroup number in International Tables in Crystallography.")
+AnnotationAssertion(rdfs:comment emmo-atomistic:EMMO_81ea94d4_4297_4df0_a547_b66371607900 "In three spatial dimensions there are in total 300 spacegroups, numbered from 1 to 300 according to increasing symmetry.")
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_81ea94d4_4297_4df0_a547_b66371607900 "spacegroup_number"@en)
+SubClassOf(emmo-atomistic:EMMO_81ea94d4_4297_4df0_a547_b66371607900 emmo-atomistic:EMMO_63aae48d_ec56_4a33_8e06_499ef0e948bd)
+
+# Class: emmo-atomistic:EMMO_84d456a8_e7be_455e_973b_a218e152e880 (second)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_84d456a8_e7be_455e_973b_a218e152e880 "second"@en)
+SubClassOf(emmo-atomistic:EMMO_84d456a8_e7be_455e_973b_a218e152e880 emmo-atomistic:EMMO_9e0cba6d_71ee_463f_81d5_d63487481530)
+
+# Class: emmo-atomistic:EMMO_8722d8b3_40b3_4137_8be6_3e8e437dc1f7 (measurement_unit)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_8722d8b3_40b3_4137_8be6_3e8e437dc1f7 "measurement_unit"@en)
+SubClassOf(emmo-atomistic:EMMO_8722d8b3_40b3_4137_8be6_3e8e437dc1f7 emmo-atomistic:EMMO_b19d704b_67eb_41e0_ae6f_fa23fe2cf0f9)
+
+# Class: emmo-atomistic:EMMO_8db07414_a578_4b83_8b83_ce2d226489af (atomic number)
+
+AnnotationAssertion(<http://emmc.info/emmo-core#EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84> emmo-atomistic:EMMO_8db07414_a578_4b83_8b83_ce2d226489af "Number of protons in the nucleus of an atom.")
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_8db07414_a578_4b83_8b83_ce2d226489af "atomic number"@en)
+SubClassOf(emmo-atomistic:EMMO_8db07414_a578_4b83_8b83_ce2d226489af <http://emmc.info/emmo-physical-properties#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819>)
+
+# Class: emmo-atomistic:EMMO_8f80ec76_6821_4bcb_983b_eff80a397ae8 (kilogram)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_8f80ec76_6821_4bcb_983b_eff80a397ae8 "kilogram"@en)
+SubClassOf(emmo-atomistic:EMMO_8f80ec76_6821_4bcb_983b_eff80a397ae8 emmo-atomistic:EMMO_9e0cba6d_71ee_463f_81d5_d63487481530)
+
+# Class: emmo-atomistic:EMMO_91dbccb4_ce0e_4e75_b881_aa946e7befc3 (spacegroup)
+
+AnnotationAssertion(rdfs:comment emmo-atomistic:EMMO_91dbccb4_ce0e_4e75_b881_aa946e7befc3 "A crystallographic spacegroup.")
+AnnotationAssertion(rdfs:comment emmo-atomistic:EMMO_91dbccb4_ce0e_4e75_b881_aa946e7befc3 "For simplicity, the value of a spacegroup is it number in International Tables.")
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_91dbccb4_ce0e_4e75_b881_aa946e7befc3 "spacegroup"@en)
+SubClassOf(emmo-atomistic:EMMO_91dbccb4_ce0e_4e75_b881_aa946e7befc3 emmo-atomistic:EMMO_3f502d13_b621_4b2d_a225_ac5ee6da929c)
+SubClassOf(emmo-atomistic:EMMO_91dbccb4_ce0e_4e75_b881_aa946e7befc3 ObjectSomeValuesFrom(emmo-atomistic:EMMO_655c3d90_bfdd_4034_bb3e_7082ebd09c0e emmo-atomistic:EMMO_63aae48d_ec56_4a33_8e06_499ef0e948bd))
+
+# Class: emmo-atomistic:EMMO_959aea07_eab5_4678_a0fe_f19ec00037e1 (candela)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_959aea07_eab5_4678_a0fe_f19ec00037e1 "candela"@en)
+SubClassOf(emmo-atomistic:EMMO_959aea07_eab5_4678_a0fe_f19ec00037e1 emmo-atomistic:EMMO_9e0cba6d_71ee_463f_81d5_d63487481530)
+
+# Class: emmo-atomistic:EMMO_9e0cba6d_71ee_463f_81d5_d63487481530 (basic_unit)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_9e0cba6d_71ee_463f_81d5_d63487481530 "basic_unit"@en)
+SubClassOf(emmo-atomistic:EMMO_9e0cba6d_71ee_463f_81d5_d63487481530 emmo-atomistic:EMMO_f83e6970_07c0_4eb5_8781_ee4e2a7f87a6)
+
+# Class: emmo-atomistic:EMMO_b19d704b_67eb_41e0_ae6f_fa23fe2cf0f9 (quantitative_property)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_b19d704b_67eb_41e0_ae6f_fa23fe2cf0f9 "quantitative_property"@en)
+SubClassOf(emmo-atomistic:EMMO_b19d704b_67eb_41e0_ae6f_fa23fe2cf0f9 emmo-atomistic:EMMO_209a72fb_9ba8_4d84_b9d0_0f6356dcb45f)
+
+# Class: emmo-atomistic:EMMO_b224f178_e7f5_4a5b_89da_60c4949c0a4a (subjective_property)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_b224f178_e7f5_4a5b_89da_60c4949c0a4a "subjective_property"@en)
+SubClassOf(emmo-atomistic:EMMO_b224f178_e7f5_4a5b_89da_60c4949c0a4a <http://emmc.info/emmo-properties#EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba>)
+
+# Class: emmo-atomistic:EMMO_b464c8d5_1d77_4d52_a94e_934ee8eef26e (morphological property)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_b464c8d5_1d77_4d52_a94e_934ee8eef26e "morphological property"@en)
+SubClassOf(emmo-atomistic:EMMO_b464c8d5_1d77_4d52_a94e_934ee8eef26e <http://emmc.info/emmo-physical-properties#EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec>)
+
+# Class: emmo-atomistic:EMMO_b96cbd60_018c_45e4_ad33_df873289633e (array)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_b96cbd60_018c_45e4_ad33_df873289633e "array"@en)
+SubClassOf(emmo-atomistic:EMMO_b96cbd60_018c_45e4_ad33_df873289633e emmo-atomistic:EMMO_1b9acb0f_153b_403f_bc84_821f88f997f3)
+
+# Class: emmo-atomistic:EMMO_f3e6c812_b1d5_4d7f_bd93_90d541b5ddcf (ampere)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_f3e6c812_b1d5_4d7f_bd93_90d541b5ddcf "ampere"@en)
+SubClassOf(emmo-atomistic:EMMO_f3e6c812_b1d5_4d7f_bd93_90d541b5ddcf emmo-atomistic:EMMO_9e0cba6d_71ee_463f_81d5_d63487481530)
+
+# Class: emmo-atomistic:EMMO_f83e6970_07c0_4eb5_8781_ee4e2a7f87a6 (si_unit)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_f83e6970_07c0_4eb5_8781_ee4e2a7f87a6 "si_unit"@en)
+SubClassOf(emmo-atomistic:EMMO_f83e6970_07c0_4eb5_8781_ee4e2a7f87a6 emmo-atomistic:EMMO_8722d8b3_40b3_4137_8be6_3e8e437dc1f7)
+
+# Class: emmo-atomistic:EMMO_fe557be6_adc2_477a_85f7_7d6c6cf4b2b3 (math_symbol)
+
+AnnotationAssertion(rdfs:label emmo-atomistic:EMMO_fe557be6_adc2_477a_85f7_7d6c6cf4b2b3 "math_symbol"@en)
+SubClassOf(emmo-atomistic:EMMO_fe557be6_adc2_477a_85f7_7d6c6cf4b2b3 <http://emmc.info/emmo-semiotics#EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527>)
 
 
 )

@@ -1,0 +1,4 @@
+[submodule "emmo"]
+	path = emmo
+	url = git@github.com:emmo-repo/EMMO.git
+	branch = v0.9.10
