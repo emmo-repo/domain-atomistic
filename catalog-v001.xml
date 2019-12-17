@@ -1,23 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo" uri="emmo/emmo/emmo.owl"/>
-
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-core" uri="emmo/emmo/core/emmo-core.owl"/>
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-4d" uri="emmo/emmo/core/emmo-4d.owl"/>
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-physical" uri="emmo/emmo/core/emmo-physical.owl"/>
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-process" uri="emmo/emmo/core/emmo-process.owl"/>
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-granularity" uri="emmo/emmo/core/emmo-granularity.owl"/>
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-semiotics" uri="emmo/emmo/core/emmo-semiotics.owl"/>
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-properties" uri="emmo/emmo/core/emmo-properties.owl"/>
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-physical-properties" uri="emmo/emmo/material/emmo-physical-properties.owl"/>
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-languages-examples" uri="emmo/emmo/languages/emmo-languages-examples.owl"/>
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-material" uri="emmo/emmo/material/emmo-material.owl"/>
-
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-math" uri="emmo/emmo/math/emmo-math.owl"/>
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-geometry" uri="emmo/emmo/math/emmo-geometry.owl"/>
-
-	<uri id="Imports Wizard Entry" name="http://emmc.info/emmo-models" uri="emmo/emmo/models/emmo-models.owl"/>
-
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+    <uri id="Imports Wizard Entry" name="http://emmo.info/emmo.owl" uri="emmo/emmo.owl"/>
 </catalog>
