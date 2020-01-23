@@ -11,6 +11,8 @@
      xmlns:emmo-annotations="http://emmo.info/base/emmo-annotations.owl#">
     <owl:Ontology rdf:about="http://emmc.info/emmo-atomistic">
         <owl:imports rdf:resource="http://emmo.info/emmo.owl"/>
+        <owl:imports rdf:resource="http://emmo.info/domains/emmo-datatypes.owl"/>
+        <owl:imports rdf:resource="http://emmo.info/domains/emmo-material.owl"/>
     </owl:Ontology>
     
 
@@ -47,10 +49,8 @@
 
     <owl:ObjectProperty rdf:about="http://emmc.info/emmo-atomistic#EMMO_531f027c_0d9e_4d39_bd2b_785501447f8a">
         <rdfs:subPropertyOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b"/>
-        <rdfs:domain rdf:resource="http://emmc.info/emmo-atomistic#EMMO_61265ce0_ccc2_41a0_90fc_019000524587"/>
-        <rdfs:range rdf:resource="http://emmc.info/emmo-atomistic#EMMO_61265ce0_ccc2_41a0_90fc_019000524587"/>
         <rdfs:comment>next_dimension is used to describe multi-dimensionality.</rdfs:comment>
-        <rdfs:label xml:lang="en">next_dimension</rdfs:label>
+        <rdfs:label xml:lang="en">nextDimension</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -59,7 +59,7 @@
 
     <owl:ObjectProperty rdf:about="http://emmc.info/emmo-atomistic#EMMO_655c3d90_bfdd_4034_bb3e_7082ebd09c0e">
         <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f"/>
-        <rdfs:label xml:lang="en">has_value</rdfs:label>
+        <rdfs:label xml:lang="en">hasValue</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -68,7 +68,7 @@
 
     <owl:ObjectProperty rdf:about="http://emmc.info/emmo-atomistic#EMMO_bd881c8f_2e53_4141_b2f1_c8dcf07e0bdf">
         <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f"/>
-        <rdfs:label xml:lang="en">has_unit</rdfs:label>
+        <rdfs:label xml:lang="en">hasUnit</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -77,9 +77,26 @@
 
     <owl:ObjectProperty rdf:about="http://emmc.info/emmo-atomistic#EMMO_e3b1b88e_203c_4b27_a1a3_756cb831b421">
         <rdfs:subPropertyOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b"/>
-        <rdfs:range rdf:resource="http://emmc.info/emmo-atomistic#EMMO_61265ce0_ccc2_41a0_90fc_019000524587"/>
-        <rdfs:label xml:lang="en">has_dimension</rdfs:label>
+        <rdfs:label xml:lang="en">hasDimension</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f -->
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f"/>
+    
+
+
+    <!-- http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe -->
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+    
+
+
+    <!-- http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b -->
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b"/>
     
 
 
@@ -91,33 +108,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_0c88f73b_9bd9_49b7_ba62_aabaa0f29d58 -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_0c88f73b_9bd9_49b7_ba62_aabaa0f29d58">
-        <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_f83e6970_07c0_4eb5_8781_ee4e2a7f87a6"/>
-        <rdfs:label xml:lang="en">derived_unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_0ff9c3cb_fccc_4655_ac25_34ea49ae70f3 -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_0ff9c3cb_fccc_4655_ac25_34ea49ae70f3">
-        <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_9e0cba6d_71ee_463f_81d5_d63487481530"/>
-        <rdfs:label xml:lang="en">mole</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_12898425_eae9_4663_8120_bd83131749f4 -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_12898425_eae9_4663_8120_bd83131749f4">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_1a663927_3b68_4618_acd3_a8aa0d406329"/>
-        <rdfs:label xml:lang="en">real</rdfs:label>
-    </owl:Class>
     
 
 
@@ -135,53 +125,7 @@
         <rdfs:comment>Atomistic simulations are performed on a collection of atoms, that are not necessarily bonded in one molecule. Fruthermore molecule must have at least two atoms according to IUPAC.
 
 Atomic_ensemble may have part molecule (not necessarily, since atomic_ensemble may be a single atom or a collection of single atoms).</rdfs:comment>
-        <rdfs:label xml:lang="en">atomic_ensemble</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_1f2d9cd4_4d48_4a3e_8458_dc84536c18cd -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_1f2d9cd4_4d48_4a3e_8458_dc84536c18cd">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819"/>
-        <rdfs:label xml:lang="en">mass</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_27676e85_935b_4578_9664_6bcec1816b80 -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_27676e85_935b_4578_9664_6bcec1816b80">
-        <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_9e0cba6d_71ee_463f_81d5_d63487481530"/>
-        <rdfs:label xml:lang="en">kelvin</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_2f40d678_1379_455a_948b_0af0726a30ca -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_2f40d678_1379_455a_948b_0af0726a30ca">
-        <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_9e0cba6d_71ee_463f_81d5_d63487481530"/>
-        <rdfs:label xml:lang="en">meter</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_3731e97c_2f68_48e8_abaa_130d6a9ce9cc -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_3731e97c_2f68_48e8_abaa_130d6a9ce9cc">
-        <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_61265ce0_ccc2_41a0_90fc_019000524587"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819"/>
-        <rdfs:label xml:lang="en">physical dimension</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_3d4a5eba_eaf9_4fc1_8fb9_6e67877bbc13 -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_3d4a5eba_eaf9_4fc1_8fb9_6e67877bbc13">
-        <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_0c88f73b_9bd9_49b7_ba62_aabaa0f29d58"/>
-        <rdfs:label xml:lang="en">joule</rdfs:label>
+        <rdfs:label xml:lang="en">AtomicEnsemble</rdfs:label>
     </owl:Class>
     
 
@@ -190,14 +134,7 @@ Atomic_ensemble may have part molecule (not necessarily, since atomic_ensemble m
 
     <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_462743ce_6912_4c84_a15f_f2fc23108c3b">
         <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_b464c8d5_1d77_4d52_a94e_934ee8eef26e"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmc.info/emmo-atomistic#EMMO_655c3d90_bfdd_4034_bb3e_7082ebd09c0e"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://emmc.info/emmo-atomistic#EMMO_81ea94d4_4297_4df0_a547_b66371607900"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">crystal structure</rdfs:label>
+        <rdfs:label xml:lang="en">CrystalStructure</rdfs:label>
     </owl:Class>
     
 
@@ -206,7 +143,7 @@ Atomic_ensemble may have part molecule (not necessarily, since atomic_ensemble m
 
     <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_50c3c7e3_1fcb_4ca7_b33c_de5f90ca2e68">
         <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3"/>
-        <rdfs:label xml:lang="en">schrödinger equation</rdfs:label>
+        <rdfs:label xml:lang="en">SchrodingerEquation</rdfs:label>
     </owl:Class>
     
 
@@ -221,41 +158,7 @@ Atomic_ensemble may have part molecule (not necessarily, since atomic_ensemble m
                 <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_8303a247_f9d9_4616_bdcd_f5cbd7b298e3"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">unit_cell</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_61265ce0_ccc2_41a0_90fc_019000524587 -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_61265ce0_ccc2_41a0_90fc_019000524587">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_c46f091c_0420_4c1a_af30_0a2c8ebcf7d7"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmc.info/emmo-atomistic#EMMO_655c3d90_bfdd_4034_bb3e_7082ebd09c0e"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://emmc.info/emmo-atomistic#EMMO_63aae48d_ec56_4a33_8e06_499ef0e948bd"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmc.info/emmo-atomistic#EMMO_531f027c_0d9e_4d39_bd2b_785501447f8a"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://emmc.info/emmo-atomistic#EMMO_61265ce0_ccc2_41a0_90fc_019000524587"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>A dimension of an array.</rdfs:comment>
-        <rdfs:comment>The next_dimension relationship can be used to describe an ordered list of multible dimensions.</rdfs:comment>
-        <rdfs:label xml:lang="en">dimension</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_63aae48d_ec56_4a33_8e06_499ef0e948bd -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_63aae48d_ec56_4a33_8e06_499ef0e948bd">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_1a663927_3b68_4618_acd3_a8aa0d406329"/>
-        <rdfs:label xml:lang="en">integer</rdfs:label>
+        <rdfs:label xml:lang="en">UnitCell</rdfs:label>
     </owl:Class>
     
 
@@ -270,27 +173,7 @@ Atomic_ensemble may have part molecule (not necessarily, since atomic_ensemble m
                 <owl:someValuesFrom rdf:resource="http://emmc.info/emmo-atomistic#EMMO_550f319e_c851_4c8d_a163_d1ca515a14f4"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">crystal</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_81ea94d4_4297_4df0_a547_b66371607900 -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_81ea94d4_4297_4df0_a547_b66371607900">
-        <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_63aae48d_ec56_4a33_8e06_499ef0e948bd"/>
-        <rdfs:comment>A spacegroup number in International Tables in Crystallography.</rdfs:comment>
-        <rdfs:comment>In three spatial dimensions there are in total 300 spacegroups, numbered from 1 to 300 according to increasing symmetry.</rdfs:comment>
-        <rdfs:label xml:lang="en">spacegroup_number</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_84d456a8_e7be_455e_973b_a218e152e880 -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_84d456a8_e7be_455e_973b_a218e152e880">
-        <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_9e0cba6d_71ee_463f_81d5_d63487481530"/>
-        <rdfs:label xml:lang="en">second</rdfs:label>
+        <rdfs:label xml:lang="en">Crystal</rdfs:label>
     </owl:Class>
     
 
@@ -300,16 +183,7 @@ Atomic_ensemble may have part molecule (not necessarily, since atomic_ensemble m
     <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_8db07414_a578_4b83_8b83_ce2d226489af">
         <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819"/>
         <rdfs:comment>Number of protons in the nucleus of an atom.</rdfs:comment>
-        <rdfs:label xml:lang="en">atomic number</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_8f80ec76_6821_4bcb_983b_eff80a397ae8 -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_8f80ec76_6821_4bcb_983b_eff80a397ae8">
-        <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_9e0cba6d_71ee_463f_81d5_d63487481530"/>
-        <rdfs:label xml:lang="en">kilogram</rdfs:label>
+        <rdfs:label xml:lang="en">AtomicNumber</rdfs:label>
     </owl:Class>
     
 
@@ -318,33 +192,9 @@ Atomic_ensemble may have part molecule (not necessarily, since atomic_ensemble m
 
     <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_91dbccb4_ce0e_4e75_b881_aa946e7befc3">
         <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_c46f091c_0420_4c1a_af30_0a2c8ebcf7d7"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmc.info/emmo-atomistic#EMMO_655c3d90_bfdd_4034_bb3e_7082ebd09c0e"/>
-                <owl:someValuesFrom rdf:resource="http://emmc.info/emmo-atomistic#EMMO_63aae48d_ec56_4a33_8e06_499ef0e948bd"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>A crystallographic spacegroup.</rdfs:comment>
         <rdfs:comment>For simplicity, the value of a spacegroup is it number in International Tables.</rdfs:comment>
-        <rdfs:label xml:lang="en">spacegroup</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_959aea07_eab5_4678_a0fe_f19ec00037e1 -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_959aea07_eab5_4678_a0fe_f19ec00037e1">
-        <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_9e0cba6d_71ee_463f_81d5_d63487481530"/>
-        <rdfs:label xml:lang="en">candela</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_9e0cba6d_71ee_463f_81d5_d63487481530 -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_9e0cba6d_71ee_463f_81d5_d63487481530">
-        <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_f83e6970_07c0_4eb5_8781_ee4e2a7f87a6"/>
-        <rdfs:label xml:lang="en">basic_unit</rdfs:label>
+        <rdfs:label xml:lang="en">Spacegroup</rdfs:label>
     </owl:Class>
     
 
@@ -353,16 +203,7 @@ Atomic_ensemble may have part molecule (not necessarily, since atomic_ensemble m
 
     <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_b464c8d5_1d77_4d52_a94e_934ee8eef26e">
         <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66"/>
-        <rdfs:label xml:lang="en">morphological property</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://emmc.info/emmo-atomistic#EMMO_b96cbd60_018c_45e4_ad33_df873289633e -->
-
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_b96cbd60_018c_45e4_ad33_df873289633e">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_1a663927_3b68_4618_acd3_a8aa0d406329"/>
-        <rdfs:label xml:lang="en">array</rdfs:label>
+        <rdfs:label xml:lang="en">MorphologicalProperty</rdfs:label>
     </owl:Class>
     
 
@@ -376,7 +217,7 @@ Atomic_ensemble may have part molecule (not necessarily, since atomic_ensemble m
 This simplifies the formulation greatly because instead of explicitly including the real potential of many interacting electrons, the Kohn–Sham equation contains a local effective (fictitious) external potential of non-interacting particles. Spin polarized quantum DFT is an extension of quantum DFT which includes both the electron density and the up and down spin densities explicitly in the Kohn-Sham equations.
 
 Ref: RoMM</rdfs:comment>
-        <rdfs:label xml:lang="en">kohn-sham equation</rdfs:label>
+        <rdfs:label xml:lang="en">KohnShamEquation</rdfs:label>
     </owl:Class>
     
 
@@ -385,26 +226,62 @@ Ref: RoMM</rdfs:comment>
 
     <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_e87a25d6_ca43_4677_b56a_abb297e95547">
         <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11"/>
-        <rdfs:label xml:lang="en">density functional theory</rdfs:label>
+        <rdfs:label xml:lang="en">DensityFunctionalTheory</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://emmc.info/emmo-atomistic#EMMO_f3e6c812_b1d5_4d7f_bd93_90d541b5ddcf -->
+    <!-- http://emmo.info/domains/emmo-material.owl#EMMO_174cf221_9d16_427c_abea_e217a948969b -->
 
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_f3e6c812_b1d5_4d7f_bd93_90d541b5ddcf">
-        <rdfs:subClassOf rdf:resource="http://emmc.info/emmo-atomistic#EMMO_9e0cba6d_71ee_463f_81d5_d63487481530"/>
-        <rdfs:label xml:lang="en">ampere</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_174cf221_9d16_427c_abea_e217a948969b"/>
     
 
 
-    <!-- http://emmc.info/emmo-atomistic#EMMO_f83e6970_07c0_4eb5_8781_ee4e2a7f87a6 -->
+    <!-- http://emmo.info/domains/emmo-material.owl#EMMO_8303a247_f9d9_4616_bdcd_f5cbd7b298e3 -->
 
-    <owl:Class rdf:about="http://emmc.info/emmo-atomistic#EMMO_f83e6970_07c0_4eb5_8781_ee4e2a7f87a6">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4"/>
-        <rdfs:label xml:lang="en">si unit</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_8303a247_f9d9_4616_bdcd_f5cbd7b298e3"/>
+    
+
+
+    <!-- http://emmo.info/domains/emmo-material.owl#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 -->
+
+    <owl:Class rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1"/>
+    
+
+
+    <!-- http://emmo.info/domains/emmo-material.owl#EMMO_eb77076b_a104_42ac_a065_798b2d2809ad -->
+
+    <owl:Class rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_eb77076b_a104_42ac_a065_798b2d2809ad"/>
+    
+
+
+    <!-- http://emmo.info/domains/emmo-models.owl#EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3 -->
+
+    <owl:Class rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3"/>
+    
+
+
+    <!-- http://emmo.info/domains/emmo-models.owl#EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11 -->
+
+    <owl:Class rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11"/>
+    
+
+
+    <!-- http://emmo.info/domains/emmo-physical-properties.owl#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 -->
+
+    <owl:Class rdf:about="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819"/>
+    
+
+
+    <!-- http://emmo.info/domains/emmo-physical-properties.owl#EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66 -->
+
+    <owl:Class rdf:about="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66"/>
+    
+
+
+    <!-- http://emmo.info/domains/emmo-physical-properties.owl#EMMO_c46f091c_0420_4c1a_af30_0a2c8ebcf7d7 -->
+
+    <owl:Class rdf:about="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_c46f091c_0420_4c1a_af30_0a2c8ebcf7d7"/>
 </rdf:RDF>
 
 
