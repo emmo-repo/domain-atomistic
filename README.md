@@ -2,6 +2,6 @@ EMMO Atomistic
 ==============
 An EMMO-based domain ontology for atomistic and electronic modelling.
 
-Obtain with
+Clone it with
 
-    git clone --shallow-submodules git@gitlab.cc-asp.fraunhofer.de:simphony/emmo-atomistic.git
+    git clone --recurse-submodules --shallow-submodules git@gitlab.cc-asp.fraunhofer.de:ontology/domains/emmo-atomistic.git
