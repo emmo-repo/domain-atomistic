@@ -3,12 +3,12 @@ atomistic
 An EMMO-based domain ontology for atomistic and electronic modelling.
 
 
-Dependencies
-------------
+Imported ontologies
+-------------------
 This ontology builds on top of EMMO. See the following table for version
 compatibilies:
 
-| Dependency           | Version           |
+| Imported ontologies  | Version           |
 | -------------------- | ----------------- |
 | [EMMO][1]            | marketplace-1.0.1 |
 | [crystallography][2] | 0.0.1             |
