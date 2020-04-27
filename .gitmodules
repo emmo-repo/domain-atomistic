@@ -1,7 +1,4 @@
-[submodule "emmo"]
-	path = emmo
-	url = git@github.com:emmo-repo/EMMO.git
-	branch = v0.9.10
 [submodule "crystallography"]
 	path = crystallography
-	url = git@gitlab.cc-asp.fraunhofer.de:ontology/domains/crystallography.git
+	#url = git@gitlab.cc-asp.fraunhofer.de:ontology/domains/crystallography.git
+        url = https://gitlab.cc-asp.fraunhofer.de/ontology/domains/crystallography.git

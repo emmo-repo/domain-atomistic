@@ -6,7 +6,9 @@
 
         <uri name="http://emmo.info/crystallography/0.0.1/crystallography"        uri="./crystallography/crystallography.owl"/>
 
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2"                            uri="./crystallography/EMMO/emmo.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0"                         uri="http://emmo.info/emmo/marketplace-1.0"/>
+
+        <uri name="http://emmo.info/emmo/1.0.0-alpha2/top"                        uri="./crystallography/EMMO/top/top.owl"/>
         <uri name="http://emmo.info/emmo/1.0.0-alpha2/top/annotations"            uri="./crystallography/EMMO/top/annotations.owl"/>
         <uri name="http://emmo.info/emmo/1.0.0-alpha2/top/mereotopology"          uri="./crystallography/EMMO/top/mereotopology.owl"/>
         <uri name="http://emmo.info/emmo/1.0.0-alpha2/top/physical"               uri="./crystallography/EMMO/top/physical.owl"/>
@@ -24,5 +26,6 @@
         <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/isq"                 uri="./crystallography/EMMO/middle/isq.owl"/>
         <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/siunits"             uri="./crystallography/EMMO/middle/siunits.owl"/>
         <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/units-extension"     uri="./crystallography/EMMO/middle/units-extension.owl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-alpha2/emmo-inferred"              uri="./crystallography/EMMO/emmo-inferred.owl"/>
     </group>
 </catalog>
