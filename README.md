@@ -43,5 +43,5 @@ The crystallography domain ontology is released under the [Creative
 Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license (CC BY 4.0).
 
 
-[2]: https://github.com/emmo-repo/EMMO
-[1]: https://gitlab.cc-asp.fraunhofer.de/ontology/domains/crystallography
+[1]: https://github.com/emmo-repo/EMMO
+[2]: https://gitlab.cc-asp.fraunhofer.de/ontology/domains/crystallography
