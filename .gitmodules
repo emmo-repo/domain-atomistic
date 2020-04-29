@@ -1,4 +1,3 @@
 [submodule "crystallography"]
 	path = crystallography
-	#url = git@gitlab.cc-asp.fraunhofer.de:ontology/domains/crystallography.git
         url = https://gitlab.cc-asp.fraunhofer.de/ontology/domains/crystallography.git

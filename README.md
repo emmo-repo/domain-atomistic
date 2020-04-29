@@ -8,7 +8,7 @@ Imported ontologies
 This ontology builds on top of EMMO. See the following table for version
 compatibilies:
 
-| Imported ontologies  | Version           |
+| Imported Ontologies  | Version           |
 | -------------------- | ----------------- |
 | [EMMO][1]            | marketplace-1.0.1 |
 | [crystallography][2] | 0.0.1             |
@@ -16,11 +16,11 @@ compatibilies:
 
 Obtaining atomistic
 -------------------
-This repository include the correct version of the crystallography
+This repository include the correct version of the atomistic
 domain ontology as a git submodule.  Hence, use the following command
 when cloning this repository:
 
-    git clone --recurse-submodules --shallow-submodules git@gitlab.cc-asp.fraunhofer.de:ontology/domains/crystallography.git
+    git clone --recurse-submodules --shallow-submodules https://gitlab.cc-asp.fraunhofer.de/ontology/domains/emmo-atomistic.git
 
 
 Attributions and credits
@@ -39,7 +39,7 @@ Attributions and credits
 
 License
 -------
-The crystallography domain ontology is released under the [Creative
+The atomistic domain ontology is released under the [Creative
 Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license (CC BY 4.0).
 
 
