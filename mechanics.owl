@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://emmo.info/emmo/mechanics#"
-     xml:base="http://emmo.info/emmo/mechanics"
+<rdf:RDF xmlns="http://emmo.info/mechanics/mechanics#"
+     xml:base="http://emmo.info/mechanics/mechanics"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:annotations="http://emmo.info/emmo/top/annotations#">
-    <owl:Ontology rdf:about="http://emmo.info/emmo/mechanics">
-        <owl:versionIRI rdf:resource="http://emmo.info/emmo/0.0.1/mechanics"/>
-        <owl:imports rdf:resource="http://emmo.info/emmo/1.0.0-alpha2"/>
+    <owl:Ontology rdf:about="http://emmo.info/mechanics/mechanics">
+        <owl:versionIRI rdf:resource="http://emmo.info/mechanics/0.0.1/mechanics"/>
+        <owl:imports rdf:resource="http://emmo.info/emmo/marketplace-1.0.1"/>
     </owl:Ontology>
     
 

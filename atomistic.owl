@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://emmo.info/emmo/atomistic#"
-     xml:base="http://emmo.info/emmo/atomistic"
+<rdf:RDF xmlns="http://emmo.info/atomistic/atomistic#"
+     xml:base="http://emmo.info/atomistic/atomistic"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,10 +9,10 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:annotations="http://emmo.info/emmo/top/annotations#"
      xmlns:crystallography="http://emmo.info/crystallography/crystallography#">
-    <owl:Ontology rdf:about="http://emmo.info/emmo/atomistic">
-        <owl:versionIRI rdf:resource="http://emmo.info/emmo/0.0.1/atomistic"/>
+    <owl:Ontology rdf:about="http://emmo.info/atomistic/atomistic">
+        <owl:versionIRI rdf:resource="http://emmo.info/atomistic/0.0.1/atomistic"/>
         <owl:imports rdf:resource="http://emmo.info/crystallography/0.0.1/crystallography"/>
-        <owl:imports rdf:resource="http://emmo.info/mechanics/0.0.1/mechanics"/>
+        <owl:imports rdf:resource="http://emmo.info/mechanistic/0.0.1/mechanics"/>
         <rdfs:comment>An EMMO-based ontology for electronic and atomic modelling.</rdfs:comment>
     </owl:Ontology>
     
@@ -29,14 +29,14 @@
     
 
 
-    <!-- http://emmo.info/emmo/atomistic#EMMO_5ac618c5_e5b8_432a_9b27_9d647a318a71 -->
+    <!-- http://emmo.info/atomistic/atomistic#EMMO_5ac618c5_e5b8_432a_9b27_9d647a318a71 -->
 
-    <owl:Class rdf:about="http://emmo.info/emmo/atomistic#EMMO_5ac618c5_e5b8_432a_9b27_9d647a318a71">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/atomistic#EMMO_e6cb17ee_5d23_4b3c_a12a_3a60bfe8ef69"/>
+    <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_5ac618c5_e5b8_432a_9b27_9d647a318a71">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/atomistic/atomistic#EMMO_e6cb17ee_5d23_4b3c_a12a_3a60bfe8ef69"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/atomistic#EMMO_989de62b_ce32_45e9_aae6_733a4330b709"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/atomistic/atomistic#EMMO_989de62b_ce32_45e9_aae6_733a4330b709"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">KohnShamEquation</rdfs:label>
@@ -44,9 +44,9 @@
     
 
 
-    <!-- http://emmo.info/emmo/atomistic#EMMO_751f0682_e7db_4129_ba0c_1a3152648994 -->
+    <!-- http://emmo.info/atomistic/atomistic#EMMO_751f0682_e7db_4129_ba0c_1a3152648994 -->
 
-    <owl:Class rdf:about="http://emmo.info/emmo/atomistic#EMMO_751f0682_e7db_4129_ba0c_1a3152648994">
+    <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_751f0682_e7db_4129_ba0c_1a3152648994">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -59,9 +59,9 @@
     
 
 
-    <!-- http://emmo.info/emmo/atomistic#EMMO_823ae3d3_1603_470f_babb_b6fcd2b65640 -->
+    <!-- http://emmo.info/atomistic/atomistic#EMMO_823ae3d3_1603_470f_babb_b6fcd2b65640 -->
 
-    <owl:Class rdf:about="http://emmo.info/emmo/atomistic#EMMO_823ae3d3_1603_470f_babb_b6fcd2b65640">
+    <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_823ae3d3_1603_470f_babb_b6fcd2b65640">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e"/>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A mathematical description of the quantum state of an isolated quantum system. A wave function is a function of the degrees of freedom corresponding to some maximal set of commuting observables. Once such a representation is chosen, the wave function can be derived from the quantum state.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>https://en.wikipedia.org/wiki/Wave_function</annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>
@@ -70,9 +70,9 @@
     
 
 
-    <!-- http://emmo.info/emmo/atomistic#EMMO_911b2dad_3acf_4f63_8a24_a7b42e1c9699 -->
+    <!-- http://emmo.info/atomistic/atomistic#EMMO_911b2dad_3acf_4f63_8a24_a7b42e1c9699 -->
 
-    <owl:Class rdf:about="http://emmo.info/emmo/atomistic#EMMO_911b2dad_3acf_4f63_8a24_a7b42e1c9699">
+    <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_911b2dad_3acf_4f63_8a24_a7b42e1c9699">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2"/>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An operator corresponding to the sum of the kinetic energies plus the potential energies for all the particles in the system.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <rdfs:label xml:lang="en">Hamiltonian</rdfs:label>
@@ -80,19 +80,19 @@
     
 
 
-    <!-- http://emmo.info/emmo/atomistic#EMMO_93210686_b75c_45cb_9766_5f3ef6f0ee3f -->
+    <!-- http://emmo.info/atomistic/atomistic#EMMO_93210686_b75c_45cb_9766_5f3ef6f0ee3f -->
 
-    <owl:Class rdf:about="http://emmo.info/emmo/atomistic#EMMO_93210686_b75c_45cb_9766_5f3ef6f0ee3f">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/atomistic#EMMO_d3df28d5_d223_403d_aff6_e8062ceaf3b5"/>
+    <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_93210686_b75c_45cb_9766_5f3ef6f0ee3f">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/atomistic/atomistic#EMMO_d3df28d5_d223_403d_aff6_e8062ceaf3b5"/>
         <annotations:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b>TimeDependentSchrödingerEquation</annotations:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b>
         <rdfs:label xml:lang="en">TimeDependentSchrodingerEquation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://emmo.info/emmo/atomistic#EMMO_989de62b_ce32_45e9_aae6_733a4330b709 -->
+    <!-- http://emmo.info/atomistic/atomistic#EMMO_989de62b_ce32_45e9_aae6_733a4330b709 -->
 
-    <owl:Class rdf:about="http://emmo.info/emmo/atomistic#EMMO_989de62b_ce32_45e9_aae6_733a4330b709">
+    <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_989de62b_ce32_45e9_aae6_733a4330b709">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -100,7 +100,7 @@
                 <owl:allValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569"/>
-                        <owl:allValuesFrom rdf:resource="http://emmo.info/emmo/atomistic#EMMO_751f0682_e7db_4129_ba0c_1a3152648994"/>
+                        <owl:allValuesFrom rdf:resource="http://emmo.info/atomistic/atomistic#EMMO_751f0682_e7db_4129_ba0c_1a3152648994"/>
                     </owl:Restriction>
                 </owl:allValuesFrom>
             </owl:Restriction>
@@ -115,29 +115,29 @@
     
 
 
-    <!-- http://emmo.info/emmo/atomistic#EMMO_aabf5735_3acb_4144_b97f_0ccc041f1b2f -->
+    <!-- http://emmo.info/atomistic/atomistic#EMMO_aabf5735_3acb_4144_b97f_0ccc041f1b2f -->
 
-    <owl:Class rdf:about="http://emmo.info/emmo/atomistic#EMMO_aabf5735_3acb_4144_b97f_0ccc041f1b2f">
+    <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_aabf5735_3acb_4144_b97f_0ccc041f1b2f">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/models#EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11"/>
         <rdfs:label xml:lang="en">DensityFunctionalTheory</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://emmo.info/emmo/atomistic#EMMO_d3df28d5_d223_403d_aff6_e8062ceaf3b5 -->
+    <!-- http://emmo.info/atomistic/atomistic#EMMO_d3df28d5_d223_403d_aff6_e8062ceaf3b5 -->
 
-    <owl:Class rdf:about="http://emmo.info/emmo/atomistic#EMMO_d3df28d5_d223_403d_aff6_e8062ceaf3b5">
+    <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_d3df28d5_d223_403d_aff6_e8062ceaf3b5">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/models#EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/atomistic#EMMO_823ae3d3_1603_470f_babb_b6fcd2b65640"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/atomistic/atomistic#EMMO_823ae3d3_1603_470f_babb_b6fcd2b65640"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/atomistic#EMMO_911b2dad_3acf_4f63_8a24_a7b42e1c9699"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/atomistic/atomistic#EMMO_911b2dad_3acf_4f63_8a24_a7b42e1c9699"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -156,10 +156,10 @@ The exact form of the Schrödinger equation depends on the physical situation. T
     
 
 
-    <!-- http://emmo.info/emmo/atomistic#EMMO_e6cb17ee_5d23_4b3c_a12a_3a60bfe8ef69 -->
+    <!-- http://emmo.info/atomistic/atomistic#EMMO_e6cb17ee_5d23_4b3c_a12a_3a60bfe8ef69 -->
 
-    <owl:Class rdf:about="http://emmo.info/emmo/atomistic#EMMO_e6cb17ee_5d23_4b3c_a12a_3a60bfe8ef69">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/atomistic#EMMO_d3df28d5_d223_403d_aff6_e8062ceaf3b5"/>
+    <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_e6cb17ee_5d23_4b3c_a12a_3a60bfe8ef69">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/atomistic/atomistic#EMMO_d3df28d5_d223_403d_aff6_e8062ceaf3b5"/>
         <annotations:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b>TimeIndependentSchrödingerEquation</annotations:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b>
         <rdfs:label xml:lang="en">TimeIndependentSchrodingerEquation</rdfs:label>
     </owl:Class>
