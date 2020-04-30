@@ -12,7 +12,7 @@
     <owl:Ontology rdf:about="http://emmo.info/atomistic/atomistic">
         <owl:versionIRI rdf:resource="http://emmo.info/atomistic/0.0.1/atomistic"/>
         <owl:imports rdf:resource="http://emmo.info/crystallography/0.0.1/crystallography"/>
-        <owl:imports rdf:resource="http://emmo.info/mechanistic/0.0.1/mechanics"/>
+        <owl:imports rdf:resource="http://emmo.info/mechanics/0.0.1/mechanics"/>
         <rdfs:comment>An EMMO-based ontology for electronic and atomic modelling.</rdfs:comment>
     </owl:Ontology>
     
