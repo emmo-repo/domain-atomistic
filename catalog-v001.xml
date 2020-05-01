@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
-        <uri name="http://emmo.info/atomistic/0.0.1/atomistic"                     uri="./atomistic.owl"/>
-        <uri name="http://emmo.info/mechanics/0.0.1/mechanics"                     uri="./mechanics.owl"/>
 
-        <uri name="http://emmo.info/crystallography/0.0.1/crystallography"         uri="./crystallography/crystallography.owl"/>
+        <uri name="http://emmo.info/atomistic/0.0.1/atomistic"                       uri="./atomistic.owl"/>
+        <uri name="http://emmo.info/mechanics/0.0.1/mechanics"                       uri="./mechanics/mechanics.owl"/>
 
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1"                        uri="./crystallography/EMMO/emmo.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/top"                    uri="./crystallography/EMMO/top/top.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/top/annotations"        uri="./crystallography/EMMO/top/annotations.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/top/mereotopology"      uri="./crystallography/EMMO/top/mereotopology.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/top/physical"           uri="./crystallography/EMMO/top/physical.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/semiotics"       uri="./crystallography/EMMO/middle/semiotics.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/perceptual"      uri="./crystallography/EMMO/middle/perceptual.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/reductionistic"  uri="./crystallography/EMMO/middle/reductionistic.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/holistic"        uri="./crystallography/EMMO/middle/holistic.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/physicalistic"   uri="./crystallography/EMMO/middle/physicalistic.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/math"            uri="./crystallography/EMMO/middle/math.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/properties"      uri="./crystallography/EMMO/middle/properties.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/materials"       uri="./crystallography/EMMO/middle/materials.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/metrology"       uri="./crystallography/EMMO/middle/metrology.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/models"          uri="./crystallography/EMMO/middle/models.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/manufacturing"   uri="./crystallography/EMMO/middle/manufacturing.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/isq"             uri="./crystallography/EMMO/middle/isq.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/siunits"         uri="./crystallography/EMMO/middle/siunits.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/units-extension" uri="./crystallography/EMMO/middle/units-extension.owl"/>
-        <uri name="http://emmo.info/emmo/marketplace-1.0.1/emmo-inferred"          uri="./crystallography/EMMO/emmo-inferred.owl"/>
+        <uri name="http://emmo.info/crystallography/0.0.1/crystallography"           uri="./crystallography/crystallography.owl"/>
+
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1"                          uri="./crystallography/EMMO/emmo.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/top"                      uri="./crystallography/EMMO/top/top.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/top/annotations"          uri="./crystallography/EMMO/top/annotations.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/top/mereotopology"        uri="./crystallography/EMMO/top/mereotopology.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/top/physical"             uri="./crystallography/EMMO/top/physical.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/semiotics"         uri="./crystallography/EMMO/middle/semiotics.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/perceptual"        uri="./crystallography/EMMO/middle/perceptual.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/reductionistic"    uri="./crystallography/EMMO/middle/reductionistic.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/holistic"          uri="./crystallography/EMMO/middle/holistic.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/physicalistic"     uri="./crystallography/EMMO/middle/physicalistic.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/math"              uri="./crystallography/EMMO/middle/math.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/properties"        uri="./crystallography/EMMO/middle/properties.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/materials"         uri="./crystallography/EMMO/middle/materials.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/metrology"         uri="./crystallography/EMMO/middle/metrology.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/models"            uri="./crystallography/EMMO/middle/models.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/manufacturing"     uri="./crystallography/EMMO/middle/manufacturing.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/isq"               uri="./crystallography/EMMO/middle/isq.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/siunits"           uri="./crystallography/EMMO/middle/siunits.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/middle/units-extension"   uri="./crystallography/EMMO/middle/units-extension.owl"/>
+        <uri name="http://emmo.info/emmo/marketplace-1.0.1/emmo-inferred"            uri="./crystallography/EMMO/emmo-inferred.owl"/>
     </group>
 </catalog>
