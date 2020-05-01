@@ -1,4 +1,4 @@
-[![pipeline](https://gitlab.cc-asp.fraunhofer.de/ontology/domains/atomistic/badges/master/pipeline.svg)](https://gitlab.cc-asp.fraunhofer.de/ontology/domains/atomistic/pipelines/latest)
+[![pipeline](https://gitlab.cc-asp.fraunhofer.de/ontology/domains/enno-atomistic/badges/master/pipeline.svg)](https://gitlab.cc-asp.fraunhofer.de/ontology/domains/emmo-atomistic/pipelines)
 
 
 atomistic
