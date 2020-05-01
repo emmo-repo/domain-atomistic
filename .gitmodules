@@ -4,6 +4,3 @@
 [submodule "mechanics"]
 	path = mechanics
 	url = https://gitlab.cc-asp.fraunhofer.de/ontology/domains/mechanics.git
-[submodule "emmo"]
-	path = emmo
-	url = https://github.com/emmo-repo/EMMO.git
