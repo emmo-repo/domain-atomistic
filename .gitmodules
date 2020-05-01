@@ -6,4 +6,4 @@
 	url = https://gitlab.cc-asp.fraunhofer.de/ontology/domains/mechanics.git
 [submodule "emmo"]
 	path = emmo
-	url = http://emmo.info/emmo/marketplace-1.0.1
+	url = https://github.com/emmo-repo/EMMO.git
