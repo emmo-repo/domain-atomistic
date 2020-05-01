@@ -1,3 +1,6 @@
+[![pipeline](https://gitlab.cc-asp.fraunhofer.de/ontology/domains/enno-atomistic/badges/master/pipeline.svg)](https://gitlab.cc-asp.fraunhofer.de/ontology/domains/emmo-atomistic/pipelines)
+
+
 atomistic
 =========
 An EMMO-based domain ontology for atomistic and electronic modelling.
@@ -12,6 +15,7 @@ compatibilies:
 | -------------------- | ----------------- |
 | [EMMO][1]            | marketplace-1.0.1 |
 | [crystallography][2] | 0.0.1             |
+| [mechanics][3]       | 0.0.1             |
 
 
 Obtaining atomistic
@@ -45,3 +49,4 @@ Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4
 
 [1]: https://github.com/emmo-repo/EMMO
 [2]: https://gitlab.cc-asp.fraunhofer.de/ontology/domains/crystallography
+[3]: https://gitlab.cc-asp.fraunhofer.de/ontology/domains/mechanics
