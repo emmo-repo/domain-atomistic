@@ -20,9 +20,9 @@ compatibilies:
 
 Obtaining atomistic
 -------------------
-This repository include the correct version of the atomistic
-domain ontology as a git submodule.  Hence, use the following command
-when cloning this repository:
+This repository include the correct version of the crystallography and
+mechanics domain ontologies as a git submodules.  Hence, use the
+following command when cloning this repository:
 
     git clone --recurse-submodules --shallow-submodules https://gitlab.cc-asp.fraunhofer.de/ontology/domains/emmo-atomistic.git
 
