@@ -3,7 +3,7 @@
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
 
         <uri name="http://emmo.info/atomistic/0.0.1/atomistic"                       uri="./atomistic.owl"/>
-        <uri name="http://emmo.info/mechanics/0.0.1/mechanics"                       uri="./mechanics/mechanics.owl"/>
+        <uri name="http://emmo.info/mechanics/0.0.1/mechanics"                       uri="./mechanics.owl"/>
 
         <uri name="http://emmo.info/crystallography/0.0.1/crystallography"           uri="./crystallography/crystallography.owl"/>
 
