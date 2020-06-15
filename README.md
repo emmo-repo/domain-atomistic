@@ -62,5 +62,5 @@ Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4
 
 
 [1]: https://github.com/emmo-repo/EMMO
-[2]: https://gitlab.cc-asp.fraunhofer.de/ontology/domains/crystallography
-[3]: https://gitlab.cc-asp.fraunhofer.de/ontology/domains/mechanics
+[2]: https://github.com/emmo-repo/domain-crystallography
+[3]: https://github.com/emmo-repo/domain-atomistic/mechanics.owl
