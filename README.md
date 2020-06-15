@@ -1,9 +1,23 @@
-[![pipeline](https://gitlab.cc-asp.fraunhofer.de/ontology/domains/enno-atomistic/badges/master/pipeline.svg)](https://gitlab.cc-asp.fraunhofer.de/ontology/domains/emmo-atomistic/pipelines)
+[![CI tests](https://github.com/emmo-repo/domain-atomistic/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-atomistic/actions/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 
-atomistic
-=========
+domain-atomistic
+================
 An EMMO-based domain ontology for atomistic and electronic modelling.
+
+
+Status
+------
+- [ ] Proposal
+- [X] accepted, under development
+- [ ] official
+
+This domain ontology is work-in-progress (WIP), it is in the process
+of being accepted as a task group by the EMMC.
+
+* Application submitted: 15 June 2020
+* Application accepted on: TBD
 
 
 Imported ontologies
@@ -18,13 +32,13 @@ compatibilies:
 | [mechanics][3]       | 0.0.1             |
 
 
-Obtaining atomistic
--------------------
+Obtaining domain-atomistic
+--------------------------
 This repository include the correct version of the crystallography and
 mechanics domain ontologies as a git submodules.  Hence, use the
 following command when cloning this repository:
 
-    git clone --recurse-submodules --shallow-submodules https://gitlab.cc-asp.fraunhofer.de/ontology/domains/emmo-atomistic.git
+    git clone --recurse-submodules --shallow-submodules git@github.com:emmo-repo/domain-atomistic.git
 
 
 Attributions and credits
