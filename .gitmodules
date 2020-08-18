@@ -1,6 +1,7 @@
 [submodule "crystallography"]
 	path = crystallography
-	url = git@github.com:emmo-repo/domain-crystallography.git
-[submodule "mechanics"]
-	path = mechanics
-	url = https://gitlab.cc-asp.fraunhofer.de/ontology/domains/mechanics.git
+        #url = https://gitlab.cc-asp.fraunhofer.de/ontology/domains/mechanics.git
+	url = https://gitlab.cc-asp.fraunhofer.de/ontology/domains/crystallography.git
+#[submodule "mechanics"]
+#	path = mechanics
+#	url = https://gitlab.cc-asp.fraunhofer.de/ontology/domains/mechanics.git
