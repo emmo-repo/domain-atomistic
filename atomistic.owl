@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://emmo.info/atomistic/atomistic#"
      xml:base="http://emmo.info/atomistic/atomistic"
+     xmlns:isq="http://emmo.info/emmo/middle/isq#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:annotations="http://emmo.info/emmo/top/annotations#"
      xmlns:crystallography="http://emmo.info/crystallography/crystallography#">
     <owl:Ontology rdf:about="http://emmo.info/atomistic/atomistic">
@@ -39,7 +41,7 @@
                 <owl:someValuesFrom rdf:resource="http://emmo.info/atomistic/atomistic#EMMO_989de62b_ce32_45e9_aae6_733a4330b709"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">KohnShamEquation</rdfs:label>
+        <skos:prefLabel xml:lang="en">KohnShamEquation</skos:prefLabel>
     </owl:Class>
     
 
@@ -54,7 +56,7 @@
                 <owl:hasValue>T+1 L-3 M0 I+1 Θ0 N0 J0</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">TimeCurrentPerCubicLengthDimension</rdfs:label>
+        <skos:prefLabel xml:lang="en">TimeCurrentPerCubicLengthDimension</skos:prefLabel>
     </owl:Class>
     
 
@@ -65,7 +67,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e"/>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A mathematical description of the quantum state of an isolated quantum system. A wave function is a function of the degrees of freedom corresponding to some maximal set of commuting observables. Once such a representation is chosen, the wave function can be derived from the quantum state.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>https://en.wikipedia.org/wiki/Wave_function</annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>
-        <rdfs:label xml:lang="en">WaveFunction</rdfs:label>
+        <skos:prefLabel xml:lang="en">WaveFunction</skos:prefLabel>
     </owl:Class>
     
 
@@ -75,7 +77,7 @@
     <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_911b2dad_3acf_4f63_8a24_a7b42e1c9699">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2"/>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An operator corresponding to the sum of the kinetic energies plus the potential energies for all the particles in the system.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
-        <rdfs:label xml:lang="en">Hamiltonian</rdfs:label>
+        <skos:prefLabel xml:lang="en">Hamiltonian</skos:prefLabel>
     </owl:Class>
     
 
@@ -85,7 +87,7 @@
     <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_93210686_b75c_45cb_9766_5f3ef6f0ee3f">
         <rdfs:subClassOf rdf:resource="http://emmo.info/atomistic/atomistic#EMMO_d3df28d5_d223_403d_aff6_e8062ceaf3b5"/>
         <annotations:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b>TimeDependentSchrödingerEquation</annotations:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b>
-        <rdfs:label xml:lang="en">TimeDependentSchrodingerEquation</rdfs:label>
+        <skos:prefLabel xml:lang="en">TimeDependentSchrodingerEquation</skos:prefLabel>
     </owl:Class>
     
 
@@ -110,7 +112,7 @@
         <annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>https://en.wikipedia.org/wiki/Charge_density</annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>
         <annotations:EMMO_e55f2d7c_9893_48cd_b4a4_fdf38253bd20>http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricChargeDensity</annotations:EMMO_e55f2d7c_9893_48cd_b4a4_fdf38253bd20>
         <annotations:EMMO_fe015383_afb3_44a6_ae86_043628697aa2>https://doi.org/10.1351/goldbook.C00988</annotations:EMMO_fe015383_afb3_44a6_ae86_043628697aa2>
-        <rdfs:label xml:lang="en">ChargeDensity</rdfs:label>
+        <skos:prefLabel xml:lang="en">ChargeDensity</skos:prefLabel>
     </owl:Class>
     
 
@@ -119,7 +121,7 @@
 
     <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_aabf5735_3acb_4144_b97f_0ccc041f1b2f">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/models#EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11"/>
-        <rdfs:label xml:lang="en">DensityFunctionalTheory</rdfs:label>
+        <skos:prefLabel xml:lang="en">DensityFunctionalTheory</skos:prefLabel>
     </owl:Class>
     
 
@@ -143,7 +145,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/middle/siunits#EMMO_76cc4efc_231e_42b4_be83_2547681caed6"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <annotations:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b>SchrödingerEquation</annotations:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b>
@@ -151,7 +153,7 @@
 
 The exact form of the Schrödinger equation depends on the physical situation. The most general form is the time-dependent Schrödinger equation.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation</annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>
-        <rdfs:label xml:lang="en">SchrodingerEquation</rdfs:label>
+        <skos:prefLabel xml:lang="en">SchrodingerEquation</skos:prefLabel>
     </owl:Class>
     
 
@@ -161,7 +163,7 @@ The exact form of the Schrödinger equation depends on the physical situation. T
     <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_e6cb17ee_5d23_4b3c_a12a_3a60bfe8ef69">
         <rdfs:subClassOf rdf:resource="http://emmo.info/atomistic/atomistic#EMMO_d3df28d5_d223_403d_aff6_e8062ceaf3b5"/>
         <annotations:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b>TimeIndependentSchrödingerEquation</annotations:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b>
-        <rdfs:label xml:lang="en">TimeIndependentSchrodingerEquation</rdfs:label>
+        <skos:prefLabel xml:lang="en">TimeIndependentSchrodingerEquation</skos:prefLabel>
     </owl:Class>
 </rdf:RDF>
 
