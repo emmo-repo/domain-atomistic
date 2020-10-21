@@ -1,5 +1,4 @@
 [![CI tests](https://github.com/emmo-repo/domain-atomistic/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-atomistic/actions/)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 
 domain-atomistic
@@ -27,7 +26,7 @@ compatibilies:
 
 | Imported Ontologies  | Version           |
 | -------------------- | ----------------- |
-| [EMMO][1]            | marketplace-1.0.1 |
+| [EMMO][1]            | 1.0.0-alpha2      |
 | [crystallography][2] | 0.0.1             |
 | [mechanics][3]       | 0.0.1             |
 
