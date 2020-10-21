@@ -76,6 +76,7 @@
 
     <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_911b2dad_3acf_4f63_8a24_a7b42e1c9699">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2"/>
+        <isq:EMMO_de178b12_5d35_4bca_8efa_a4193162571d>T-2 L+2 M+1 I0 Θ0 N0 J0</isq:EMMO_de178b12_5d35_4bca_8efa_a4193162571d>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An operator corresponding to the sum of the kinetic energies plus the potential energies for all the particles in the system.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <skos:prefLabel xml:lang="en">Hamiltonian</skos:prefLabel>
     </owl:Class>
@@ -166,6 +167,14 @@ The exact form of the Schrödinger equation depends on the physical situation. T
         <annotations:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b>TimeIndependentSchrödingerEquation</annotations:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b>
         <skos:prefLabel xml:lang="en">TimeIndependentSchrodingerEquation</skos:prefLabel>
     </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/middle/isq#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 -->
+
+    <rdf:Description rdf:about="http://emmo.info/emmo/middle/isq#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2">
+        <isq:EMMO_de178b12_5d35_4bca_8efa_a4193162571d>T-2 L+2 M+1 I0 Θ0 N0 J0</isq:EMMO_de178b12_5d35_4bca_8efa_a4193162571d>
+    </rdf:Description>
     
 
 
