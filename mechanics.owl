@@ -9,7 +9,7 @@
      xmlns:annotations="http://emmo.info/emmo/top/annotations#">
     <owl:Ontology rdf:about="http://emmo.info/mechanics/mechanics">
         <owl:versionIRI rdf:resource="http://emmo.info/mechanics/0.0.1/mechanics"/>
-        <owl:imports rdf:resource="http://emmo.info/emmo/marketplace-1.0.1"/>
+        <owl:imports rdf:resource="http://emmo.info/emmo/1.0.0-alpha2"/>
     </owl:Ontology>
     
 
