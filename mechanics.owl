@@ -6,11 +6,41 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:annotations="http://emmo.info/emmo/top/annotations#">
     <owl:Ontology rdf:about="http://emmo.info/mechanics/mechanics">
         <owl:versionIRI rdf:resource="http://emmo.info/mechanics/0.0.1/mechanics"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/marketplace-1.0.1"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://emmo.info/emmo/top/annotations#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 -->
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo/top/annotations#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9"/>
+    
+
+
+    <!-- http://emmo.info/emmo/top/annotations#EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d -->
+
+    <owl:AnnotationProperty rdf:about="http://emmo.info/emmo/top/annotations#EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     
 
 
@@ -25,13 +55,19 @@
     
 
 
+    <!-- http://emmo.info/emmo/middle/models#EMMO_9c32fd69_f480_4130_83b3_fb25d9face14 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/middle/models#EMMO_9c32fd69_f480_4130_83b3_fb25d9face14"/>
+    
+
+
     <!-- http://emmo.info/mechanics/mechanics#EMMO_1cc23378_2789_4f0d_b9bc_6936b4d52ba5 -->
 
     <owl:Class rdf:about="http://emmo.info/mechanics/mechanics#EMMO_1cc23378_2789_4f0d_b9bc_6936b4d52ba5">
         <rdfs:subClassOf rdf:resource="http://emmo.info/mechanics/mechanics#EMMO_dfb4770d_681f_408c_b14e_5d3d2ba68049"/>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>States that &quot;when one body exerts a force on a second body, the second body simultaneously exerts a force equal in magnitude and opposite in direction on the first body&quot;.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Newton&apos;s_third_law</annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>
-        <rdfs:label xml:lang="en">NewtonsThirdLawOfMotion</rdfs:label>
+        <skos:prefLabel xml:lang="en">NewtonsThirdLawOfMotion</skos:prefLabel>
     </owl:Class>
     
 
@@ -42,7 +78,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/mechanics/mechanics#EMMO_dfb4770d_681f_408c_b14e_5d3d2ba68049"/>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>States that &quot;in an inertial frame of reference, the vector sum of the forces F on an object is equal to the mass m of that object multiplied by the acceleration a of the object&quot;.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Newton&apos;s_second_law</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
-        <rdfs:label xml:lang="en">NewtonsSecondLawOfMotion</rdfs:label>
+        <skos:prefLabel xml:lang="en">NewtonsSecondLawOfMotion</skos:prefLabel>
     </owl:Class>
     
 
@@ -53,7 +89,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/mechanics/mechanics#EMMO_dfb4770d_681f_408c_b14e_5d3d2ba68049"/>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>States that &quot;in an inertial frame of reference, an object either remains at rest or continues to move at a constant velocity, unless acted upon by a force&quot;.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Newton&apos;s_first_law</annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>
-        <rdfs:label xml:lang="en">NewtonsFirstLawOfMotion</rdfs:label>
+        <skos:prefLabel xml:lang="en">NewtonsFirstLawOfMotion</skos:prefLabel>
     </owl:Class>
     
 
@@ -64,7 +100,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/models#EMMO_9c32fd69_f480_4130_83b3_fb25d9face14"/>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>Three physical laws that, together, laid the foundation for classical mechanics. They describe the relationship between a body and the forces acting upon it, and its motion in response to those forces.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Newton&apos;s_second_law</annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>
-        <rdfs:label xml:lang="en">NewtonsLawsOfMotion</rdfs:label>
+        <skos:prefLabel xml:lang="en">NewtonsLawsOfMotion</skos:prefLabel>
     </owl:Class>
 </rdf:RDF>
 

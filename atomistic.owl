@@ -23,11 +23,43 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://emmo.info/atomistic/atomistic#EMMO_cc272ffd_1a42_441a_9f3d_5f7e69775b91 -->
+
+    <owl:ObjectProperty rdf:about="http://emmo.info/atomistic/atomistic#EMMO_cc272ffd_1a42_441a_9f3d_5f7e69775b91">
+        <rdfs:subPropertyOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+        <rdfs:domain rdf:resource="http://emmo.info/emmo/middle/math#EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa"/>
+        <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">Relates a mathematical (or physical) operator to its eigenvalue.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">hasEigenvalue</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://emmo.info/atomistic/atomistic#EMMO_258836b9_5cab_4205_aac8_4e4c29905124 -->
+
+    <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_258836b9_5cab_4205_aac8_4e4c29905124">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/math#EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa"/>
+        <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A mathematical operator with a physical interpretation.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+        <skos:prefLabel xml:lang="en">PhysicalOperator</skos:prefLabel>
+    </owl:Class>
     
 
 
@@ -56,7 +88,7 @@
                 <owl:hasValue>T+1 L-3 M0 I+1 Θ0 N0 J0</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <skos:prefLabel xml:lang="en">TimeCurrentPerCubicLengthDimension</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">ChargeDensityDimension</skos:prefLabel>
     </owl:Class>
     
 
@@ -65,6 +97,7 @@
 
     <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_823ae3d3_1603_470f_babb_b6fcd2b65640">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e"/>
+        <isq:EMMO_de178b12_5d35_4bca_8efa_a4193162571d>T0 L0 M0 I0 Θ0 N0 J0</isq:EMMO_de178b12_5d35_4bca_8efa_a4193162571d>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A mathematical description of the quantum state of an isolated quantum system. A wave function is a function of the degrees of freedom corresponding to some maximal set of commuting observables. Once such a representation is chosen, the wave function can be derived from the quantum state.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>https://en.wikipedia.org/wiki/Wave_function</annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>
         <skos:prefLabel xml:lang="en">WaveFunction</skos:prefLabel>
@@ -75,7 +108,13 @@
     <!-- http://emmo.info/atomistic/atomistic#EMMO_911b2dad_3acf_4f63_8a24_a7b42e1c9699 -->
 
     <owl:Class rdf:about="http://emmo.info/atomistic/atomistic#EMMO_911b2dad_3acf_4f63_8a24_a7b42e1c9699">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/atomistic/atomistic#EMMO_258836b9_5cab_4205_aac8_4e4c29905124"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/atomistic/atomistic#EMMO_cc272ffd_1a42_441a_9f3d_5f7e69775b91"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An operator corresponding to the sum of the kinetic energies plus the potential energies for all the particles in the system.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <skos:prefLabel xml:lang="en">Hamiltonian</skos:prefLabel>
     </owl:Class>
@@ -107,6 +146,7 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <isq:EMMO_de178b12_5d35_4bca_8efa_a4193162571d>T+1 L-3 M0 I+1 Θ0 N0 J0</isq:EMMO_de178b12_5d35_4bca_8efa_a4193162571d>
         <annotations:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f>http://www.electropedia.org/iev/iev.nsf/display?openform&amp;ievref=121-11-07</annotations:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>Electric charge per volume.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>https://en.wikipedia.org/wiki/Charge_density</annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d>
