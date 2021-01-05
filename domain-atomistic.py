@@ -29,9 +29,10 @@ if not int(rdflib.__version__.split('.')[0]) >= 5:
     warnings.warn('upgrade to rdflib v5.0.0 or higher to get preferred output')
 
 # Load crystallography, which imports emmo
+crystallography_url = ('https://raw.githubusercontent.com/emmo-repo/'
+                       'domain-crystallography/master/crystallography.ttl')
 world = World()
-cryst = world.get_ontology('https://raw.githubusercontent.com/emmo-repo/'
-                           'domain-crystallography/master/crystallography.ttl')
+cryst = world.get_ontology(crystallography_url)
 cryst.load()
 cryst.sync_python_names()  # Syncronize annotations
 
@@ -54,6 +55,7 @@ with onto:
             pl("T+1 L-3 M0 I+1 Θ0 N0 J0"))]
 
 
+
 # Save new ontology as owl
 onto.sync_attributes(name_policy='uuid', class_docstring='elucidation',
                      name_prefix='atomistic_')
@@ -70,6 +72,12 @@ BASE = rdflib.Namespace('http://emmo.info/atomistic')
 
 g = rdflib.Graph()
 g.parse('atomistic.owl', format='xml')
+
+# Fix url to imported ontologies
+for s, p, o in g.triples((None, OWL.imports, None)):
+    if str(o) == 'http://emmo.info/crystallography/crystallography':
+        g.remove((s, p, o))
+        g.add((s, p, URIRef(crystallography_url)))
 
 # Add ontology annotations
 g.add((URIRef(BASE), OWL.versionInfo, Literal(__version__)))
