@@ -80,6 +80,7 @@ the potential energies for all the particles in the system."""@en ;
 <#atomistic_513b1e52-5e37-5ba0-b4cc-89369f9b41c5> a owl:Class ;
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "http://www.electropedia.org/iev/iev.nsf/display?openform&ievref=121-11-07"^^rdf:PlainLiteral ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electric charge per volume."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Charge_density"^^rdf:PlainLiteral ;
     emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T+1 L-3 M0 I+1 Θ0 N0 J0"^^rdf:PlainLiteral ;
     emmo:EMMO_e55f2d7c_9893_48cd_b4a4_fdf38253bd20 "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricChargeDensity"^^rdf:PlainLiteral ;
     emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.C00988"^^rdf:PlainLiteral ;
@@ -97,6 +98,7 @@ quantum system. A wave function is a function of the degrees of freedom
 corresponding to some maximal set of commuting observables. Once such a
 representation is chosen, the wave function can be derived from the
 quantum state."""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Wave_function"^^rdf:PlainLiteral ;
     emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T0 L0 M0 I0 Θ0 N0 J0"^^rdf:PlainLiteral ;
     rdfs:subClassOf emmo:EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e ;
     core:prefLabel "WaveFunction"@en .
@@ -107,12 +109,13 @@ quantum state."""@en ;
 quantum-mechanical system. 
 The exact form of the Schrödinger equation depends on the physical situation.
 The most general form is the time-dependent Schrödinger equation."""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation"^^rdf:PlainLiteral ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-            owl:someValuesFrom emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ],
+            owl:someValuesFrom <#atomistic_df750ce7-fda1-5e9b-ba32-db96ec170577> ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-            owl:someValuesFrom <#atomistic_df750ce7-fda1-5e9b-ba32-db96ec170577> ],
+            owl:someValuesFrom emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
             owl:someValuesFrom <#atomistic_42244404-98d1-582a-8fc0-3cdd2a9b3df6> ],

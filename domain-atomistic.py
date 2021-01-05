@@ -62,7 +62,7 @@ with onto:
         IECEntry = pl("http://www.electropedia.org/iev/iev.nsf/display?openform&ievref=121-11-07")
         iupacEntry = pl("https://doi.org/10.1351/goldbook.C00988")
         omMatch = pl("http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricChargeDensity")
-        #wikipediaEntry("https://en.wikipedia.org/wiki/Charge_density")
+        wikipediaEntry = pl("https://en.wikipedia.org/wiki/Charge_density")
 
 
     class ChargeDensityDimension(onto.PhysicalDimension):
@@ -89,7 +89,7 @@ with onto:
         quantum state."""
 
         physicalDimension = pl("T0 L0 M0 I0 Θ0 N0 J0")
-
+        wikipediaEntry = pl("https://en.wikipedia.org/wiki/Wave_function")
     
     class SchrodingerEquation(onto.PhysicsEquation):
         """A linear partial differential equation describing the wave function of a 
@@ -101,6 +101,7 @@ with onto:
         is_a = [onto.hasSpatialDirectPart.some(onto.Energy),
                 onto.hasSpatialDirectPart.some(onto.Hamiltonian),
                 onto.hasSpatialDirectPart.some(onto.WaveFunction)]
+        wikipediaEntry = pl("https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation")
 
     class TimeDependentSchrodingerEquation(onto.SchrodingerEquation):
         """"""
