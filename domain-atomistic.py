@@ -105,7 +105,8 @@ with onto:
         is_a = [onto.hasSpatialDirectPart.some(onto.Energy),
                 onto.hasSpatialDirectPart.some(onto.Hamiltonian),
                 onto.hasSpatialDirectPart.some(onto.WaveFunction)]
-        wikipediaEntry = pl("https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation")
+        wikipediaEntry = pl(
+            "https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation")
 
     class TimeDependentSchrodingerEquation(onto.SchrodingerEquation):
         """The full time-dependent Schrödinger equation."""
