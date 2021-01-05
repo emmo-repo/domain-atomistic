@@ -118,10 +118,10 @@ with onto:
     class KohnShamEquation(onto.TimeIndependentSchrodingerEquation):
         """The Schrödinger equation for a fictious "Kohn-Sham" system of
         non-interacting electrons that generates the same charge
-        density as the rial interacting system.
-
-        This is the equation that is solved with density functional theory.
+        density as the real interacting system.
         """
+        comment = ("This is the equation that is solved with density "
+                   "functional theory.")
         is_a = [onto.hasSpatialDirectPart.some(onto.ChargeDensity)]
 
 
