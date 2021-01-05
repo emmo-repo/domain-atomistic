@@ -1,0 +1,120 @@
+@base <http://emmo.info/atomistic> .
+@prefix : <http://emmo.info/atomistic#> .
+@prefix core: <http://www.w3.org/2004/02/skos/core#> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<> a owl:Ontology ;
+    ns1:abstract """An EMMO-based domain ontology for atomistic and electronic modelling.
+
+Atomistic is released under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
+"""@en ;
+    ns1:contributor "SINTEF" ;
+    ns1:creator "Francesca L. Bleken",
+        "Jesper Friis" ;
+    ns1:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+    ns1:publisher "EMMC ASBL" ;
+    ns1:title "Atomistic"@en ;
+    rdfs:comment """Contacts:
+Jesper Friis
+SINTEF
+email: jesper.friis@sintef.no
+
+Francesca L. Bleken
+SINTEF
+email: francesca.l.bleken@sintef.no
+"""@en,
+        """The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).
+"""@en ;
+    owl:imports <https://raw.githubusercontent.com/emmo-repo/domain-crystallography/master/crystallography.ttl> ;
+    owl:versionIRI <http://emmo.info/0.0.1/atomistic> ;
+    owl:versionInfo "0.0.1" .
+
+<#atomistic_21c6ff70-4800-555e-b642-74ba2aaeb039> a owl:Class ;
+    rdfs:subClassOf emmo:EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue "T+1 L-3 M0 I+1 Θ0 N0 J0"^^rdf:PlainLiteral ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
+    core:prefLabel "ChargeDensityDimension"@en .
+
+<#atomistic_83a69cf2-00c1-58b8-915b-76cb3549890a> a owl:Class ;
+    rdfs:subClassOf emmo:EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11 ;
+    core:prefLabel "DensityFunctionalTheory"@en .
+
+<#atomistic_b65fe3b6-8477-5508-a066-2f7edcf25126> a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom <#atomistic_513b1e52-5e37-5ba0-b4cc-89369f9b41c5> ],
+        <#atomistic_acaafcb6-b65f-5996-93ed-2f486f5f2b30> ;
+    core:prefLabel "KohnShamEquation"@en .
+
+<#atomistic_fac61002-4a3d-5810-a430-ad5dad69c9a0> a owl:Class ;
+    emmo:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b "TimeDependentSchrödingerEquation"@en ;
+    rdfs:subClassOf <#atomistic_c4dd4450-cc80-5de4-a8d6-db0651115a2c> ;
+    core:prefLabel "TimeDependentSchrodingerEquation"@en .
+
+<#atomistic_08fd7117-66ac-5b6d-b65e-34a826675877> a owl:Class ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A mathematical operator with a physical interpretation."@en ;
+    rdfs:subClassOf emmo:EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa ;
+    core:prefLabel "PhysicalOperator"@en .
+
+<#atomistic_42244404-98d1-582a-8fc0-3cdd2a9b3df6> a owl:Class ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """An operator corresponding to the sum of the kinetic energies plus
+the potential energies for all the particles in the system."""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <#atomistic_42812fef-145a-56e9-9c18-72bd32214455> ;
+            owl:someValuesFrom emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ],
+        <#atomistic_08fd7117-66ac-5b6d-b65e-34a826675877>,
+        emmo:EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b ;
+    core:prefLabel "Hamiltonian"@en .
+
+<#atomistic_42812fef-145a-56e9-9c18-72bd32214455> a owl:ObjectProperty ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a mathematical (or physical) operator to its eigenvalue."@en ;
+    rdfs:subPropertyOf emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+    core:prefLabel "hasEigenvalue"@en .
+
+<#atomistic_513b1e52-5e37-5ba0-b4cc-89369f9b41c5> a owl:Class ;
+    emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "http://www.electropedia.org/iev/iev.nsf/display?openform&ievref=121-11-07"^^rdf:PlainLiteral ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electric charge per volume."@en ;
+    emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T+1 L-3 M0 I+1 Θ0 N0 J0"^^rdf:PlainLiteral ;
+    emmo:EMMO_e55f2d7c_9893_48cd_b4a4_fdf38253bd20 "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricChargeDensity"^^rdf:PlainLiteral ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.C00988"^^rdf:PlainLiteral ;
+    rdfs:subClassOf emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ;
+    core:prefLabel "ChargeDensity"@en .
+
+<#atomistic_acaafcb6-b65f-5996-93ed-2f486f5f2b30> a owl:Class ;
+    emmo:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b "TimeIndependentSchrödingerEquation"@en ;
+    rdfs:subClassOf <#atomistic_c4dd4450-cc80-5de4-a8d6-db0651115a2c> ;
+    core:prefLabel "TimeIndependentSchrodingerEquation"@en .
+
+<#atomistic_df750ce7-fda1-5e9b-ba32-db96ec170577> a owl:Class ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A mathematical description of the quantum state of an isolated
+quantum system. A wave function is a function of the degrees of freedom
+corresponding to some maximal set of commuting observables. Once such a
+representation is chosen, the wave function can be derived from the
+quantum state."""@en ;
+    emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T0 L0 M0 I0 Θ0 N0 J0"^^rdf:PlainLiteral ;
+    rdfs:subClassOf emmo:EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e ;
+    core:prefLabel "WaveFunction"@en .
+
+<#atomistic_c4dd4450-cc80-5de4-a8d6-db0651115a2c> a owl:Class ;
+    emmo:EMMO_21ae69b4_235e_479d_8dd8_4f756f694c1b "SchrödingerEquation"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A linear partial differential equation describing the wave function of a 
+quantum-mechanical system. 
+The exact form of the Schrödinger equation depends on the physical situation.
+The most general form is the time-dependent Schrödinger equation."""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom <#atomistic_df750ce7-fda1-5e9b-ba32-db96ec170577> ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom <#atomistic_42244404-98d1-582a-8fc0-3cdd2a9b3df6> ],
+        emmo:EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3 ;
+    core:prefLabel "SchrodingerEquation"@en .
+

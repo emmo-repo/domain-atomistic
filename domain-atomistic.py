@@ -46,15 +46,74 @@ onto.sync_python_names()
 # Populate the new ontology
 with onto:
 
+    """ Define ObjectProperties """
+        
+    class hasEigenvalue(onto.hasProperty):
+        """Relates a mathematical (or physical) operator to its eigenvalue."""
+        # domains not successful!
+        domains = [onto.MathematicalOperator]
+
+
+    """ Define Classes """
+
     class ChargeDensity(onto.ISQDerivedQuantity):
         """Electric charge per volume."""
         physicalDimension = pl("T+1 L-3 M0 I+1 Θ0 N0 J0")
+        IECEntry = pl("http://www.electropedia.org/iev/iev.nsf/display?openform&ievref=121-11-07")
+        iupacEntry = pl("https://doi.org/10.1351/goldbook.C00988")
+        omMatch = pl("http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricChargeDensity")
+        #wikipediaEntry("https://en.wikipedia.org/wiki/Charge_density")
+
 
     class ChargeDensityDimension(onto.PhysicalDimension):
+        """"""
         equivalent_to = [onto.hasSymbolData.value(
             pl("T+1 L-3 M0 I+1 Θ0 N0 J0"))]
 
+    class DensityFunctionalTheory(onto.ElectronicModel):
+        """"""
+    
+    class PhysicalOperator(onto.MathematicalOperator):
+        """A mathematical operator with a physical interpretation."""
+    
+    class Hamiltonian(onto.PhysicalOperator):
+        """An operator corresponding to the sum of the kinetic energies plus
+        the potential energies for all the particles in the system."""
+        is_a = [onto.Object, onto.hasEigenvalue.some(onto.Energy)]
 
+    class WaveFunction(onto.ISQDimensionlessQuantity):
+        """A mathematical description of the quantum state of an isolated
+        quantum system. A wave function is a function of the degrees of freedom
+        corresponding to some maximal set of commuting observables. Once such a
+        representation is chosen, the wave function can be derived from the
+        quantum state."""
+
+        physicalDimension = pl("T0 L0 M0 I0 Θ0 N0 J0")
+
+    
+    class SchrodingerEquation(onto.PhysicsEquation):
+        """A linear partial differential equation describing the wave function of a 
+        quantum-mechanical system. 
+        The exact form of the Schrödinger equation depends on the physical situation.
+        The most general form is the time-dependent Schrödinger equation.
+        """
+        altLabel=en("SchrödingerEquation")
+        is_a = [onto.hasSpatialDirectPart.some(onto.Energy),
+                onto.hasSpatialDirectPart.some(onto.Hamiltonian),
+                onto.hasSpatialDirectPart.some(onto.WaveFunction)]
+
+    class TimeDependentSchrodingerEquation(onto.SchrodingerEquation):
+        """"""
+        altLabel=en("TimeDependentSchrödingerEquation")
+
+    class TimeIndependentSchrodingerEquation(onto.SchrodingerEquation):
+        """"""
+        altLabel=en("TimeIndependentSchrödingerEquation")
+
+    class KohnShamEquation(onto.TimeIndependentSchrodingerEquation):
+        """"""
+        is_a = [onto.hasSpatialDirectPart.some(onto.ChargeDensity)]
+    
 
 # Save new ontology as owl
 onto.sync_attributes(name_policy='uuid', class_docstring='elucidation',
