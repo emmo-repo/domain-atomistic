@@ -46,36 +46,38 @@ onto.sync_python_names()
 # Populate the new ontology
 with onto:
 
-    """ Define ObjectProperties """
-        
+    #
+    # ObjectProperties
+    # ----------------
     class hasEigenvalue(onto.hasProperty):
         """Relates a mathematical (or physical) operator to its eigenvalue."""
-        # domains not successful!
-        domains = [onto.MathematicalOperator]
+        domain = [onto.MathematicalOperator]
 
-
-    """ Define Classes """
-
+    #
+    # Classes
+    # -------
     class ChargeDensity(onto.ISQDerivedQuantity):
         """Electric charge per volume."""
         physicalDimension = pl("T+1 L-3 M0 I+1 Θ0 N0 J0")
-        IECEntry = pl("http://www.electropedia.org/iev/iev.nsf/display?openform&ievref=121-11-07")
+        IECEntry = pl("http://www.electropedia.org/iev/iev.nsf/display?"
+                      "openform&ievref=121-11-07")
         iupacEntry = pl("https://doi.org/10.1351/goldbook.C00988")
-        omMatch = pl("http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricChargeDensity")
-        #wikipediaEntry("https://en.wikipedia.org/wiki/Charge_density")
-
+        omMatch = pl("http://www.ontology-of-units-of-measure.org/resource/"
+                     "om-2/ElectricChargeDensity")
+        wikipediaEntry = "https://en.wikipedia.org/wiki/Charge_density"
 
     class ChargeDensityDimension(onto.PhysicalDimension):
-        """"""
+        """Physical dimensionality of charge density."""
         equivalent_to = [onto.hasSymbolData.value(
             pl("T+1 L-3 M0 I+1 Θ0 N0 J0"))]
 
     class DensityFunctionalTheory(onto.ElectronicModel):
-        """"""
-    
+        """An efficient computional method for solving the many-electron
+        (time-independent) Schrödinger equation."""
+
     class PhysicalOperator(onto.MathematicalOperator):
         """A mathematical operator with a physical interpretation."""
-    
+
     class Hamiltonian(onto.PhysicalOperator):
         """An operator corresponding to the sum of the kinetic energies plus
         the potential energies for all the particles in the system."""
@@ -83,37 +85,45 @@ with onto:
 
     class WaveFunction(onto.ISQDimensionlessQuantity):
         """A mathematical description of the quantum state of an isolated
-        quantum system. A wave function is a function of the degrees of freedom
-        corresponding to some maximal set of commuting observables. Once such a
-        representation is chosen, the wave function can be derived from the
-        quantum state."""
-
+        quantum system. A wave function is a function of the degrees
+        of freedom corresponding to some maximal set of commuting
+        observables. Once such a representation is chosen, the wave
+        function can be derived from the quantum state.
+        """
         physicalDimension = pl("T0 L0 M0 I0 Θ0 N0 J0")
 
-    
     class SchrodingerEquation(onto.PhysicsEquation):
-        """A linear partial differential equation describing the wave function of a 
-        quantum-mechanical system. 
-        The exact form of the Schrödinger equation depends on the physical situation.
-        The most general form is the time-dependent Schrödinger equation.
+        """A linear partial differential equation describing the wave
+        function of a quantum-mechanical system.
+
+        The exact form of the Schrödinger equation depends on the
+        physical situation.  The most general form is the
+        time-dependent Schrödinger equation.
         """
-        altLabel=en("SchrödingerEquation")
+        altLabel = en("SchrödingerEquation")
         is_a = [onto.hasSpatialDirectPart.some(onto.Energy),
                 onto.hasSpatialDirectPart.some(onto.Hamiltonian),
                 onto.hasSpatialDirectPart.some(onto.WaveFunction)]
 
     class TimeDependentSchrodingerEquation(onto.SchrodingerEquation):
-        """"""
-        altLabel=en("TimeDependentSchrödingerEquation")
+        """The full time-dependent Schrödinger equation."""
+        altLabel = en("TimeDependentSchrödingerEquation")
 
     class TimeIndependentSchrodingerEquation(onto.SchrodingerEquation):
-        """"""
-        altLabel=en("TimeIndependentSchrödingerEquation")
+        """If the external potential does not depende on time, the Schrödinger
+        equation can be reduced to this time-independent form.
+        """
+        altLabel = en("TimeIndependentSchrödingerEquation")
 
     class KohnShamEquation(onto.TimeIndependentSchrodingerEquation):
-        """"""
+        """The Schrödinger equation for a fictious "Kohn-Sham" system of
+        non-interacting electrons that generates the same charge
+        density as the rial interacting system.
+
+        This is the equation that is solved with density functional theory.
+        """
         is_a = [onto.hasSpatialDirectPart.some(onto.ChargeDensity)]
-    
+
 
 # Save new ontology as owl
 onto.sync_attributes(name_policy='uuid', class_docstring='elucidation',
