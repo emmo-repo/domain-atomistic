@@ -109,6 +109,7 @@ quantum system. A wave function is a function of the degrees
 of freedom corresponding to some maximal set of commuting
 observables. Once such a representation is chosen, the wave
 function can be derived from the quantum state."""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Wave_function"^^rdf:PlainLiteral ;
     emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T0 L0 M0 I0 Θ0 N0 J0"^^rdf:PlainLiteral ;
     rdfs:subClassOf emmo:EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e ;
     core:prefLabel "WaveFunction"@en .
@@ -121,15 +122,16 @@ function of a quantum-mechanical system.
 The exact form of the Schrödinger equation depends on the
 physical situation.  The most general form is the
 time-dependent Schrödinger equation."""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation"^^rdf:PlainLiteral ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-            owl:someValuesFrom emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
             owl:someValuesFrom <#atomistic_42244404-98d1-582a-8fc0-3cdd2a9b3df6> ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
             owl:someValuesFrom <#atomistic_df750ce7-fda1-5e9b-ba32-db96ec170577> ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ],
         emmo:EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3 ;
     core:prefLabel "SchrodingerEquation"@en .
 

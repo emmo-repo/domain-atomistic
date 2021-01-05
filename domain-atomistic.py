@@ -91,6 +91,7 @@ with onto:
         function can be derived from the quantum state.
         """
         physicalDimension = pl("T0 L0 M0 I0 Θ0 N0 J0")
+        wikipediaEntry = pl("https://en.wikipedia.org/wiki/Wave_function")
 
     class SchrodingerEquation(onto.PhysicsEquation):
         """A linear partial differential equation describing the wave
@@ -104,6 +105,7 @@ with onto:
         is_a = [onto.hasSpatialDirectPart.some(onto.Energy),
                 onto.hasSpatialDirectPart.some(onto.Hamiltonian),
                 onto.hasSpatialDirectPart.some(onto.WaveFunction)]
+        wikipediaEntry = pl("https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation")
 
     class TimeDependentSchrodingerEquation(onto.SchrodingerEquation):
         """The full time-dependent Schrödinger equation."""
@@ -133,6 +135,8 @@ onto.set_version(
 onto.dir_label = False
 onto.save('atomistic.owl', overwrite=True)
 
+onto.sync_reasoner()
+onto.save('atomistic-inferred.owl', overwrite=True)
 
 #################################################################
 # Annotate the ontology itself with rdflib
