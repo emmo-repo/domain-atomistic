@@ -73,6 +73,7 @@ the potential energies for all the particles in the system."""@en ;
 
 <#atomistic_42812fef-145a-56e9-9c18-72bd32214455> a owl:ObjectProperty ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a mathematical (or physical) operator to its eigenvalue."@en ;
+    rdfs:domain emmo:EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa ;
     rdfs:subPropertyOf emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
     core:prefLabel "hasEigenvalue"@en .
 
@@ -108,10 +109,10 @@ The exact form of the Schrödinger equation depends on the physical situation.
 The most general form is the time-dependent Schrödinger equation."""@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-            owl:someValuesFrom <#atomistic_df750ce7-fda1-5e9b-ba32-db96ec170577> ],
+            owl:someValuesFrom emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-            owl:someValuesFrom emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ],
+            owl:someValuesFrom <#atomistic_df750ce7-fda1-5e9b-ba32-db96ec170577> ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
             owl:someValuesFrom <#atomistic_42244404-98d1-582a-8fc0-3cdd2a9b3df6> ],

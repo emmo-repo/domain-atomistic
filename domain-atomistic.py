@@ -51,7 +51,7 @@ with onto:
     class hasEigenvalue(onto.hasProperty):
         """Relates a mathematical (or physical) operator to its eigenvalue."""
         # domains not successful!
-        domains = [onto.MathematicalOperator]
+        domain = [onto.MathematicalOperator]
 
 
     """ Define Classes """
@@ -123,6 +123,8 @@ onto.set_version(
 onto.dir_label = False
 onto.save('atomistic.owl', overwrite=True)
 
+onto.sync_reasoner()
+onto.save('atomistic-inferred.owl', overwrite=True)
 
 #################################################################
 # Annotate the ontology itself with rdflib
