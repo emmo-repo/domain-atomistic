@@ -1,8 +1,8 @@
 [![CI tests](https://github.com/emmo-repo/domain-atomistic/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-atomistic/actions/)
 
 
-domain-atomistic
-================
+Domain ontology for atomistic and electronic modelling
+======================================================
 An EMMO-based domain ontology for atomistic and electronic modelling.
 
 
@@ -12,8 +12,7 @@ Status
 - [X] accepted, under development
 - [ ] official
 
-This domain ontology is work-in-progress (WIP), it is in the process
-of being accepted as a task group by the EMMC.
+This domain ontology is work-in-progress (WIP), it is in the process of being accepted as a task group by the EMMC.
 
 * Application submitted: 15 June 2020
 * Application accepted on: TBD
