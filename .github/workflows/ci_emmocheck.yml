@@ -26,4 +26,4 @@ jobs:
 
     - name: Check EMMO
       run: |
-        emmocheck --local --verbose --check-imported atomistic.owl
+        emmocheck --local --verbose --check-imported --configfile .github/emmocheck_conf.yml atomistic.owl

@@ -1,0 +1,7 @@
+# Configurations used when running emmocheck from the ci_emmocheck workflow
+test_namespace:
+  exceptions:
+    - manufacturing.EngineeredMaterial
+test_class_label:
+  exceptions:
+    - C++
