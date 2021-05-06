@@ -1,13 +1,9 @@
 #!/usr/bin/env python
 """Python script that generates the periodic table ontology.
 """
-import warnings
-
-import rdflib
-from rdflib import URIRef, Literal
-from rdflib.namespace import RDFS, OWL, DCTERMS
 
 from emmo import World
+from emmo.utils import write_catalog
 import owlready2
 
 
@@ -24,17 +20,17 @@ def pl(s):
     return owlready2.locstr(s, lang='')
 
 
-# Check rdflib version (for preferred turtle serialising)
-if not int(rdflib.__version__.split('.')[0]) >= 5:
-    warnings.warn('upgrade to rdflib v5.0.0 or higher to get preferred output')
-
 # Load crystallography, which imports emmo
-crystallography_url = ('https://raw.githubusercontent.com/emmo-repo/'
-                       'domain-crystallography/master/crystallography.ttl')
+crystallography_url = (
+        'https://raw.githubusercontent.com/emmo-repo/emmo-repo.github.io/'
+        'master/versions/1.0.0-beta/emmo-inferred-chemistry2.ttl')
 world = World()
 cryst = world.get_ontology(crystallography_url)
 cryst.load()
 cryst.sync_python_names()  # Syncronize annotations
+cryst.base_iri = cryst.base_iri.rstrip('/#')
+catalog_mappings = {cryst.base_iri: crystallography_url}
+
 
 # Create new ontology
 onto = world.get_ontology('http://emmo.info/atomistic#')
@@ -131,65 +127,48 @@ with onto:
 # Save new ontology as owl
 onto.sync_attributes(name_policy='uuid', class_docstring='elucidation',
                      name_prefix='atomistic_')
-onto.set_version(
-    version_iri="http://emmo.info/%s/atomistic" % __version__)
+version_iri = "http://emmo.info/%s/atomistic" % __version__
+onto.set_version(version_iri=version_iri)
 onto.dir_label = False
-onto.save('atomistic.owl', overwrite=True)
 
-onto.sync_reasoner()
-onto.save('atomistic-inferred.owl', overwrite=True)
+catalog_mappings[version_iri] = '.atomistic.ttl'
 
 #################################################################
-# Annotate the ontology itself with rdflib
+# Annotate the ontology metadata
 #################################################################
-BASE = rdflib.Namespace('http://emmo.info/atomistic')
 
-g = rdflib.Graph()
-g.parse('atomistic.owl', format='xml')
+onto.metadata.abstract.append(en(
+        'An EMMO-based domain ontology for atomistic and electronic modelling.'
+        'Atomistic is released under the Creative Commons Attribution 4.0 '
+        'International license (CC BY 4.0).'))
 
-# Fix url to imported ontologies
-for s, p, o in g.triples((None, OWL.imports, None)):
-    if str(o) == 'http://emmo.info/crystallography/crystallography':
-        g.remove((s, p, o))
-        g.add((s, p, URIRef(crystallography_url)))
-
-# Add ontology annotations
-g.add((URIRef(BASE), OWL.versionInfo, Literal(__version__)))
-g.add((URIRef(BASE), DCTERMS.title, Literal('Atomistic', lang='en')))
-g.add((URIRef(BASE), DCTERMS.creator, Literal('Jesper Friis')))
-g.add((URIRef(BASE), DCTERMS.contributor, Literal('SINTEF')))
-g.add((URIRef(BASE), DCTERMS.creator, Literal('Francesca L. Bleken')))
-g.add((URIRef(BASE), DCTERMS.contributor, Literal('SINTEF')))
-g.add((URIRef(BASE), DCTERMS.publisher, Literal('EMMC ASBL')))
-g.add((URIRef(BASE), DCTERMS.license,
-       Literal('https://creativecommons.org/licenses/by/4.0/legalcode')))
-
-g.add((URIRef(BASE), DCTERMS.abstract,
-       Literal("""\
-An EMMO-based domain ontology for atomistic and electronic modelling.
-
-Atomistic is released under the Creative Commons Attribution 4.0 \
-International license (CC BY 4.0).
-""", lang='en')))
-
-g.add((URIRef(BASE), RDFS.comment,
-       Literal("""\
-The EMMO requires FacT++ reasoner plugin in order to visualize all \
-inferences and class hierarchy (ctrl+R hotkey in Protege).
-""", lang='en')))
+onto.metadata.title.append(en('Atomistic'))
+onto.metadata.creator.append(en('Jesper Friis'))
+onto.metadata.contributor.append(en('SINTEF'))
+onto.metadata.creator.append(en('Francesca L. Bleken'))
+onto.metadata.contributor.append(en('SINTEF'))
+onto.metadata.publisher.append(en('EMMC ASBL'))
+onto.metadata.license.append(en(
+    'https://creativecommons.org/licenses/by/4.0/legalcode'))
+onto.metadata.versionInfo.append(en(__version__))
+onto.metadata.comment.append(en(
+    'The EMMO requires FacT++ reasoner plugin in order to visualize all'
+    'inferences and class hierarchy (ctrl+R hotkey in Protege).'))
+onto.metadata.comment.append(en(
+    'This ontology is generated with data from the ASE Python package.'))
+onto.metadata.comment.append(en(
+    'Contacts:\n'
+    'Jesper Friis\n'
+    'SINTEF\n'
+    'email: jesper.friis@sintef.no\n'
+    '\n'
+    'Francesca L. Bleken\n'
+    'SINTEF\n'
+    'email: francesca.l.bleken@sintef.no'
+    ))
 
 
-g.add((URIRef(BASE), RDFS.comment,
-       Literal("""\
-Contacts:
-Jesper Friis
-SINTEF
-email: jesper.friis@sintef.no
-
-Francesca L. Bleken
-SINTEF
-email: francesca.l.bleken@sintef.no
-""", lang='en')))
-
-# Store in turtle format
-g.serialize(destination='atomistic.ttl', format='turtle', base=BASE)
+onto.save('atomistic.ttl', overwrite=True)
+write_catalog(catalog_mappings)
+# onto.sync_reasoner()
+# onto.save('atomistic-inferred.ttl', overwrite=True)
