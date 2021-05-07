@@ -26,4 +26,5 @@ jobs:
 
     - name: Check EMMO
       run: |
-        emmocheck --local --verbose --check-imported atomistic.owl
+        emmocheck --verbose atomistic.ttl
+        #emmocheck --local --verbose --check-imported -u atomistic.ttl
