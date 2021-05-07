@@ -21,21 +21,19 @@ def pl(s):
 
 
 # Load crystallography, which imports emmo
-crystallography_url = (
+emmo_url = (
         'https://raw.githubusercontent.com/emmo-repo/emmo-repo.github.io/'
         'master/versions/1.0.0-beta/emmo-inferred-chemistry2.ttl')
 world = World()
-cryst = world.get_ontology(crystallography_url)
-cryst.load()
-cryst.sync_python_names()  # Syncronize annotations
-cryst.base_iri = cryst.base_iri.rstrip('/#')
-catalog_mappings = {cryst.base_iri: crystallography_url}
-
+emmo = world.get_ontology(emmo_url)
+emmo.load()
+emmo.sync_python_names()  # Syncronize annotations
+emmo.base_iri = emmo.base_iri.rstrip('/#')
+catalog_mappings = {emmo.base_iri: emmo_url}
 
 # Create new ontology
-onto = world.get_ontology('http://emmo.info/atomistic#')
-onto.base_iri = 'http://emmo.info/atomistic#'
-onto.imported_ontologies.append(cryst)
+onto = world.get_ontology('http://emmo.info/domain-atomistic#')
+onto.imported_ontologies.append(emmo)
 onto.sync_python_names()
 
 
@@ -126,12 +124,12 @@ with onto:
 
 # Save new ontology as owl
 onto.sync_attributes(name_policy='uuid', class_docstring='elucidation',
-                     name_prefix='atomistic_')
-version_iri = "http://emmo.info/%s/atomistic" % __version__
+                     name_prefix='')
+version_iri = "http://emmo.info/%s/domain-atomistic" % __version__
 onto.set_version(version_iri=version_iri)
 onto.dir_label = False
 
-catalog_mappings[version_iri] = '.atomistic.ttl'
+catalog_mappings[version_iri] = 'atomistic.ttl'
 
 #################################################################
 # Annotate the ontology metadata
@@ -152,7 +150,7 @@ onto.metadata.license.append(en(
     'https://creativecommons.org/licenses/by/4.0/legalcode'))
 onto.metadata.versionInfo.append(en(__version__))
 onto.metadata.comment.append(en(
-    'The EMMO requires FacT++ reasoner plugin in order to visualize all'
+    'The EMMO requires FaCT++ reasoner plugin in order to visualize all'
     'inferences and class hierarchy (ctrl+R hotkey in Protege).'))
 onto.metadata.comment.append(en(
     'This ontology is generated with data from the ASE Python package.'))
@@ -172,3 +170,17 @@ onto.save('atomistic.ttl', overwrite=True)
 write_catalog(catalog_mappings)
 # onto.sync_reasoner()
 # onto.save('atomistic-inferred.ttl', overwrite=True)
+
+
+# Manually change url of EMMO to `emmo_url` when importing it to make
+# it resolvable without consulting the catalog file.  This makes it possible
+# to open the ontology from url in Protege
+import rdflib  # noqa: E402, F401
+g = rdflib.Graph()
+g.parse('atomistic.ttl', format='turtle')
+for s, p, o in g.triples(
+        (None, rdflib.URIRef('http://www.w3.org/2002/07/owl#imports'), None)):
+    if 'emmo-inferred' in o:
+        g.remove((s, p, o))
+        g.add((s, p, rdflib.URIRef(emmo_url)))
+g.serialize(destination='atomistic.ttl', format='turtle')
