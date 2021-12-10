@@ -4,7 +4,7 @@
 Domain ontology for atomistic and electronic modelling
 ======================================================
 An EMMO-based domain ontology for atomistic and electronic modelling.
-
+![image](https://user-images.githubusercontent.com/45469701/145525645-4085c0de-efae-4975-811c-50730bde5ae2.png) <--- generated using https://www.ldf.fi/service/rdf-grapher --->
 
 Status
 ------
