@@ -26,8 +26,8 @@ SINTEF
 email: francesca.l.bleken@sintef.no"""@en,
         "The EMMO requires FaCT++ reasoner plugin in order to visualize allinferences and class hierarchy (ctrl+R hotkey in Protege)."@en,
         "This ontology is generated with data from the ASE Python package."@en ;
-    owl:imports <https://raw.githubusercontent.com/emmo-repo/emmo-repo.github.io/master/versions/1.0.0-beta/emmo-inferred-chemistry2.ttl> ;
-    owl:versionIRI <http://emmo.info/0.0.1/domain-atomistic> ;
+    owl:imports <https://w3id.org/emmo/1.0.0-rc2/> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/atomistic/0.0.1> ;
     owl:versionInfo "0.0.1"@en .
 
 <https://w3id.org/emmo/domain/atomistic#21c6ff70-4800-555e-b642-74ba2aaeb039> a owl:Class ;
