@@ -138,17 +138,6 @@ function can be derived from the quantum state."""@en ;
                                                                               <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A mathematical operator with a physical interpretation."@en .
 
 
-###  https://w3id.org/emmo/domain/atomistic#21c6ff70-4800-555e-b642-74ba2aaeb039
-<https://w3id.org/emmo/domain/atomistic#21c6ff70-4800-555e-b642-74ba2aaeb039> rdf:type owl:Class ;
-                                                                              owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                                                                    owl:onProperty <https://w3id.org/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
-                                                                                                    owl:hasValue "T+1 L-3 M0 I+1 Θ0 N0 J0"
-                                                                                                  ] ;
-                                                                              rdfs:subClassOf <https://w3id.org/emmo#EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc> ;
-                                                                              core:prefLabel "ChargeDensityDimension"@en ;
-                                                                              <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Physical dimensionality of charge density."@en .
-
-
 ###  https://w3id.org/emmo/domain/atomistic#42244404-98d1-582a-8fc0-3cdd2a9b3df6
 <https://w3id.org/emmo/domain/atomistic#42244404-98d1-582a-8fc0-3cdd2a9b3df6> rdf:type owl:Class ;
                                                                               rdfs:subClassOf <https://w3id.org/emmo#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b> ,
