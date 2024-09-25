@@ -47,10 +47,6 @@ email: francesca.l.bleken@sintef.no"""@en ,
 <https://w3id.org/emmo#EMMO_de178b12_5d35_4bca_8efa_a4193162571d> rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/emmo#EMMO_e55f2d7c_9893_48cd_b4a4_fdf38253bd20
-<https://w3id.org/emmo#EMMO_e55f2d7c_9893_48cd_b4a4_fdf38253bd20> rdf:type owl:AnnotationProperty .
-
-
 #################################################################
 #    Object Properties
 #################################################################
@@ -81,7 +77,7 @@ equation can be reduced to this time-independent form."""@en .
                                       rdfs:subClassOf :acaafcb6-b65f-5996-93ed-2f486f5f2b30 ,
                                                       [ rdf:type owl:Restriction ;
                                                         owl:onProperty <https://w3id.org/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
-                                                        owl:someValuesFrom <https://w3id.org/emmo/domain/atomistic#513b1e52-5e37-5ba0-b4cc-89369f9b41c5>
+                                                        owl:someValuesFrom <https://w3id.org/emmo#EMMO_5cbb7bfb_7ab8_4151_8ed1_13a5b7d5caa4>
                                                       ] ;
                                       rdfs:comment "This is the equation that is solved with density functional theory." ;
                                       core:prefLabel "KohnShamEquation"@en ;
@@ -164,18 +160,6 @@ function can be derived from the quantum state."""@en ;
                                                                               core:prefLabel "Hamiltonian"@en ;
                                                                               <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """An operator corresponding to the sum of the kinetic energies plus
 the potential energies for all the particles in the system."""@en .
-
-
-###  https://w3id.org/emmo/domain/atomistic#513b1e52-5e37-5ba0-b4cc-89369f9b41c5
-<https://w3id.org/emmo/domain/atomistic#513b1e52-5e37-5ba0-b4cc-89369f9b41c5> rdf:type owl:Class ;
-                                                                              rdfs:subClassOf <https://w3id.org/emmo#EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064> ;
-                                                                              core:prefLabel "ChargeDensity"@en ;
-                                                                              <https://w3id.org/emmo#EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f> "http://www.electropedia.org/iev/iev.nsf/display?openform&ievref=121-11-07" ;
-                                                                              <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Electric charge per volume."@en ;
-                                                                              <https://w3id.org/emmo#EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d> "https://en.wikipedia.org/wiki/Charge_density" ;
-                                                                              <https://w3id.org/emmo#EMMO_de178b12_5d35_4bca_8efa_a4193162571d> "T+1 L-3 M0 I+1 Θ0 N0 J0" ;
-                                                                              <https://w3id.org/emmo#EMMO_e55f2d7c_9893_48cd_b4a4_fdf38253bd20> "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricChargeDensity" ;
-                                                                              <https://w3id.org/emmo#EMMO_fe015383_afb3_44a6_ae86_043628697aa2> "https://doi.org/10.1351/goldbook.C00988" .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#83a69cf2-00c1-58b8-915b-76cb3549890a
