@@ -51,6 +51,16 @@ email: francesca.l.bleken@sintef.no"""@en ,
 #    Object Properties
 #################################################################
 
+###  https://w3id.org/emmo/domain/atomistic#EMMO_c2da4973_b83d_4581_a4b4_87ab401b8f5b
+:EMMO_c2da4973_b83d_4581_a4b4_87ab401b8f5b rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <https://w3id.org/emmo#EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b> ;
+                                           rdfs:domain <https://w3id.org/emmo#EMMO_a96e2152_40e7_409c_a53a_fdb9f141eb6a> ;
+                                           rdfs:range <https://w3id.org/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a> ;
+                                           core:prefLabel "hasSpecies"@en ;
+                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Relates a material to the species it is made of."@en ;
+                                           <https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f> "Intended for documeting what kind of atoms a material is made of."@en .
+
+
 ###  https://w3id.org/emmo/domain/atomistic#42812fef-145a-56e9-9c18-72bd32214455
 <https://w3id.org/emmo/domain/atomistic#42812fef-145a-56e9-9c18-72bd32214455> rdf:type owl:ObjectProperty ;
                                                                               rdfs:subPropertyOf <https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
@@ -62,6 +72,37 @@ email: francesca.l.bleken@sintef.no"""@en ,
 #################################################################
 #    Classes
 #################################################################
+
+###  https://w3id.org/emmo/domain/atomistic#EMMO_070efd9c_b971_44ee_bd45_8c548a80a65d
+:EMMO_070efd9c_b971_44ee_bd45_8c548a80a65d rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298 ;
+                                           core:example "LAMMPS"@en ;
+                                           core:prefLabel "ForceFieldSimulationSoftware"@en ;
+                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Forcefield-based simulation software."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298
+:EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298 rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://w3id.org/emmo#EMMO_8d4962d7_9608_44f7_a2f1_82a4bb173f4a> ;
+                                           core:example "NWChem -  a physical based software that implements both DFT and higher order QM methods."@en ;
+                                           core:prefLabel "AtomisticSimulationSoftware"@en ;
+                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The superclass of physical-based electronic and forcefield simulation softwares."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#EMMO_429430f4_00e9_4157_a636_6cf798139e40
+:EMMO_429430f4_00e9_4157_a636_6cf798139e40 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298 ;
+                                           core:example "VASP, Quantum ESPRESSO, NWChem "@en ;
+                                           core:prefLabel "DFTSimulationSoftware"@en ;
+                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "DFT-based simulation software."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#EMMO_52a6103f_86a4_4710_9028_a49b4cef858e
+:EMMO_52a6103f_86a4_4710_9028_a49b4cef858e rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://w3id.org/emmo#EMMO_5dd63d84_57f5_4b79_b760_fe940c06680d> ;
+                                           core:prefLabel "DFTComputation"@en ;
+                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A computation that solves the Kohn-Sham equation (using DFT)."@en .
+
 
 ###  https://w3id.org/emmo/domain/atomistic#acaafcb6-b65f-5996-93ed-2f486f5f2b30
 :acaafcb6-b65f-5996-93ed-2f486f5f2b30 rdf:type owl:Class ;
