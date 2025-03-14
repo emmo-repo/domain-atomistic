@@ -92,7 +92,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_429430f4_00e9_4157_a636_6cf798139e40
 :EMMO_429430f4_00e9_4157_a636_6cf798139e40 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298 ;
-                                           core:example "VASP, Quantum Expresso"@en ;
+                                           core:example "VASP, Quantum ESPRESSO, NWChem "@en ;
                                            core:prefLabel "DFTSimulationSoftware"@en ;
                                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "DFT-based simulation software."@en .
 
