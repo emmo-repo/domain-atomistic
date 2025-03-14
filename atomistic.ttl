@@ -84,7 +84,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298
 :EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298 rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org/emmo#EMMO_8d4962d7_9608_44f7_a2f1_82a4bb173f4a> ;
-                                           core:example "NVChem -  a physical based software that implements both DFT and forcefields."@en ;
+                                           core:example "NWChem -  a physical based software that implements both DFT and higher order QM methods."@en ;
                                            core:prefLabel "AtomicSimulationSoftware"@en ;
                                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The superclass of physical-based DFT and forcefield simulation softwares."@en .
 
