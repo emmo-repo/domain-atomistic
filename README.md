@@ -25,7 +25,7 @@ compatibilies:
 
 | Imported Ontologies  | Version           |
 | -------------------- | ----------------- |
-| [EMMO][1]            | 1.0.0-alpha2      |
+| [EMMO][1]            | 1.0.0             |
 | [crystallography][2] | 0.0.1             |
 | [mechanics][3]       | 0.0.1             |
 

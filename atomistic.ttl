@@ -10,8 +10,8 @@
 @base <https://w3id.org/emmo/domain/atomistic#> .
 
 <https://w3id.org/emmo/domain/atomistic> rdf:type owl:Ontology ;
-                                          owl:versionIRI <https://w3id.org/emmo/domain/atomistic/0.0.1> ;
-                                          owl:imports <https://w3id.org/emmo/1.0.0-rc2/> ;
+                                          owl:versionIRI <https://w3id.org/emmo/domain/atomistic/0.0.2> ;
+                                          owl:imports <https://w3id.org/emmo/1.0.0/> ;
                                           term:abstract "An EMMO-based domain ontology for atomistic and electronic modelling.Atomistic is released under the Creative Commons Attribution 4.0 International license (CC BY 4.0)."@en ;
                                           term:contributor "SINTEF"@en ;
                                           term:creator "Francesca L. Bleken"@en ,
