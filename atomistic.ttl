@@ -76,7 +76,8 @@ email: francesca.l.bleken@sintef.no"""@en ,
 ###  https://w3id.org/emmo/domain/atomistic#AtomisticComputationSetting
 :AtomisticComputationSetting rdf:type owl:Class ;
                              rdfs:subClassOf <https://w3id.org/emmo#EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a> ;
-                             <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Dataset that is used by an atomistic computational software, often defined as a setting in the input file."@en .
+                             core:prefLabel "AtomisticComputationSetting"@en ;
+                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Dataset that is used by an atomistic computational software, often defined as a setting in the input file."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#BasisSet
@@ -152,10 +153,11 @@ email: francesca.l.bleken@sintef.no"""@en ,
                       <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "NWChem comutation that includes cosmo as solvation model."@en .
 
 
-###  https://w3id.org/emmo/domain/atomistic#NWChemFinite-differenceHessian
-:NWChemFinite-differenceHessian rdf:type owl:Class ;
+###  https://w3id.org/emmo/domain/atomistic#NWChemFiniteDifferenceHessian
+:NWChemFiniteDifferenceHessian rdf:type owl:Class ;
                                 rdfs:subClassOf :NWChemComputation ;
-                                core:prefLabel "NWChemFinite-differenceHessian"@en ;
+                                core:altLabel "NWChemFinite-differenceHessian"@en ;
+                                core:prefLabel "NWChemFiniteDifferenceHessian"@en ;
                                 <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A numerically evaluated Hessian matrix computed using finite-difference methods within the NWChem software suite. May be used for frequency analysis."@en .
 
 
