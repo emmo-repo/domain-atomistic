@@ -11,7 +11,7 @@
 
 <https://w3id.org/emmo/domain/atomistic> rdf:type owl:Ontology ;
                                           owl:versionIRI <https://w3id.org/emmo/domain/atomistic/0.0.2> ;
-                                          owl:imports <https://w3id.org/emmo/1.0.0/> ;
+                                          owl:imports <https://w3id.org/emmo/1.0.1/> ;
                                           term:abstract "An EMMO-based domain ontology for atomistic and electronic modelling.Atomistic is released under the Creative Commons Attribution 4.0 International license (CC BY 4.0)."@en ;
                                           term:contributor "SINTEF"@en ;
                                           term:creator "Francesca L. Bleken"@en ,
@@ -73,6 +73,20 @@ email: francesca.l.bleken@sintef.no"""@en ,
 #    Classes
 #################################################################
 
+###  https://w3id.org/emmo/domain/atomistic#AtomisticComputationSetting
+:AtomisticComputationSetting rdf:type owl:Class ;
+                             rdfs:subClassOf <https://w3id.org/emmo#EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a> ;
+                             core:prefLabel "AtomisticComputationSetting"@en ;
+                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Dataset that is used by an atomistic computational software, often defined as a setting in the input file."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#BasisSet
+:BasisSet rdf:type owl:Class ;
+          rdfs:subClassOf :AtomisticComputationSetting ;
+          core:prefLabel "BasisSet"@en ;
+          <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A collection of mathematical functions used to represent molecular orbitals in quantum chemical calculations."@en .
+
+
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_070efd9c_b971_44ee_bd45_8c548a80a65d
 :EMMO_070efd9c_b971_44ee_bd45_8c548a80a65d rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298 ;
@@ -99,9 +113,87 @@ email: francesca.l.bleken@sintef.no"""@en ,
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_52a6103f_86a4_4710_9028_a49b4cef858e
 :EMMO_52a6103f_86a4_4710_9028_a49b4cef858e rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/emmo#EMMO_5dd63d84_57f5_4b79_b760_fe940c06680d> ;
+                                           rdfs:subClassOf :ElectronicComputation ;
                                            core:prefLabel "DFTComputation"@en ;
                                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A computation that solves the Kohn-Sham equation (using DFT)."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#ElectronicComputation
+:ElectronicComputation rdf:type owl:Class ;
+                       rdfs:subClassOf <https://w3id.org/emmo#EMMO_5dd63d84_57f5_4b79_b760_fe940c06680d> ;
+                       core:prefLabel "ElectronicComputation"@en ;
+                      <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Physics based calculation that solves the electronic states of a system. Can be either a simulation that treats the electronc explicitly or the electron density."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#Functional
+:Functional rdf:type owl:Class ;
+            rdfs:subClassOf :AtomisticComputationSetting ;          
+            core:prefLabel "Functional"@en ;
+            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "In DFT the functional is the electron density which is a function of space and time."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#GroundState
+:GroundState rdf:type owl:Class ;
+             rdfs:subClassOf :QuantumState ;
+             core:prefLabel "GroundState"@en ;
+             <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "he lowest-energy quantum state of a physical system."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#NWChemComputation
+:NWChemComputation rdf:type owl:Class ;
+                   rdfs:subClassOf :ElectronicComputation ;
+		   core:prefLabel "NWChemComputation"@en ;
+                   <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Electronic computation performed with the NWChem software." .
+
+
+###  https://w3id.org/emmo/domain/atomistic#NWChemDFTModuleCOSMO
+:NWChemDFTModuleCOSMO rdf:type owl:Class ;
+                      rdfs:subClassOf :NWChemComputation ;
+                      core:prefLabel "NWChemDFTModuleCOSMO"@en ;
+                      <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "NWChem comutation that includes cosmo as solvation model."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#NWChemFiniteDifferenceHessian
+:NWChemFiniteDifferenceHessian rdf:type owl:Class ;
+                                rdfs:subClassOf :NWChemComputation ;
+                                core:altLabel "NWChemFinite-differenceHessian"@en ;
+                                core:prefLabel "NWChemFiniteDifferenceHessian"@en ;
+                                <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A numerically evaluated Hessian matrix computed using finite-difference methods within the NWChem software suite. May be used for frequency analysis."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#NWChemGeometryOptimization
+:NWChemGeometryOptimization rdf:type owl:Class ;
+                            rdfs:subClassOf :NWChemComputation ;
+                            core:prefLabel "NWChemGeometryOptimization"@en ;
+                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Geometry optimisation performed with NWChem"@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#QuantumState
+:QuantumState rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/emmo#EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf> ;
+              core:prefLabel "QuantumState"@en ;
+              <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A specific state of a quantum system. Often defined by its wavefunction."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#SaddlePoint
+:SaddlePoint rdf:type owl:Class ;
+             rdfs:subClassOf :QuantumState ;
+             core:prefLabel "SaddlePoint"@en ;
+             <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A critical point on a potential energy surface representing a transition state in a chemical reaction."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#SolvationModel
+:SolvationModel rdf:type owl:Class ;
+                rdfs:subClassOf :AtomisticComputationSetting ;
+                core:prefLabel "SolvationModel"@en ;
+                <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A model that allows the quantum chemistry calculations to include the interactions between solvents and the quantum solute implicitly."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#SolvationModelSolvent
+:SolvationModelSolvent rdf:type owl:Class ;
+                       rdfs:subClassOf :AtomisticComputationSetting ;
+                       core:prefLabel "SolvationModelSolvent"@en ;
+                       <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A solvent used in the solvation model, typically identified with a chemical name."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#acaafcb6-b65f-5996-93ed-2f486f5f2b30
@@ -198,6 +290,35 @@ the potential energies for all the particles in the system."""@en .
                                                                               core:prefLabel "DensityFunctionalTheory"@en ;
                                                                               <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """An efficient computional method for solving the many-electron
 (time-independent) Schrödinger equation."""@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/emmo/domain/atomistic#acetonitrile
+:acetonitrile rdf:type owl:NamedIndividual ,
+                       :SolvationModelSolvent .
+
+
+###  https://w3id.org/emmo/domain/atomistic#aug-cc-pVDZ
+:aug-cc-pVDZ rdf:type owl:NamedIndividual ,
+                      :BasisSet .
+
+
+###  https://w3id.org/emmo/domain/atomistic#b3lyp
+:b3lyp rdf:type owl:NamedIndividual ,
+                :Functional .
+
+
+###  https://w3id.org/emmo/domain/atomistic#cosmo
+:cosmo rdf:type owl:NamedIndividual ,
+                :SolvationModel .
+
+
+###  https://w3id.org/emmo/domain/atomistic#pbe
+:pbe rdf:type owl:NamedIndividual ,
+              :Functional .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
