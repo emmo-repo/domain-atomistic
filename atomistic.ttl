@@ -172,7 +172,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
 :QuantumState rdf:type owl:Class ;
               rdfs:subClassOf <https://w3id.org/emmo#EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf> ;
               core:prefLabel "QuantumState"@en ;
-              <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A specific state of a quantum system defined by its energy and wavefunction."@en .
+              <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A specific state of a quantum system. Often defined by its wavefunction."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#SaddlePoint
