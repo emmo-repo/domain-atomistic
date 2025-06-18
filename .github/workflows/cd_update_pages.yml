@@ -9,7 +9,7 @@ on:
 
 env:
   GIT_USER_NAME: EMMO Developers
-  GIT_USER_EMAIL: "atomistic@emmc.eu"
+  GIT_USER_EMAIL: "emmo@emmc.eu"
 
 jobs:
 
