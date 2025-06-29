@@ -1,6 +1,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15767861.svg)](https://doi.org/10.5281/zenodo.15767861)
 [![CI tests](https://github.com/emmo-repo/domain-atomistic/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-atomistic/actions/)
+<!--
 [![FOOPS Score](https://img.shields.io/badge/FOOPS%20Score-79.0%25-yellow)](https://foops.linkeddata.es/FAIR_validator.html)
+-->
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 
