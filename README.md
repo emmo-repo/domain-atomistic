@@ -1,4 +1,7 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15767861.svg)](https://doi.org/10.5281/zenodo.15767861)
 [![CI tests](https://github.com/emmo-repo/domain-atomistic/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-atomistic/actions/)
+[![FOOPS Score](https://img.shields.io/badge/FOOPS%20Score-79.0%25-yellow)](https://foops.linkeddata.es/FAIR_validator.html)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 
 Domain ontology for atomistic and electronic modelling
@@ -18,16 +21,15 @@ This domain ontology is work-in-progress (WIP), it is in the process of being ac
 * Application accepted on: TBD
 
 
-Imported ontologies
--------------------
-This ontology builds on top of EMMO. See the following table for version
-compatibilies:
+### Imported ontologies
+Version dependencies on imported ontologies:
 
-| Imported Ontologies  | Version           |
-| -------------------- | ----------------- |
-| [EMMO][1]            | 1.0.0             |
-| [crystallography][2] | 0.0.1             |
-| [mechanics][3]       | 0.0.1             |
+| Version | [EMMO]       | [crystallography] | [mechanics] |
+|---------|--------------|-------------------|-------------|
+| 0.0.1   | 1.0.0-alpha1 | 0.0.1             | 0.0.1       |
+| 0.0.2   | 1.0.1        | 0.0.1             | 0.0.1       |
+| 0.0.3   | 1.0.1        | 0.0.1             | 0.0.1       |
+
 
 
 Obtaining domain-atomistic
@@ -59,6 +61,6 @@ The atomistic domain ontology is released under the [Creative
 Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license (CC BY 4.0).
 
 
-[1]: https://github.com/emmo-repo/EMMO
-[2]: https://github.com/emmo-repo/domain-crystallography
-[3]: https://github.com/emmo-repo/domain-atomistic/mechanics.owl
+[EMMO]: https://github.com/emmo-repo/EMMO
+[CRYST]: https://github.com/emmo-repo/domain-crystallography
+[MECH]: https://github.com/emmo-repo/domain-atomistic/mechanics.owl
