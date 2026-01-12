@@ -32,7 +32,7 @@ emmo.base_iri = emmo.base_iri.rstrip('/#')
 catalog_mappings = {emmo.base_iri: emmo_url}
 
 # Create new ontology
-onto = world.get_ontology('http://emmo.info/domain-atomistic#')
+onto = world.get_ontology('http://https://w3id.org/emmo/domain-atomistic#')
 onto.imported_ontologies.append(emmo)
 onto.sync_python_names()
 
@@ -125,7 +125,7 @@ with onto:
 # Save new ontology as owl
 onto.sync_attributes(name_policy='uuid', class_docstring='elucidation',
                      name_prefix='')
-version_iri = "http://emmo.info/%s/domain-atomistic" % __version__
+version_iri = "https://w3id.org/emmo/%s/domain-atomistic" % __version__
 onto.set_version(version_iri=version_iri)
 onto.dir_label = False
 
