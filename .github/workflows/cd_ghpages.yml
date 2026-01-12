@@ -33,11 +33,14 @@ jobs:
         #pip install EMMOntoPy
         pip install -U git+https://github.com/emmo-repo/EMMOntoPy.git@flb/issue916
 
-    - name: Install temgo and tripper
+    - name: Install tripper
       run: |
-        pip install .
         #pip install tripper[datadoc]
         pip install -U git+https://github.com/EMMC-ASBL/tripper.git@master
+
+    #- name: Install current ontology for keywords tool
+    #  run: |
+    #    pip install -U git+
 
     - name: Install ROBOT
       run: |
