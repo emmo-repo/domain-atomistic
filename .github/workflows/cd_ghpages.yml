@@ -35,7 +35,7 @@ jobs:
 
     - name: Install tripper
       run: |
-        #pip install tripper[datadoc]
+        pip install tripper[datadoc]
         pip install -U git+https://github.com/EMMC-ASBL/tripper.git@master
 
     #- name: Install current ontology for keywords tool
