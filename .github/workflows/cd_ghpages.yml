@@ -5,7 +5,7 @@ on: push
 #    branches: [master]
 
 env:
-  ONTOLOGY_NAME: domain-atomistic
+  ONTOLOGY_NAME: atomistic
   ONTOLOGY_PREFIX: at
   ONTOLOGY_IRI: https://w3id.org/emmo/domain/atomistic
 
@@ -62,8 +62,8 @@ jobs:
             -saw \
             --namespace="emmo:https://w3id.org/emmo#" \
             --namespace="at:https://w3id.org/emmo/domain/atomistic#" \
-            domain-atomistic-dependencies.ttl \
-            build/domain-atomistic-dependencies.ttl
+            atomistic-dependencies.ttl \
+            build/atomistic-dependencies.ttl
 
         ontoconvert \
             -sawe \
@@ -71,8 +71,8 @@ jobs:
             --namespace="at:https://w3id.org/emmo/domain/atomistic#" \
             --base-iri="https://w3id.org/emmo/domain/atomistic#" \
             --iri="https://w3id.org/emmo/domain/atomistic" \
-            domain-atomistic.ttl \
-            build/domain-atomistic.ttl
+            atomistic.ttl \
+            build/atomistic.ttl
 
         ontoconvert \
             -awe \
@@ -82,8 +82,8 @@ jobs:
             --iri="https://w3id.org/emmo/domain/atomistic" \
             --copy-annotation="elucidation-->http://purl.org/dc/terms/description" \
             --copy-annotation="prefLabel-->http://www.w3.org/2000/01/rdf-schema#label" \
-            domain-atomistic.ttl \
-            build/domain-atomistic-doc.ttl
+            atomistic.ttl \
+            build/atomistic-doc.ttl
 
     - name: Create inferred ontology
       run: |
@@ -95,22 +95,22 @@ jobs:
         #    --base-iri="https://w3id.org/emmo/domain/atomistic#" \
         #    --iri="https://w3id.org/emmo/domain/atomistic" \
         #    --infer=HermiT \
-        #    domain-atomistic.ttl \
-        #    build/domain-atomistic-inferred.ttl
+        #    atomistic.ttl \
+        #    build/atomistic-inferred.ttl
         #
         bin/robot reason \
             --reasoner HermiT \
-            --input build/domain-atomistic.ttl \
-            --output build/domain-atomistic-inferred.ttl
+            --input build/atomistic.ttl \
+            --output build/atomistic-inferred.ttl
 
     - name: Generate markdown documentation of all keywords
       run: |
-        keywords -i build/domain-atomistic-doc.ttl --keywords build/domain-atomistic.md --namespace-filter=https://w3id.org/emmo/domain/atomistic --redefine=allow
+        keywords -i build/atomistic-doc.ttl --keywords build/atomistic.md --namespace-filter=https://w3id.org/emmo/domain/atomistic --redefine=allow
 
     - name: Generate Widoco documentation
       run: |
         java -jar widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
-            -ontFile build/domain-atomistic-doc.ttl \
+            -ontFile build/atomistic-doc.ttl \
             -outFolder build/widoco \
             -getOntologyMetadata \
             -oops \

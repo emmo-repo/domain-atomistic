@@ -2,7 +2,7 @@ name: CI tests
 on: [push]
 
 env:
-  ONTOLOGY_NAME: domain-atomistic
+  ONTOLOGY_NAME: atomistic
 
 jobs:
   ci_testing:
@@ -25,4 +25,4 @@ jobs:
 
     - name: Test
       run: |
-        emmocheck --configfile=.github/emmocheck_conf.yml domain-atomistic.ttl
+        emmocheck --configfile=.github/emmocheck_conf.yml atomistic.ttl
