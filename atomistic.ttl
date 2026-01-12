@@ -62,11 +62,11 @@ email: francesca.l.bleken@sintef.no"""@en ,
 
 
 ###  https://w3id.org/emmo/domain/atomistic#42812fef-145a-56e9-9c18-72bd32214455
-<https://w3id.org/emmo/domain/atomistic#42812fef-145a-56e9-9c18-72bd32214455> rdf:type owl:ObjectProperty ;
-                                                                              rdfs:subPropertyOf <https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
-                                                                              rdfs:domain <https://w3id.org/emmo#EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa> ;
-                                                                              core:prefLabel "hasEigenvalue"@en ;
-                                                                              <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Relates a mathematical (or physical) operator to its eigenvalue."@en .
+#<https://w3id.org/emmo/domain/atomistic#42812fef-145a-56e9-9c18-72bd32214455> rdf:type owl:ObjectProperty ;
+#                                                                              rdfs:subPropertyOf <https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+#                                                                              rdfs:domain <https://w3id.org/emmo#EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa> ;
+#                                                                              core:prefLabel "hasEigenvalue"@en ;
+#                                                                              <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Relates a mathematical (or physical) operator to its eigenvalue."@en .
 
 
 #################################################################
