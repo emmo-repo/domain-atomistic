@@ -111,9 +111,9 @@ jobs:
             --input build/atomistic.ttl \
             --output build/atomistic-inferred.ttl
 
-#    - name: Generate markdown documentation of all keywords
-#      run: |
-#        keywords -i build/atomistic-doc.ttl --keywords build/atomistic.md --namespace-filter=https://w3id.org/emmo/domain/atomistic --redefine=allow
+    - name: Generate markdown documentation of all keywords
+      run: |
+        keywords -i build/atomistic-doc.ttl --keywords build/atomistic.md --namespace-filter=https://w3id.org/emmo/domain/atomistic# --redefine=allow
 
     - name: Generate Widoco documentation
       run: |
