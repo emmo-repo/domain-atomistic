@@ -7,17 +7,43 @@
 #  --ontology-iri https://w3id.org/emmo/domain/atomistic \
 #  . 
 
-#mkdir build
+mkdir build
+cp README.md LICENSE build/.
 
-#ontoconvert \
-#      -awe \
-#      --namespace="emmo:https://w3id.org/emmo#" \
-#      --namespace="at:https://w3id.org/emmo/domain/atomistic#" \
-#      --base-iri="https://w3id.org/emmo/domain/atomistic#" \
-#      --iri="https://w3id.org/emmo/domain/atomistic" \
-#      --copy-annotation="elucidation-->http://purl.org/dc/terms/description" \
-#      --copy-annotation="prefLabel-->http://www.w3.org/2000/01/rdf-schema#label" \
-#      atomistic.ttl \
-#      build/atomistic-doc.ttl
+ontoconvert \
+            -saw \
+            --namespace="emmo:https://w3id.org/emmo#" \
+            --namespace="at:https://w3id.org/emmo/domain/atomistic#" \
+            atomistic-dependencies.ttl \
+            build/atomistic-dependencies.ttl
 
-#keywords -i build/atomistic-doc.ttl --keywords build/atomistic.md --namespace-filter=https://w3id.org/emmo/domain/atomistic --redefine=allow #-p ato=https://w3id.org/emmo/domain/atomistic
+ontoconvert \
+            -sawe \
+            --namespace="emmo:https://w3id.org/emmo#" \
+            --namespace="at:https://w3id.org/emmo/domain/atomistic#" \
+            --base-iri="https://w3id.org/emmo/domain/atomistic#" \
+            --iri="https://w3id.org/emmo/domain/atomistic" \
+            atomistic.ttl \
+            build/atomistic.ttl
+
+ontoconvert \
+            -awe \
+            --namespace="emmo:https://w3id.org/emmo#" \
+            --namespace="at:https://w3id.org/emmo/domain/atomistic#" \
+            --base-iri="https://w3id.org/emmo/domain/atomistic#" \
+	    --iri="https://w3id.org/emmo/domain/atomistic" \
+            --copy-annotation="elucidation-->http://purl.org/dc/terms/description" \
+            --copy-annotation="prefLabel-->http://www.w3.org/2000/01/rdf-schema#label" \
+            atomistic.ttl \
+            build/atomistic-doc.ttl
+
+robot reason \
+            --reasoner HermiT \
+            --remove-redundant-subclass-axioms true \
+            --preserve-annotated-axioms true \
+            --exclude-owl-thing true \
+            --exclude-duplicate-axioms true \
+            --input build/atomistic.ttl \
+            --output atomistic-inferred.ttl
+
+ontoconvert --iri=https://w3id.org/emmo/domain/atomistic/inferred atomistic-inferred.ttl build/atomistic-inferred.ttl
