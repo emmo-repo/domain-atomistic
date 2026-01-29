@@ -56,8 +56,8 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            <https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f> "Intended for documeting what kind of atoms a material is made of."@en .
 
 
-###  https://w3id.org/emmo/domain/atomistic#42812fef-145a-56e9-9c18-72bd32214455
-<https://w3id.org/emmo/domain/atomistic#42812fef-145a-56e9-9c18-72bd32214455> rdf:type owl:ObjectProperty ;
+###  https://w3id.org/emmo/domain/atomistic#EMMO_42812fef-145a-56e9-9c18-72bd32214455
+:EMMO_42812fef-145a-56e9-9c18-72bd32214455 rdf:type owl:ObjectProperty ;
                                                                               rdfs:subPropertyOf <https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
                                                                               rdfs:domain <https://w3id.org/emmo#EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa> ;
                                                                               skos:prefLabel "hasEigenvalue"@en ;
@@ -272,7 +272,7 @@ function can be derived from the quantum state."""@en ;
                                                                               rdfs:subClassOf <https://w3id.org/emmo#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b> ,
                                                                                               <https://w3id.org/emmo/domain/atomistic#08fd7117-66ac-5b6d-b65e-34a826675877> ,
                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                owl:onProperty <https://w3id.org/emmo/domain/atomistic#42812fef-145a-56e9-9c18-72bd32214455> ;
+                                                                                                owl:onProperty :EMMO_42812fef-145a-56e9-9c18-72bd32214455 ;
                                                                                                 owl:someValuesFrom <https://w3id.org/emmo#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2>
                                                                                               ] ;
                                                                               skos:prefLabel "Hamiltonian"@en ;
