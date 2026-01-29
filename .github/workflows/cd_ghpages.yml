@@ -1,14 +1,14 @@
 name: Deploy on GitHub Pages
 
 # Only run this workflow on push to a release branch or master
-#on: push
-on:
-  push:
-    branches:
-      - '[0-9]+.[0-9]+.[0-9]+'
-      - '[0-9]+.[0-9]+.[0-9]+-*'
-      - master
-      - main
+on: push
+#on:
+#  push:
+#    branches:
+#      - '[0-9]+.[0-9]+.[0-9]+'
+#      - '[0-9]+.[0-9]+.[0-9]+-*'
+#      - master
+#      - main
 
 env:
   ONTOLOGY_NAME: atomistic
@@ -95,6 +95,9 @@ jobs:
             atomistic.ttl \
             build/atomistic-doc.ttl
 
+    - name: Copy dependencies to buid
+      run: cp atomistic-dependencies.ttl build/ && cp catalog-v001.xml build/
+
     - name: Create inferred ontology
       run: |
         bin/robot reason \
@@ -111,19 +114,23 @@ jobs:
       run: |
         keywords -i build/atomistic-doc.ttl --keywords build/atomistic.md --namespace-filter=https://w3id.org/emmo/domain/atomistic# --redefine=allow
 
-    - name: Generate Widoco documentation
-      run: |
-        java -jar widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
-            -ontFile build/atomistic-doc.ttl \
-            -outFolder build/widoco \
-            -getOntologyMetadata \
-            -oops \
-            -rewriteAll \
-            -saveConfig build/widoco/widoco.conf \
-            - webVowl \
-            -licensius \
-            -includeAnnotationProperties
+    # Need to decide if we want both Widoco and ontokit and how they should be shown    
+    # - name: Generate Widoco documentation
+    #  run: |
+    #    java -jar widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
+    #        -ontFile build/atomistic-doc.ttl \
+    #        -outFolder build/widoco \
+    #        -getOntologyMetadata \
+    #        -oops \
+    #        -rewriteAll \
+    #        -saveConfig build/widoco/widoco.conf \
+    #        - webVowl \
+    #        -licensius \
+    #        -includeAnnotationProperties
 
+    # Should be added automatically when running ontokit setup    
+    - name: Generate Ontokit documentation
+      run: ontokit docs .
 
 
     - name: Deploy to GitHub Pages
