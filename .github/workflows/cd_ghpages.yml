@@ -129,14 +129,20 @@ jobs:
     #        -includeAnnotationProperties
 
     # Should be added automatically when running ontokit setup    
-    - name: Generate Ontokit documentation
+    - name: Generate Ontokit documentation to public
       run: ontokit docs . && touch public/.nojekyll # FIX IN ontokit! 
+
+    # Copy turtle files from build to public
+    # Consider if this should be done either in ontokit docs directly
+    # or specified in more detail as part of ontokit setup (which makes this file)
+    - name: Copy ontologies to public
+      run: cp build/*ttl public/
 
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        folder: build
+        folder: public
         branch: gh-pages
         clean: false
         single-commit: true
