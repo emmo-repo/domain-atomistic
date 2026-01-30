@@ -130,7 +130,7 @@ jobs:
 
     # Should be added automatically when running ontokit setup    
     - name: Generate Ontokit documentation
-      run: ontokit docs .
+      run: ontokit docs . && touch public/.nojekyll # FIX IN ontokit! 
 
 
     - name: Deploy to GitHub Pages
