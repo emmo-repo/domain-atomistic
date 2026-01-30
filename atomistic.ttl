@@ -40,6 +40,37 @@ email: francesca.l.bleken@sintef.no"""@en ,
 <https://w3id.org/emmo#EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc> rdf:type owl:AnnotationProperty .
 
 
+###  https://w3id.org/emmo#EMMO_b6730304_cabc_4104_b415_14218466445c
+<https://w3id.org/emmo#EMMO_b6730304_cabc_4104_b415_14218466445c> rdf:type owl:AnnotationProperty ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "caution"@en ;
+                                                                  <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "a moderate-level advisory about possible pitfalls, errors, or inefficiencies"@en .
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty ;
+                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "a general annotation that provides extra context, clarifications, or useful background information"@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#related
+<http://www.w3.org/2004/02/skos/core#related> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty ;
+                                                <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "a note that helps to clarify the meaning and/or the use of a concept"@en .
+
+
+###  https://w3id.org/emmo#EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72
+<https://w3id.org/emmo#EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72> rdf:type owl:AnnotationProperty ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "warning"@en ;                                                                                                                <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "q critical alert about potential dangers, system failures, or serious misuse of a concept."@en .
+
+###  https://w3id.org/emmo#EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e
+<https://w3id.org/emmo#EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e> rdf:type owl:AnnotationProperty ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "tip"@en ;
+                                                                  <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "a best practice or helpful suggestion related to the concept."@en .
 
 
 #################################################################
@@ -88,7 +119,9 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            rdfs:subClassOf :EMMO_29fd60b8-b709-4bc9-8e0e-19498abb5da0 ;
                                            skos:prefLabel "Functional"@en ;
                                            skos:altLabel "DFTFunctional"@en ;
-                                           skos:example "LDA, GGA, GW"@en ;
+                                           skos:altLabel "FUNKY"@en ;
+					   skos:example "LDA, GGA, GW"@en ;
+					   skos:example "Hybrid functionals"@en ;
                                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A functional that approximates the exchange-correlation of the electron density of the chosen system."@en .
 
 
@@ -110,6 +143,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
 :EMMO_2be6633a-e701-41a7-a42b-0e89f262d82c rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_78e3ce89-632d-4a3e-a194-a051df2f5d5f ;
                                            skos:prefLabel "NWChemGeometryOptimization"@en ;
+                                           <https://w3id.org/emmo#EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72> "This is not necessarily a optimisation to the ground state, but can also be a saddle point"@en ;
                                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Geometry optimisation performed with NWChem"@en .
 
 
@@ -126,6 +160,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            rdfs:subClassOf :EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298 ;
                                            skos:example "VASP, Quantum ESPRESSO, NWChem "@en ;
                                            skos:prefLabel "DFTSimulationSoftware"@en ;
+                                           skos:note "The software is not restricted to only DFT, i.e. also MP2 simulations are avilabel in NWChem"@en ;
                                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "DFT-based simulation software."@en .
 
 
@@ -154,6 +189,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
 :EMMO_5ddbdd13-b5ba-4101-8b13-4ab06b5173eb rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org/emmo#EMMO_5dd63d84_57f5_4b79_b760_fe940c06680d> ;
                                            skos:prefLabel "ElectronicComputation"@en ;
+                                           <https://w3id.org/emmo#EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e> "Check if there exist relevant subclasses that include information on choice of model solved by and/or software used in the computations."@en ;
                                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Physics based calculation that solves the electronic states of a system. Can be either a simulation that treats the electronc explicitly or the electron density."@en .
 
 
@@ -168,14 +204,15 @@ email: francesca.l.bleken@sintef.no"""@en ,
 :EMMO_807b8909-f44c-43de-b7cc-45d1abd515eb rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_78e3ce89-632d-4a3e-a194-a051df2f5d5f ;
                                            skos:prefLabel "NWChemDFTModuleCOSMO"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "NWChem comutation that includes cosmo as solvation model."@en .
+                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "NWChem computation that includes cosmo as solvation model."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_a8d08da5-cc89-4a50-83c1-e7f11e718bb5
 :EMMO_a8d08da5-cc89-4a50-83c1-e7f11e718bb5 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0f0feb84-14ef-4def-babb-718c9244f098 ;
                                            skos:prefLabel "GroundState"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "he lowest-energy quantum state of a physical system."@en .
+                                           <https://w3id.org/emmo#EMMO_b6730304_cabc_4104_b415_14218466445c> "Be aware that a locally found minimum is not necessarily the ground state."@en ;
+                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The lowest-energy quantum state of a physical system."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_abdf0104-0349-4c60-b4b8-91161660b2f4

@@ -138,6 +138,12 @@ jobs:
     - name: Copy ontologies to public
       run: cp build/*ttl public/
 
+    - name: Check content of build 
+      run: ls -la build
+
+    - anme: Check content of public
+      run: ls -la public
+
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
