@@ -143,7 +143,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
 :EMMO_2be6633a-e701-41a7-a42b-0e89f262d82c rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_78e3ce89-632d-4a3e-a194-a051df2f5d5f ;
                                            skos:prefLabel "NWChemGeometryOptimization"@en ;
-                                           <https://w3id.org/emmo#EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72> "This is not necessarily a optimisation to the ground state, but can also be a saddle point"@en ;
+                                           <https://w3id.org/emmo#EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72> "This is not necessarily an optimisation to the ground state, as can also be a saddle point."@en ;
                                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Geometry optimisation performed with NWChem"@en .
 
 
@@ -266,6 +266,7 @@ equation can be reduced to this time-independent form."""@en .
                                                         owl:onProperty <https://w3id.org/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
                                                         owl:someValuesFrom <https://w3id.org/emmo/domain/atomistic#42244404-98d1-582a-8fc0-3cdd2a9b3df6>
                                                       ] ;
+                                      <https://w3id.org/emmo#EMMO_157fdf31_6387_42be_8e72_10530519214a> "https://upload.wikimedia.org/wikipedia/commons/e/ec/SchrodingerEquation.svg"^^xsd:anyURI ;
                                       skos:prefLabel "SchrodingerEquation"@en ;
                                       skos:altLabel "SchrödingerEquation"@en ;
                                       <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """A linear partial differential equation describing the wave

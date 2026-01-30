@@ -130,7 +130,7 @@ jobs:
 
     # Should be added automatically when running ontokit setup    
     - name: Generate Ontokit documentation to public
-      run: ontokit docs . && touch public/.nojekyll # FIX IN ontokit! 
+      run: ontokit docs --iri-regex=https://w3id.org/emmo/domain/atomistic . && touch public/.nojekyll # FIX IN ontokit! 
 
     # Copy turtle files from build to public
     # Consider if this should be done either in ontokit docs directly
