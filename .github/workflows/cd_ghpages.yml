@@ -141,7 +141,7 @@ jobs:
     - name: Check content of build 
       run: ls -la build
 
-    - anme: Check content of public
+    - name: Check content of public
       run: ls -la public
 
 
