@@ -114,19 +114,18 @@ jobs:
       run: |
         keywords -i build/atomistic-doc.ttl --keywords build/atomistic.md --namespace-filter=https://w3id.org/emmo/domain/atomistic# --redefine=allow
 
-    # Need to decide if we want both Widoco and ontokit and how they should be shown    
-    # - name: Generate Widoco documentation
-    #  run: |
-    #    java -jar widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
-    #        -ontFile build/atomistic-doc.ttl \
-    #        -outFolder build/widoco \
-    #        -getOntologyMetadata \
-    #        -oops \
-    #        -rewriteAll \
-    #        -saveConfig build/widoco/widoco.conf \
-    #        - webVowl \
-    #        -licensius \
-    #        -includeAnnotationProperties
+    - name: Generate Widoco documentation
+      run: |
+        java -jar widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
+            -ontFile build/atomistic-doc.ttl \
+            -outFolder build/widoco \
+            -getOntologyMetadata \
+            -oops \
+            -rewriteAll \
+            -saveConfig build/widoco/widoco.conf \
+            - webVowl \
+            -licensius \
+            -includeAnnotationProperties
 
     # Should be added automatically when running ontokit setup    
     - name: Generate Ontokit documentation to public
@@ -137,6 +136,9 @@ jobs:
     # or specified in more detail as part of ontokit setup (which makes this file)
     - name: Copy ontologies to public
       run: cp build/*ttl public/
+
+    - name: Copy widoco documentation to public
+      run: cp -r build/widoco public/widoco
 
     - name: Check content of build 
       run: ls -la build
