@@ -35,6 +35,7 @@ jobs:
 
     - name: Install EMMOntoPy and tripper
       run: |
+        apt install pandoc
         pip install --upgrade pip
         pip install \
             "EMMOntoPy[ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@ontokit" \
