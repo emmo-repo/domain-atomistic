@@ -127,6 +127,10 @@ jobs:
             -licensius \
             -includeAnnotationProperties
 
+    - name: Create README.rst from README.md with pandoc
+      run: pandoc README.md -o build/README.rst
+    
+
     # Should be added automatically when running ontokit setup    
     - name: Generate Ontokit documentation to public
       run: ontokit docs --iri-regex=https://w3id.org/emmo/domain/atomistic . && touch public/.nojekyll 
