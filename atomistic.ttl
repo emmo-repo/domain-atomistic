@@ -269,8 +269,7 @@ equation can be reduced to this time-independent form."""@en .
                                       <https://w3id.org/emmo#EMMO_157fdf31_6387_42be_8e72_10530519214a> "https://upload.wikimedia.org/wikipedia/commons/e/ec/SchrodingerEquation.svg"^^xsd:anyURI ;
                                       skos:prefLabel "SchrodingerEquation"@en ;
                                       skos:altLabel "SchrödingerEquation"@en ;
-                                      <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """A linear partial differential equation describing the wave
-function of a quantum-mechanical system.
+                                      <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """A linear partial differential equation describing the wave function of a quantum-mechanical system.
 
 The exact form of the Schrödinger equation depends on the
 physical situation.  The most general form is the
