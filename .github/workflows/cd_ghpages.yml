@@ -35,7 +35,6 @@ jobs:
 
     - name: Install EMMOntoPy and tripper
       run: |
-        apt install pandoc
         pip install --upgrade pip
         pip install \
             "EMMOntoPy[ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@ontokit" \
@@ -127,10 +126,6 @@ jobs:
             -webVowl \
             -licensius \
             -includeAnnotationProperties
-
-    - name: Create README.rst from README.md with pandoc
-      run: pandoc README.md -o build/README.rst
-    
 
     # Should be added automatically when running ontokit setup    
     - name: Generate Ontokit documentation to public
