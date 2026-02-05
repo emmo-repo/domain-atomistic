@@ -152,5 +152,5 @@ jobs:
       with:
         folder: public
         branch: gh-pages
-        clean: false
+        clean: true
         single-commit: true
