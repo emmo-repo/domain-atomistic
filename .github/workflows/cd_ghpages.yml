@@ -112,7 +112,7 @@ jobs:
 
     - name: Generate markdown documentation of all keywords
       run: |
-        keywords -i build/atomistic-doc.ttl --write-kw-md build/atomistic.md --namespace-filter=https://w3id.org/emmo/domain/atomistic# --redefine=allow
+        keywords -i build/atomistic-doc.ttl --write-kw-md build/atomistic_kw.md --namespace-filter=https://w3id.org/emmo/domain/atomistic# --redefine=allow
 
     - name: Generate Widoco documentation
       run: |
@@ -141,9 +141,6 @@ jobs:
 
     - name: Copy widoco documentation to public
       run: cp -r build/widoco public/widoco
-
-    - name: Temporarily copy build to public, to see how it looks
-      run: cp -r build public/prev_build
 
     - name: Check content of build 
       run: ls -la build
