@@ -1,19 +1,21 @@
 name: Deploy on GitHub Pages
 
 # Only run this workflow on push to a release branch or master
-on: push
+#on: push
 #on:
-#  push:
-#    branches:
-#      - '[0-9]+.[0-9]+.[0-9]+'
-#      - '[0-9]+.[0-9]+.[0-9]+-*'
-#      - master
-#      - main
+  push:
+    branches:
+      - '[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+-*'
+      - master
+      - main
+      - flb/test_ontokit
 
 env:
   ONTOLOGY_NAME: atomistic
   ONTOLOGY_PREFIX: at
   ONTOLOGY_IRI: https://w3id.org/emmo/domain/atomistic
+  GITHUB_REPOSITORY: emmo-repo/domain-atomistic
 
 permissions:
   contents: write
@@ -31,7 +33,7 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v5
       with:
-        python-version: 3.13 # Tripper does not support 3.14 yet.
+        python-version: 3.14
 
     - name: Install EMMOntoPy and tripper
       run: |
@@ -95,9 +97,6 @@ jobs:
             atomistic.ttl \
             build/atomistic-doc.ttl
 
-    - name: Copy dependencies to buid
-      run: cp atomistic-dependencies.ttl build/ && cp catalog-v001.xml build/
-
     - name: Create inferred ontology
       run: |
         bin/robot reason \
@@ -127,32 +126,21 @@ jobs:
             -licensius \
             -includeAnnotationProperties
 
-    # Should be added automatically when running ontokit setup    
     - name: Generate Ontokit documentation to public
-      run: |
-        ontokit docs --iri-regex=https://w3id.org/emmo/domain/atomistic . && touch public/.nojekyll 
-        cat build/conf.py
+      run: ontokit docs --iri-regex=https://w3id.org/emmo/domain/atomistic . && touch public/.nojekyll
 
     # Copy turtle files from build to public
-    # Consider if this should be done either in ontokit docs directly
-    # or specified in more detail as part of ontokit setup (which makes this file)
     - name: Copy ontologies to public
       run: cp build/*ttl public/
 
+    # Copy widoco documentation to public, what to do with it is not yet decided.
     - name: Copy widoco documentation to public
       run: cp -r build/widoco public/widoco
-
-    - name: Check content of build 
-      run: ls -la build
-
-    - name: Check content of public
-      run: ls -la public
-
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: public
         branch: gh-pages
-        clean: true
+        clean: false
         single-commit: true
