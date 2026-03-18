@@ -2,7 +2,7 @@ name: Deploy on GitHub Pages
 
 # Only run this workflow on push to a release branch or master
 #on: push
-#on:
+on:
   push:
     branches:
       - '[0-9]+.[0-9]+.[0-9]+'
