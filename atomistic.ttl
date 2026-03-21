@@ -83,9 +83,9 @@ email: francesca.l.bleken@sintef.no"""@en ,
 
 :hasNumberOfAtoms rdf:type owl:DatatypeProperty ;
     rdfs:domain <https://w3id.org/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a> ;
-    rdfs:range xsd:Int ;
+    rdfs:range xsd:int ;
     skos:prefLabel "hasNumberOfAtoms"@en ;
-    skos:definition "Nuber of atoms in the species. Just added now for doc testing"@en .
+    skos:definition "Number of atoms in the species. Just added now for doc testing"@en .
 
 
 #################################################################
