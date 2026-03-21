@@ -37,7 +37,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
 
 :chemicalFormula rdf:type owl:AnnotationProperty ;
     skos:prefLabel "chemicalFormula"@en ;
-    skos:definition "The chemical formula of the species. Just added now for doc testing"@en
+    skos:definition "The chemical formula of the species. Just added now for doc testing"@en .
 
 
 
@@ -84,7 +84,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
 :hasDataValue rdf:type owl:DatatypeProperty ;
     rdfs:domain :Data ;
     skos:prefLabel "hasDataValue"@en ;
-    skos:definition "Relates a data individual to its literal value. Just added now for doc testing"@en
+    skos:definition "Relates a data individual to its literal value. Just added now for doc testing"@en .
 
 
 #################################################################
