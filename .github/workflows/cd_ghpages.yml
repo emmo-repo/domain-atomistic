@@ -9,7 +9,6 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+-*'
       - master
       - main
-      - flb/test_ontokit
 
 env:
   ONTOLOGY_NAME: atomistic
@@ -39,7 +38,7 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install \
-            "EMMOntoPy[ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@ontokit" \
+            "EMMOntoPy[ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@add_domain_range" \
             "tripper[datadoc] @ git+https://github.com/EMMC-ASBL/tripper.git@master"
 
     #- name: Install current ontology for keywords tool
@@ -135,7 +134,7 @@ jobs:
 
     # Copy widoco documentation to public, what to do with it is not yet decided.
     - name: Copy widoco documentation to public
-      run: cp -r build/widoco public/widoco
+      run: cp -r build/widoco public
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
