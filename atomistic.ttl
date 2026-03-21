@@ -81,10 +81,11 @@ email: francesca.l.bleken@sintef.no"""@en ,
 #    Data properties
 #################################################################
 
-:hasDataValue rdf:type owl:DatatypeProperty ;
-    rdfs:domain :Data ;
-    skos:prefLabel "hasDataValue"@en ;
-    skos:definition "Relates a data individual to its literal value. Just added now for doc testing"@en .
+:hasNumberOfAtoms rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://w3id.org/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a> ;
+    rdfs:range xsd:Int ;
+    skos:prefLabel "hasNumberOfAtoms"@en ;
+    skos:definition "Nuber of atoms in the species. Just added now for doc testing"@en .
 
 
 #################################################################
