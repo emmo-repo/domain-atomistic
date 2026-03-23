@@ -37,7 +37,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
 
 :chemicalFormula rdf:type owl:AnnotationProperty ;
     skos:prefLabel "chemicalFormula"@en ;
-    skos:definition "The chemical formula of the species. Just added now for doc testing"@en .
+    skos:definition "The chemical formula of the species."@en .
 
 
 
@@ -85,7 +85,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
     rdfs:domain <https://w3id.org/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a> ;
     rdfs:range xsd:int ;
     skos:prefLabel "hasNumberOfAtoms"@en ;
-    skos:definition "Number of atoms in the species. Just added now for doc testing"@en .
+    skos:definition "Number of atoms in the species."@en .
 
 
 #################################################################
@@ -134,7 +134,6 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            rdfs:subClassOf :EMMO_29fd60b8-b709-4bc9-8e0e-19498abb5da0 ;
                                            skos:prefLabel "Functional"@en ;
                                            skos:altLabel "DFTFunctional"@en ;
-                                           skos:altLabel "FUNKY"@en ;
 					   skos:example "LDA, GGA, GW"@en ;
 					   skos:example "Hybrid functionals"@en ;
                                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A functional that approximates the exchange-correlation of the electron density of the chosen system."@en .
@@ -175,7 +174,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            rdfs:subClassOf :EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298 ;
                                            skos:example "VASP, Quantum ESPRESSO, NWChem "@en ;
                                            skos:prefLabel "DFTSimulationSoftware"@en ;
-                                           skos:note "The software is not restricted to only DFT, i.e. also MP2 simulations are avilabel in NWChem"@en ;
+                                           skos:note "The software is not restricted to only DFT, i.e. also MP2 simulations are avilable in NWChem"@en ;
                                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "DFT-based simulation software."@en .
 
 
@@ -204,7 +203,6 @@ email: francesca.l.bleken@sintef.no"""@en ,
 :EMMO_5ddbdd13-b5ba-4101-8b13-4ab06b5173eb rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org/emmo#EMMO_5dd63d84_57f5_4b79_b760_fe940c06680d> ;
                                            skos:prefLabel "ElectronicComputation"@en ;
-                                           <https://w3id.org/emmo#EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e> "Check if there exist relevant subclasses that include information on choice of model solved by and/or software used in the computations."@en ;
                                            <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Physics based calculation that solves the electronic states of a system. Can be either a simulation that treats the electronc explicitly or the electron density."@en .
 
 
