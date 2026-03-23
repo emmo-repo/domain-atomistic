@@ -1,5 +1,0 @@
-ONTOLOGY_NAME: atomistic
-ONTOLOGY_PREFIX: at
-ONTOLOGY_IRI: https://w3id.org/emmo/domain/atomistic
-GITHUB_REPOSITORY: emmo-repo/domain-atomistic
-BUILD_DIR: build
