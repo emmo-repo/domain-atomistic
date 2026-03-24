@@ -1,0 +1,146 @@
+name: Deploy on GitHub Pages
+
+# Only run this workflow on push to a release branch or master
+#on: push
+on:
+  push:
+    branches:
+      - '[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+-*'
+      - master
+      - main
+      - flb/test_ontokit
+
+env:
+  ONTOLOGY_NAME: atomistic
+  ONTOLOGY_PREFIX: at
+  ONTOLOGY_IRI: https://w3id.org/emmo/domain/atomistic
+  GITHUB_REPOSITORY: emmo-repo/domain-atomistic
+
+permissions:
+  contents: write
+
+
+jobs:
+  deploy-on-ghpages:
+    #concurrency: ci-${{ github.ref }}  # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.14
+
+    - name: Install EMMOntoPy and tripper
+      run: |
+        pip install --upgrade pip
+        pip install \
+            "EMMOntoPy[ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@master" \
+            "tripper[datadoc] @ git+https://github.com/EMMC-ASBL/tripper.git@master"
+
+    #- name: Install current ontology for keywords tool
+    #  run: |
+    #    pip install -U git+
+
+    - name: Install ROBOT
+      run: |
+        mkdir bin
+        wget -nv https://github.com/ontodev/robot/releases/download/v1.9.6/robot.jar
+        mv robot.jar bin/.
+        curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > bin/robot
+        chmod +x bin/robot
+        ls -l bin/
+
+    - name: Download Widoco
+      run: |
+        wget --quiet https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar
+
+    - name: Copy readme and license files to gh-pages
+      run: |
+        mkdir build
+        cp README.md LICENSE build/.
+
+    - name: Create dependencies on gh-pages
+      run: |
+        ontoconvert \
+            -saw \
+            --namespace="emmo:https://w3id.org/emmo#" \
+            --namespace="at:https://w3id.org/emmo/domain/atomistic#" \
+            atomistic-dependencies.ttl \
+            build/atomistic-dependencies.ttl
+
+    - name: Create squashed ontology
+      run: |
+        ontoconvert \
+            -sawe \
+            --namespace="emmo:https://w3id.org/emmo#" \
+            --namespace="at:https://w3id.org/emmo/domain/atomistic#" \
+            --base-iri="https://w3id.org/emmo/domain/atomistic#" \
+            --iri="https://w3id.org/emmo/domain/atomistic" \
+            atomistic.ttl \
+            build/atomistic.ttl
+
+    - name: Create ontology for used later for generating documentation
+      run: |
+        ontoconvert \
+            -awe \
+            --namespace="emmo:https://w3id.org/emmo#" \
+            --namespace="at:https://w3id.org/emmo/domain/atomistic#" \
+            --base-iri="https://w3id.org/emmo/domain/atomistic#" \
+            --iri="https://w3id.org/emmo/domain/atomistic" \
+            --copy-annotation="elucidation-->http://purl.org/dc/terms/description" \
+            --copy-annotation="prefLabel-->http://www.w3.org/2000/01/rdf-schema#label" \
+            atomistic.ttl \
+            build/atomistic-doc.ttl
+
+    - name: Create inferred ontology
+      run: |
+        bin/robot reason \
+            --reasoner HermiT \
+            --remove-redundant-subclass-axioms true \
+            --preserve-annotated-axioms true \
+            --exclude-owl-thing true \
+            --exclude-duplicate-axioms true \
+            --input build/atomistic.ttl \
+            --output atomistic-inferred.ttl
+        ontoconvert --iri=https://w3id.org/emmo/domain/atomistic/inferred atomistic-inferred.ttl build/atomistic-inferred.ttl
+
+    - name: Generate markdown documentation of all keywords
+      run: |
+        keywords -i build/atomistic-doc.ttl --write-kw-md build/atomistic_kw.md --namespace-filter=https://w3id.org/emmo/domain/atomistic# --redefine=allow
+
+    - name: Generate Widoco documentation
+      run: |
+        java -jar widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
+            -ontFile build/atomistic-doc.ttl \
+            -outFolder build/widoco \
+            -getOntologyMetadata \
+            -oops \
+            -rewriteAll \
+            -saveConfig build/widoco/widoco.conf \
+            -webVowl \
+            -licensius \
+            -includeAnnotationProperties
+
+    - name: Generate Ontokit documentation to public
+      run: ontokit docs --iri-regex=https://w3id.org/emmo/domain/atomistic . && touch public/.nojekyll
+
+    # Copy turtle files from build to public
+    - name: Copy ontologies to public
+      run: cp build/*ttl public/
+
+    # Copy widoco documentation to public, what to do with it is not yet decided.
+    - name: Copy widoco documentation to public
+      run: cp -r build/widoco public
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: public
+        branch: gh-pages
+        clean: false
+        single-commit: true

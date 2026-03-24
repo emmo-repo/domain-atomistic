@@ -30,17 +30,15 @@ Version dependencies on imported ontologies:
 |---------|--------------|-------------------|-------------|
 | 0.0.1   | 1.0.0-alpha1 | 0.0.1             | 0.0.1       |
 | 0.0.2   | 1.0.1        | 0.0.1             | 0.0.1       |
-| 0.0.3   | 1.0.1        | 0.0.1             | 0.0.1       |
+| 0.0.3   | 1.0.1        | N/A               | N/A         |
 
 
 
 Obtaining domain-atomistic
 --------------------------
-This repository include the correct version of the crystallography and
-mechanics domain ontologies as a git submodules.  Hence, use the
-following command when cloning this repository:
+Use the following command when cloning this repository:
 
-    git clone --recurse-submodules --shallow-submodules git@github.com:emmo-repo/domain-atomistic.git
+    git clone git@github.com:emmo-repo/domain-atomistic.git
 
 
 Attributions and credits

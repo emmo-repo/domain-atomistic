@@ -1,0 +1,40 @@
+name: Release new version
+
+on:
+  release:
+    types: [published]
+
+env:
+  ONTOLOGY_NAME: atomistic
+  TAG: ${{ github.ref_name }}
+
+permissions:
+  contents: write
+
+jobs:
+  release_version:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Create and copy generated files to versions/
+        run: |
+          mkdir -p versions/${TAG#v}
+          cp -f \
+              README.md \
+              atomistic.ttl \
+              atomistic-dependencies.ttl \
+              atomistic-inferred.ttl \
+              versions/${TAG#v}/.
+
+      - name: Push to gh-pages
+        run: |
+          git config --global user.email "atomistic@emmc.eu"
+          git config --global user.name "atomistic"
+          git add versions/${TAG#v}
+          git commit -m "Release version ${TAG#v}"
+          git push origin gh-pages
