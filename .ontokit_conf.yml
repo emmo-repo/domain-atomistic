@@ -3,3 +3,13 @@ ONTOLOGY_PREFIX: at
 ONTOLOGY_IRI: https://w3id.org/emmo/domain/atomistic
 GITHUB_REPOSITORY: emmo-repo/domain-atomistic
 BUILD_DIR: build
+
+# Optional: additional reference indices for `ontokit docs`
+REFERENCE_INDICES:
+  - ontology_file: build/atomistic.ttl
+    title: Properties Index
+    docfile: properties.rst
+    #iri_regex: https://example.org/other
+    imported: false
+    recursive: false
+    subsections: annotation_properties,data_properties,object_properties   
