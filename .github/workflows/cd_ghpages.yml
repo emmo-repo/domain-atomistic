@@ -49,7 +49,7 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install \
-            "EMMOntoPy[ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@factor_out_reference_documentation" \
+            "EMMOntoPy[ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@ontokit_dev_fragmentlinks" \
             "tripper[datadoc] @ git+https://github.com/EMMC-ASBL/tripper.git@master"
 
     #- name: Install current ontology for keywords tool
@@ -115,7 +115,7 @@ jobs:
             --preserve-annotated-axioms true \
             --exclude-owl-thing true \
             --exclude-duplicate-axioms true \
-            --input "${BUILD_DIR}/${ONTOLOGY_NAME}.ttl" \
+            --input "${BUILD_DIR}/${ONTOLOGY_NAME}-squashed.ttl" \
             --output ${ONTOLOGY_NAME}-inferred.ttl
         ontoconvert --iri=${ONTOLOGY_IRI}/inferred ${ONTOLOGY_NAME}-inferred.ttl "${BUILD_DIR}/${ONTOLOGY_NAME}-inferred.ttl"
 
