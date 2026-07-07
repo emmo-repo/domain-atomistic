@@ -9,6 +9,7 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+-*'
       - master
       - main
+      - emmocheck_fxes
 
 permissions:
   contents: write
