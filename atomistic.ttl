@@ -47,11 +47,11 @@ email: francesca.l.bleken@sintef.no"""@en ,
 ###  https://w3id.org/emmo#EMMO_b6730304_cabc_4104_b415_14218466445c
 <https://w3id.org/emmo#EMMO_b6730304_cabc_4104_b415_14218466445c> rdf:type owl:AnnotationProperty ;
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "caution"@en ;
-                                                                  <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "a moderate-level advisory about possible pitfalls, errors, or inefficiencies"@en .
+                                                                  <https://w3id.org/emmo#elucidation> "a moderate-level advisory about possible pitfalls, errors, or inefficiencies"@en .
 
 ###  http://www.w3.org/2004/02/skos/core#note
 <http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "a general annotation that provides extra context, clarifications, or useful background information"@en .
+                                           <https://w3id.org/emmo#elucidation> "a general annotation that provides extra context, clarifications, or useful background information"@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
@@ -64,17 +64,17 @@ email: francesca.l.bleken@sintef.no"""@en ,
 
 ###  http://www.w3.org/2004/02/skos/core#scopeNote
 <http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty ;
-                                                <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "a note that helps to clarify the meaning and/or the use of a concept"@en .
+                                                <https://w3id.org/emmo#elucidation> "a note that helps to clarify the meaning and/or the use of a concept"@en .
 
 
 ###  https://w3id.org/emmo#EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72
 <https://w3id.org/emmo#EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72> rdf:type owl:AnnotationProperty ;
-                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "warning"@en ;                                                                                                                <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "q critical alert about potential dangers, system failures, or serious misuse of a concept."@en .
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "warning"@en ;                                                                                                                <https://w3id.org/emmo#elucidation> "q critical alert about potential dangers, system failures, or serious misuse of a concept."@en .
 
 ###  https://w3id.org/emmo#EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e
 <https://w3id.org/emmo#EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e> rdf:type owl:AnnotationProperty ;
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "tip"@en ;
-                                                                  <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "a best practice or helpful suggestion related to the concept."@en .
+                                                                  <https://w3id.org/emmo#elucidation> "a best practice or helpful suggestion related to the concept."@en .
 
 #################################################################
 #    Data properties
@@ -97,7 +97,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            rdfs:domain <https://w3id.org/emmo#EMMO_a96e2152_40e7_409c_a53a_fdb9f141eb6a> ;
                                            rdfs:range <https://w3id.org/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a> ;
                                            skos:prefLabel "hasSpecies"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Relates a material to the species it is made of."@en ;
+                                           <https://w3id.org/emmo#elucidation> "Relates a material to the species it is made of."@en ;
                                            <https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f> "Intended for documeting what kind of atoms a material is made of."@en .
 
 
@@ -106,7 +106,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                                                               rdfs:subPropertyOf <https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
                                                                               rdfs:domain <https://w3id.org/emmo#EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa> ;
                                                                               skos:prefLabel "hasEigenvalue"@en ;
-                                                                              <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Relates a mathematical (or physical) operator to its eigenvalue."@en .
+                                                                              <https://w3id.org/emmo#elucidation> "Relates a mathematical (or physical) operator to its eigenvalue."@en .
 
 
 #################################################################
@@ -118,14 +118,14 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            rdfs:subClassOf :EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298 ;
                                            skos:example "LAMMPS"@en ;
                                            skos:prefLabel "ForceFieldSimulationSoftware"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Forcefield-based simulation software."@en .
+                                           <https://w3id.org/emmo#elucidation> "Forcefield-based simulation software."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_0f0feb84-14ef-4def-babb-718c9244f098
 :EMMO_0f0feb84-14ef-4def-babb-718c9244f098 rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org/emmo#EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b> ;
                                            skos:prefLabel "ElectronicState"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A specific electronic state of a quantum system. Often defined by its wavefunction."@en .
+                                           <https://w3id.org/emmo#elucidation> "A specific electronic state of a quantum system. Often defined by its wavefunction."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_1338c034-b1cb-478e-a60b-816b96280ac6
@@ -135,21 +135,21 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            skos:altLabel "DFTFunctional"@en ;
 					   skos:example "LDA, GGA, GW"@en ;
 					   skos:example "Hybrid functionals"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A functional that approximates the exchange-correlation of the electron density of the chosen system."@en .
+                                           <https://w3id.org/emmo#elucidation> "A functional that approximates the exchange-correlation of the electron density of the chosen system."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_197db0fe-da46-4969-9410-4d5089e941ec
 :EMMO_197db0fe-da46-4969-9410-4d5089e941ec rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0f0feb84-14ef-4def-babb-718c9244f098 ;
                                            skos:prefLabel "SaddlePoint"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A critical point on a potential energy surface representing a transition state in a chemical reaction."@en .
+                                           <https://w3id.org/emmo#elucidation> "A critical point on a potential energy surface representing a transition state in a chemical reaction."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_29fd60b8-b709-4bc9-8e0e-19498abb5da0
 :EMMO_29fd60b8-b709-4bc9-8e0e-19498abb5da0 rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org/emmo#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0> ;
                                            skos:prefLabel "AtomisticComputationMathematical"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Mathematicals used by an atomistic computational software, often defined as a setting in the input file."@en .
+                                           <https://w3id.org/emmo#elucidation> "Mathematicals used by an atomistic computational software, often defined as a setting in the input file."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_2be6633a-e701-41a7-a42b-0e89f262d82c
@@ -157,7 +157,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            rdfs:subClassOf :EMMO_78e3ce89-632d-4a3e-a194-a051df2f5d5f ;
                                            skos:prefLabel "NWChemGeometryOptimization"@en ;
                                            <https://w3id.org/emmo#EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72> "This is not necessarily an optimisation to the ground state, as can also be a saddle point."@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Geometry optimisation performed with NWChem"@en .
+                                           <https://w3id.org/emmo#elucidation> "Geometry optimisation performed with NWChem"@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298
@@ -165,7 +165,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            rdfs:subClassOf <https://w3id.org/emmo#EMMO_8d4962d7_9608_44f7_a2f1_82a4bb173f4a> ;
                                            skos:example "NWChem -  a physical based software that implements both DFT and higher order QM methods."@en ;
                                            skos:prefLabel "AtomisticSimulationSoftware"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The superclass of physical-based electronic and forcefield simulation softwares."@en .
+                                           <https://w3id.org/emmo#elucidation> "The superclass of physical-based electronic and forcefield simulation softwares."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_429430f4_00e9_4157_a636_6cf798139e40
@@ -174,49 +174,49 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            skos:example "VASP, Quantum ESPRESSO, NWChem "@en ;
                                            skos:prefLabel "DFTSimulationSoftware"@en ;
                                            skos:note "The software is not restricted to only DFT, i.e. also MP2 simulations are avilable in NWChem"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "DFT-based simulation software."@en .
+                                           <https://w3id.org/emmo#elucidation> "DFT-based simulation software."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_42f4778d-5d87-4d1f-86cb-46cd02693733
 :EMMO_42f4778d-5d87-4d1f-86cb-46cd02693733 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_29fd60b8-b709-4bc9-8e0e-19498abb5da0 ;
                                            skos:prefLabel "SolvationModelSolvent"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A solvent used in the solvation model, typically identified with a chemical name."@en .
+                                           <https://w3id.org/emmo#elucidation> "A solvent used in the solvation model, typically identified with a chemical name."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_47d1df6d-c997-4dc4-a0ae-3bcee7f92f02
 :EMMO_47d1df6d-c997-4dc4-a0ae-3bcee7f92f02 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_29fd60b8-b709-4bc9-8e0e-19498abb5da0 ;
                                            skos:prefLabel "SolvationModel"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A mathematical model that allows the quantum chemistry calculations to include the interactions between solvents and the quantum solute implicitly."@en .
+                                           <https://w3id.org/emmo#elucidation> "A mathematical model that allows the quantum chemistry calculations to include the interactions between solvents and the quantum solute implicitly."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_52a6103f_86a4_4710_9028_a49b4cef858e
 :EMMO_52a6103f_86a4_4710_9028_a49b4cef858e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_5ddbdd13-b5ba-4101-8b13-4ab06b5173eb ;
                                            skos:prefLabel "DFTComputation"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A computation that solves the Kohn-Sham equation (using DFT)."@en .
+                                           <https://w3id.org/emmo#elucidation> "A computation that solves the Kohn-Sham equation (using DFT)."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_5ddbdd13-b5ba-4101-8b13-4ab06b5173eb
 :EMMO_5ddbdd13-b5ba-4101-8b13-4ab06b5173eb rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org/emmo#EMMO_5dd63d84_57f5_4b79_b760_fe940c06680d> ;
                                            skos:prefLabel "ElectronicComputation"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Physics based calculation that solves the electronic states of a system. Can be either a simulation that treats the electronc explicitly or the electron density."@en .
+                                           <https://w3id.org/emmo#elucidation> "Physics based calculation that solves the electronic states of a system. Can be either a simulation that treats the electronc explicitly or the electron density."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_78e3ce89-632d-4a3e-a194-a051df2f5d5f
 :EMMO_78e3ce89-632d-4a3e-a194-a051df2f5d5f rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_5ddbdd13-b5ba-4101-8b13-4ab06b5173eb ;
                                            skos:prefLabel "NWChemComputation"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Electronic computation performed with the NWChem software." .
+                                           <https://w3id.org/emmo#elucidation> "Electronic computation performed with the NWChem software." .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_807b8909-f44c-43de-b7cc-45d1abd515eb
 :EMMO_807b8909-f44c-43de-b7cc-45d1abd515eb rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_78e3ce89-632d-4a3e-a194-a051df2f5d5f ;
                                            skos:prefLabel "NWChemDFTModuleCOSMO"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "NWChem computation that includes cosmo as solvation model."@en .
+                                           <https://w3id.org/emmo#elucidation> "NWChem computation that includes cosmo as solvation model."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_a8d08da5-cc89-4a50-83c1-e7f11e718bb5
@@ -224,14 +224,14 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            rdfs:subClassOf :EMMO_0f0feb84-14ef-4def-babb-718c9244f098 ;
                                            skos:prefLabel "GroundState"@en ;
                                            <https://w3id.org/emmo#EMMO_b6730304_cabc_4104_b415_14218466445c> "Be aware that a locally found minimum is not necessarily the ground state."@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The lowest-energy quantum state of a physical system."@en .
+                                           <https://w3id.org/emmo#elucidation> "The lowest-energy quantum state of a physical system."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_abdf0104-0349-4c60-b4b8-91161660b2f4
 :EMMO_abdf0104-0349-4c60-b4b8-91161660b2f4 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_29fd60b8-b709-4bc9-8e0e-19498abb5da0 ;
                                            skos:prefLabel "BasisSet"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A collection of mathematical functions used to represent molecular orbitals in quantum chemical calculations."@en .
+                                           <https://w3id.org/emmo#elucidation> "A collection of mathematical functions used to represent molecular orbitals in quantum chemical calculations."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_f2dca06b-5987-4ff7-ac9e-9772b59b5c42
@@ -239,7 +239,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                            rdfs:subClassOf :EMMO_78e3ce89-632d-4a3e-a194-a051df2f5d5f ;
                                            skos:altLabel "NWChemFinite-differenceHessian"@en ;
                                            skos:prefLabel "NWChemFiniteDifferenceHessian"@en ;
-                                           <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A numerically evaluated Hessian matrix computed using finite-difference methods within the NWChem software suite. May be used for frequency analysis."@en .
+                                           <https://w3id.org/emmo#elucidation> "A numerically evaluated Hessian matrix computed using finite-difference methods within the NWChem software suite. May be used for frequency analysis."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#acaafcb6-b65f-5996-93ed-2f486f5f2b30
@@ -247,7 +247,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
                                       rdfs:subClassOf :c4dd4450-cc80-5de4-a8d6-db0651115a2c ;
                                       skos:prefLabel "TimeIndependentSchrodingerEquation"@en ;
                                       skos:altLabel "TimeIndependentSchrödingerEquation"@en ;
-                                      <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """If the external potential does not depende on time, the Schrödinger
+                                      <https://w3id.org/emmo#elucidation> """If the external potential does not depende on time, the Schrödinger
 equation can be reduced to this time-independent form."""@en .
 
 
@@ -260,7 +260,7 @@ equation can be reduced to this time-independent form."""@en .
                                                       ] ;
                                       rdfs:comment "This is the equation that is solved with density functional theory." ;
                                       skos:prefLabel "KohnShamEquation"@en ;
-                                      <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The Schrödinger equation for a fictious \"Kohn-Sham\" system of non-interacting electrons that generates the same charge density as the real interacting system."@en .
+                                      <https://w3id.org/emmo#elucidation> "The Schrödinger equation for a fictious \"Kohn-Sham\" system of non-interacting electrons that generates the same charge density as the real interacting system."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#c4dd4450-cc80-5de4-a8d6-db0651115a2c
@@ -281,7 +281,7 @@ equation can be reduced to this time-independent form."""@en .
                                       <https://w3id.org/emmo#EMMO_157fdf31_6387_42be_8e72_10530519214a> "https://upload.wikimedia.org/wikipedia/commons/e/ec/SchrodingerEquation.svg"^^xsd:anyURI ;
                                       skos:prefLabel "SchrodingerEquation"@en ;
                                       skos:altLabel "SchrödingerEquation"@en ;
-                                      <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """A linear partial differential equation describing the wave function of a quantum-mechanical system.
+                                      <https://w3id.org/emmo#elucidation> """A linear partial differential equation describing the wave function of a quantum-mechanical system.
 
 The exact form of the Schrödinger equation depends on the
 physical situation.  The most general form is the
@@ -293,7 +293,7 @@ time-dependent Schrödinger equation."""@en ;
 :df750ce7-fda1-5e9b-ba32-db96ec170577 rdf:type owl:Class ;
                                       rdfs:subClassOf <https://w3id.org/emmo#EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e> ;
                                       skos:prefLabel "WaveFunction"@en ;
-                                      <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """A mathematical description of the quantum state of an isolated
+                                      <https://w3id.org/emmo#elucidation> """A mathematical description of the quantum state of an isolated
 quantum system. A wave function is a function of the degrees
 of freedom corresponding to some maximal set of commuting
 observables. Once such a representation is chosen, the wave
@@ -306,14 +306,14 @@ function can be derived from the quantum state."""@en ;
                                       rdfs:subClassOf :c4dd4450-cc80-5de4-a8d6-db0651115a2c ;
                                       skos:prefLabel "TimeDependentSchrodingerEquation"@en ;
                                       skos:altLabel "TimeDependentSchrödingerEquation"@en ;
-                                      <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The full time-dependent Schrödinger equation."@en .
+                                      <https://w3id.org/emmo#elucidation> "The full time-dependent Schrödinger equation."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#08fd7117-66ac-5b6d-b65e-34a826675877
 <https://w3id.org/emmo/domain/atomistic#08fd7117-66ac-5b6d-b65e-34a826675877> rdf:type owl:Class ;
                                                                               rdfs:subClassOf <https://w3id.org/emmo#EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa> ;
                                                                               skos:prefLabel "PhysicalOperator"@en ;
-                                                                              <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A mathematical operator with a physical interpretation."@en .
+                                                                              <https://w3id.org/emmo#elucidation> "A mathematical operator with a physical interpretation."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#42244404-98d1-582a-8fc0-3cdd2a9b3df6
@@ -325,7 +325,7 @@ function can be derived from the quantum state."""@en ;
                                                                                                 owl:someValuesFrom <https://w3id.org/emmo#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2>
                                                                                               ] ;
                                                                               skos:prefLabel "Hamiltonian"@en ;
-                                                                              <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """An operator corresponding to the sum of the kinetic energies plus
+                                                                              <https://w3id.org/emmo#elucidation> """An operator corresponding to the sum of the kinetic energies plus
 the potential energies for all the particles in the system."""@en .
 
 
@@ -333,7 +333,7 @@ the potential energies for all the particles in the system."""@en .
 <https://w3id.org/emmo/domain/atomistic#83a69cf2-00c1-58b8-915b-76cb3549890a> rdf:type owl:Class ;
                                                                               rdfs:subClassOf <https://w3id.org/emmo#EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11> ;
                                                                               skos:prefLabel "DensityFunctionalTheory"@en ;
-                                                                              <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """An efficient computional method for solving the many-electron
+                                                                              <https://w3id.org/emmo#elucidation> """An efficient computional method for solving the many-electron
 (time-independent) Schrödinger equation."""@en .
 
 
@@ -345,35 +345,35 @@ the potential energies for all the particles in the system."""@en .
 :acetonitrile rdf:type owl:NamedIndividual ,
                        :EMMO_42f4778d-5d87-4d1f-86cb-46cd02693733 ;
               skos:prefLabel "acetonitrile"@en ;
-              <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The dielectric constant for acetonitrile."@en .
+              <https://w3id.org/emmo#elucidation> "The dielectric constant for acetonitrile."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#aug-cc-pVDZ
 :aug-cc-pVDZ rdf:type owl:NamedIndividual ,
                       :EMMO_abdf0104-0349-4c60-b4b8-91161660b2f4 ;
              skos:prefLabel "aug-cc-pVDZ"@en ;
-             <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The Dunning correlation-consistent polarized basis set with double-zeta for the valence orbitals."@en .
+             <https://w3id.org/emmo#elucidation> "The Dunning correlation-consistent polarized basis set with double-zeta for the valence orbitals."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#b3lyp
 :b3lyp rdf:type owl:NamedIndividual ,
                 :EMMO_1338c034-b1cb-478e-a60b-816b96280ac6 ;
        skos:prefLabel "b3lyp"@en ;
-       <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The Becke, 3-parameter, Lee-Yang-Parr hybrid exchange-correlation functional."@en .
+       <https://w3id.org/emmo#elucidation> "The Becke, 3-parameter, Lee-Yang-Parr hybrid exchange-correlation functional."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#cosmo
 :cosmo rdf:type owl:NamedIndividual ,
                 :EMMO_47d1df6d-c997-4dc4-a0ae-3bcee7f92f02 ;
        skos:prefLabel "cosmo"@en ;
-       <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The cosmo solvatisation model."@en .
+       <https://w3id.org/emmo#elucidation> "The cosmo solvatisation model."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#pbe
 :pbe rdf:type owl:NamedIndividual ,
               :EMMO_1338c034-b1cb-478e-a60b-816b96280ac6 ;
      skos:prefLabel "pbe"@en ;
-     <https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The Predew-Burke-Ernzerhof exchange-correlation functional"@en .
+     <https://w3id.org/emmo#elucidation> "The Predew-Burke-Ernzerhof exchange-correlation functional"@en .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
