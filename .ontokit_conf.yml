@@ -7,7 +7,7 @@ GIT_BASE_URL: github.com
 REFERENCE_SUBSECTIONS: all
 REFERENCE_IMPORTED: 'false'
 REFERENCE_RECURSIVE: 'true'
-REFERENCE_IRI_REGEX: https://w3id.org/emmo/domain/atomistic#
+REFERENCE_IRI_REGEX: https://w3id.org/emmo/domain/atomistic
 
 REFERENCE_INDICES:
 - ontology_file: build/atomistic.ttl
@@ -17,9 +17,3 @@ REFERENCE_INDICES:
   imported: false
   recursive: false
   subsections: annotation_properties,data_properties,object_properties
-GIT_REPOSITORY: emmo-repo/domain-atomistic
-GIT_BASE_URL: github.com
-REFERENCE_SUBSECTIONS: all
-REFERENCE_IMPORTED: 'false'
-REFERENCE_RECURSIVE: 'true'
-REFERENCE_IRI_REGEX: None#
