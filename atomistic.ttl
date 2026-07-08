@@ -341,13 +341,6 @@ the potential energies for all the particles in the system."""@en .
 #    Individuals
 #################################################################
 
-###  https://w3id.org/emmo/domain/atomistic#acetonitrile
-:acetonitrile rdf:type owl:NamedIndividual ,
-                       :EMMO_42f4778d-5d87-4d1f-86cb-46cd02693733 ;
-              skos:prefLabel "acetonitrile"@en ;
-              <https://w3id.org/emmo#elucidation> "The dielectric constant for acetonitrile."@en .
-
-
 ###  https://w3id.org/emmo/domain/atomistic#aug-cc-pVDZ
 :aug-cc-pVDZ rdf:type owl:NamedIndividual ,
                       :EMMO_abdf0104-0349-4c60-b4b8-91161660b2f4 ;
