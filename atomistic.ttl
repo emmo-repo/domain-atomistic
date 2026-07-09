@@ -147,9 +147,9 @@ email: francesca.l.bleken@sintef.no"""@en ,
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_29fd60b8-b709-4bc9-8e0e-19498abb5da0
 :EMMO_29fd60b8-b709-4bc9-8e0e-19498abb5da0 rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/emmo#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0> ;
-                                           skos:prefLabel "AtomisticComputationMathematical"@en ;
-                                           <https://w3id.org/emmo#elucidation> "Mathematicals used by an atomistic computational software, often defined as a setting in the input file."@en .
+                                           rdfs:subClassOf <https://w3id.org/emmo#EMMO_f7ed665b_c2e1_42bc_889b_6b42ed3a36f0> ;
+                                           skos:prefLabel "AtomisticComputationModel"@en ;
+                                           <https://w3id.org/emmo#elucidation> "Models used by atomistic computational software. These can often defined as a setting in the input file, but refer to more elaborate models."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_2be6633a-e701-41a7-a42b-0e89f262d82c
