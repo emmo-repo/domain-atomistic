@@ -262,7 +262,6 @@ skos:scopeNote rdf:type owl:AnnotationProperty ;
 :EMMO_a8d08da5-cc89-4a50-83c1-e7f11e718bb5 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0f0feb84-14ef-4def-babb-718c9244f098 ;
                                            skos:prefLabel "GroundState"@en ;
-                                           <https://w3id.org/emmo#EMMO_b6730304_cabc_4104_b415_14218466445c> "Be aware that a locally found minimum is not necessarily the ground state."@en ;
                                            <https://w3id.org/emmo#elucidation> "The lowest-energy quantum state of a physical system."@en .
 
 
