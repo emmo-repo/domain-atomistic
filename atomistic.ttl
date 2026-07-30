@@ -140,7 +140,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_197db0fe-da46-4969-9410-4d5089e941ec
 :EMMO_197db0fe-da46-4969-9410-4d5089e941ec rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_0f0feb84-14ef-4def-babb-718c9244f098 ;
+                                           rdfs:subClassOf <https://w3id.org/emmo#EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b> ;
                                            skos:prefLabel "SaddlePoint"@en ;
                                            <https://w3id.org/emmo#elucidation> "A critical point on a potential energy surface representing a transition state in a chemical reaction."@en .
 
