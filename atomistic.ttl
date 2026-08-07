@@ -94,7 +94,7 @@ email: francesca.l.bleken@sintef.no"""@en ,
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_c2da4973_b83d_4581_a4b4_87ab401b8f5b
 :EMMO_c2da4973_b83d_4581_a4b4_87ab401b8f5b rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf <https://w3id.org/emmo#EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b> ;
-                                           rdfs:domain <https://w3id.org/emmo#EMMO_a96e2152_40e7_409c_a53a_fdb9f141eb6a> ;
+                                           rdfs:domain <https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94> ;
                                            rdfs:range <https://w3id.org/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a> ;
                                            skos:prefLabel "hasSpecies"@en ;
                                            <https://w3id.org/emmo#elucidation> "Relates a material to the species it is made of."@en ;
