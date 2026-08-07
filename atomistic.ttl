@@ -122,6 +122,17 @@ skos:scopeNote rdf:type owl:AnnotationProperty ;
 #    Classes
 #################################################################
 
+###  https://w3id.org/emmo/domain/atomistic#EMMO_00aebe47_f165_4a69_b70c_443282097c83
+:EMMO_00aebe47_f165_4a69_b70c_443282097c83 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_7c1b69fd_0d47_47db_980c_95b38f6d09b5 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <https://w3id.org/emmo#EMMO_a8bd7094_6b40_47af_b1f4_a69d81a3afbd> ;
+                                                             owl:someValuesFrom :EMMO_98e74934_11be_497a_8ce5_4ce67bc8a7e0
+                                                           ] ;
+                                           skos:note "A stationary point corresponds to a molecular configuration for which the energy gradient vanishes. Stationary points include minima and saddle points." ;
+                                           skos:prefLabel "PESStationaryPoint"@en ;
+                                           <https://w3id.org/emmo#elucidation> "A point on a potential energy surface at which the first derivatives of the potential energy with respect to all nuclear coordinates are zero."@en .
+
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_070efd9c_b971_44ee_bd45_8c548a80a65d
 :EMMO_070efd9c_b971_44ee_bd45_8c548a80a65d rdf:type owl:Class ;
@@ -152,7 +163,6 @@ skos:scopeNote rdf:type owl:AnnotationProperty ;
 :EMMO_197db0fe-da46-4969-9410-4d5089e941ec rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_7c1b69fd_0d47_47db_980c_95b38f6d09b5 ;
                                            skos:prefLabel "SaddlePoint"@en ;
-                                           skos:scopeNote "A first-order saddle point, characterized by exactly one negative Hessian eigenvalue, corresponds to a transition state on a potential energy surface." ;
                                            <https://w3id.org/emmo#elucidation> "A stationary point on a potential energy surface at which the Hessian matrix has one or more negative eigenvalues."@en .
 
 
@@ -171,6 +181,14 @@ skos:scopeNote rdf:type owl:AnnotationProperty ;
                                            <https://w3id.org/emmo#elucidation> "Geometry optimisation performed with NWChem"@en .
 
 
+###  https://w3id.org/emmo/domain/atomistic#EMMO_3c643bc4_d5e4_48fc_a614_690419af9d07
+:EMMO_3c643bc4_d5e4_48fc_a614_690419af9d07 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_00aebe47_f165_4a69_b70c_443282097c83 ,
+                                                           :EMMO_3ff93bac_bbe5_4320_85eb_2224f6e837c2 ;
+                                           skos:prefLabel "PESMinimum"@en ;
+                                           <https://w3id.org/emmo#elucidation> "A minimum on the Potential Energy Surface that corresponds to a stable equilibrium geometry. Depending on its energy relative to other minima, it may be a local or global minimum."@en .
+
+
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298
 :EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298 rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org/emmo#EMMO_8d4962d7_9608_44f7_a2f1_82a4bb173f4a> ;
@@ -182,7 +200,6 @@ skos:scopeNote rdf:type owl:AnnotationProperty ;
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_3ff93bac_bbe5_4320_85eb_2224f6e837c2
 :EMMO_3ff93bac_bbe5_4320_85eb_2224f6e837c2 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_7c1b69fd_0d47_47db_980c_95b38f6d09b5 ;
-                                           skos:note "A minimum corresponds to a stable equilibrium geometry on the potential energy surface. Depending on its energy relative to other minima, it may be a local or global minimum."@en ;
                                            skos:prefLabel "Minimum"@en ;
                                            <https://w3id.org/emmo#elucidation> "A stationary point on a potential energy surface at which the Hessian matrix is positive definite."@en .
 
@@ -234,9 +251,8 @@ skos:scopeNote rdf:type owl:AnnotationProperty ;
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_7c1b69fd_0d47_47db_980c_95b38f6d09b5
 :EMMO_7c1b69fd_0d47_47db_980c_95b38f6d09b5 rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org/emmo#EMMO_39362460_2a97_4367_8f93_0418c2ac9a08> ;
-                                           skos:note "A stationary point corresponds to a molecular configuration for which the energy gradient vanishes. Stationary points include minima and saddle points."@en ;
                                            skos:prefLabel "StationaryPoint"@en ;
-                                           <https://w3id.org/emmo#elucidation> "A point on a potential energy surface at which the first derivatives of the potential energy with respect to all nuclear coordinates are zero."@en .
+                                           <https://w3id.org/emmo#elucidation> "A point on a n-dimensional surface at which the gradient vector is exactly 0."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_807b8909-f44c-43de-b7cc-45d1abd515eb
@@ -268,6 +284,14 @@ skos:scopeNote rdf:type owl:AnnotationProperty ;
                                            rdfs:subClassOf :EMMO_29fd60b8-b709-4bc9-8e0e-19498abb5da0 ;
                                            skos:prefLabel "BasisSet"@en ;
                                            <https://w3id.org/emmo#elucidation> "A collection of mathematical functions used to represent molecular orbitals in quantum chemical calculations."@en .
+
+
+###  https://w3id.org/emmo/domain/atomistic#EMMO_c4d0ab8b_15d7_43f4_aaad_4c9750c95079
+:EMMO_c4d0ab8b_15d7_43f4_aaad_4c9750c95079 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_00aebe47_f165_4a69_b70c_443282097c83 ,
+                                                           :EMMO_197db0fe-da46-4969-9410-4d5089e941ec ;
+                                           skos:prefLabel "PESSaddlePoint"@en ;
+                                           <https://w3id.org/emmo#elucidation> "A first-order saddle point, characterized by exactly one negative Hessian eigenvalue, corresponds to a transition state on a potential energy surface."@en .
 
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_f2dca06b-5987-4ff7-ac9e-9772b59b5c42
