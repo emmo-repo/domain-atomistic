@@ -122,9 +122,6 @@ skos:scopeNote rdf:type owl:AnnotationProperty ;
 #    Classes
 #################################################################
 
-###  https://w3id.org/emmo#EMMO_a96e2152_40e7_409c_a53a_fdb9f141eb6a
-<https://w3id.org/emmo#EMMO_a96e2152_40e7_409c_a53a_fdb9f141eb6a> rdf:type owl:Class .
-
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_070efd9c_b971_44ee_bd45_8c548a80a65d
 :EMMO_070efd9c_b971_44ee_bd45_8c548a80a65d rdf:type owl:Class ;
