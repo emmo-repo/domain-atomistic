@@ -248,7 +248,8 @@ skos:scopeNote rdf:type owl:AnnotationProperty ;
 
 ###  https://w3id.org/emmo/domain/atomistic#EMMO_98e74934_11be_497a_8ce5_4ce67bc8a7e0
 :EMMO_98e74934_11be_497a_8ce5_4ce67bc8a7e0 rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/emmo#EMMO_f7ed665b_c2e1_42bc_889b_6b42ed3a36f0> ;
+                                           rdfs:subClassOf <https://w3id.org/emmo#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0> ,
+                                                           <https://w3id.org/emmo#EMMO_9268958f_7f54_48ab_a693_febe2645892b> ;
                                            skos:altLabel "PES"@en ;
                                            skos:prefLabel "PotentialEnergySurface"@en ;
                                            skos:scopeNote "A potential energy surface is defined for a specified electronic state and molecular system. Its domain is a nuclear configuration space, while its values are energies." ;
