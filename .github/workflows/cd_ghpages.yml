@@ -58,7 +58,7 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install \
-          "EMMOntoPy[ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@master" \
+          "EMMOntoPy[ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@context_test" \
             "tripper[datadoc] @ git+https://github.com/EMMC-ASBL/tripper.git@master"
 
     #- name: Install current ontology for keywords tool
@@ -147,6 +147,15 @@ jobs:
 
     - name: Generate Ontokit documentation to public
       run: ontokit docs --iri-regex=${ONTOLOGY_IRI} . && touch public/.nojekyll
+
+    - name: Generate JSON-LD context to public/context
+      run: |
+        mkdir -p public/context
+        ontokit context \
+            "${BUILD_DIR}/${ONTOLOGY_NAME}.ttl" \
+            public/context/context.json \
+            --include-imported \
+            --include-namespace "${ONTOLOGY_IRI}#"
 
     # Copy turtle files from build to public
     - name: Copy ontologies to public
