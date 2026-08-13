@@ -58,7 +58,7 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install \
-          "EMMOntoPy[ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@master" \
+          "EMMOntoPy[ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@context_test" \
             "tripper[datadoc] @ git+https://github.com/EMMC-ASBL/tripper.git@master"
 
     #- name: Install current ontology for keywords tool
