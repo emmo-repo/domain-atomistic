@@ -1,0 +1,2083 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/emmo/domain/atomistic", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/emmo" ],
+    "title" : {
+      "en" : "Atomistic"
+    },
+    "iri" : "https://w3id.org/emmo/domain/atomistic",
+    "version" : "0.0.1",
+    "author" : [ "Jesper Friis", "Francesca L. Bleken" ],
+    "comments" : {
+      "en" : "The EMMO requires FaCT++ reasoner plugin in order to visualize allinferences and class hierarchy (ctrl+R hotkey in Protege)."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Jesper Friis",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Francesca L. Bleken",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "SINTEF",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "EMMC ASBL",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "0.0.1",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "An EMMO-based domain ontology for atomistic and electronic modelling.Atomistic is released under the Creative Commons Attribution 4.0 International license (CC BY 4.0).",
+        "type" : "label"
+      } ],
+      "EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc" : [ {
+        "identifier" : "EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc",
+        "language" : "en",
+        "value" : "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Atomistic",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#c4dd4450-cc80-5de4-a8d6-db0651115a2c",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "A linear partial differential equation describing the wave function of a quantum-mechanical system.\n\nThe exact form of the Schrödinger equation depends on the\nphysical situation.  The most general form is the\ntime-dependent Schrödinger equation."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "A linear partial differential equation describing the wave function of a quantum-mechanical system.\n\nThe exact form of the Schrödinger equation depends on the\nphysical situation.  The most general form is the\ntime-dependent Schrödinger equation.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "SchrodingerEquation",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "SchrödingerEquation",
+        "type" : "label"
+      } ],
+      "EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d" : [ {
+        "identifier" : "EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation",
+        "type" : "label"
+      } ],
+      "EMMO_157fdf31_6387_42be_8e72_10530519214a" : [ {
+        "identifier" : "EMMO_157fdf31_6387_42be_8e72_10530519214a",
+        "language" : "undefined",
+        "value" : "https://upload.wikimedia.org/wikipedia/commons/e/ec/SchrodingerEquation.svg",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "c4dd4450-cc80-5de4-a8d6-db0651115a2c",
+      "en" : "SchrodingerEquation"
+    },
+    "subClasses" : [ "2", "3" ],
+    "comment" : {
+      "en" : "A linear partial differential equation describing the wave function of a quantum-mechanical system.\n\nThe exact form of the Schrödinger equation depends on the\nphysical situation.  The most general form is the\ntime-dependent Schrödinger equation."
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_5ddbdd13-b5ba-4101-8b13-4ab06b5173eb",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "Physics based calculation that solves the electronic states of a system. Can be either a simulation that treats the electronc explicitly or the electron density."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "Physics based calculation that solves the electronic states of a system. Can be either a simulation that treats the electronc explicitly or the electron density.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ElectronicComputation",
+        "type" : "label"
+      } ],
+      "EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e" : [ {
+        "identifier" : "EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e",
+        "language" : "en",
+        "value" : "Check if there exist relevant subclasses that include information on choice of model solved by and/or software used in the computations.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_5ddbdd13-b5ba-4101-8b13-4ab06b5173eb",
+      "en" : "ElectronicComputation"
+    },
+    "subClasses" : [ "6", "7" ],
+    "comment" : {
+      "en" : "Physics based calculation that solves the electronic states of a system. Can be either a simulation that treats the electronc explicitly or the electron density."
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_52a6103f_86a4_4710_9028_a49b4cef858e",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "A computation that solves the Kohn-Sham equation (using DFT)."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "A computation that solves the Kohn-Sham equation (using DFT).",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "DFTComputation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_52a6103f_86a4_4710_9028_a49b4cef858e",
+      "en" : "DFTComputation"
+    },
+    "comment" : {
+      "en" : "A computation that solves the Kohn-Sham equation (using DFT)."
+    },
+    "id" : "6",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_a96e2152_40e7_409c_a53a_fdb9f141eb6a",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_a96e2152_40e7_409c_a53a_fdb9f141eb6a"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#08fd7117-66ac-5b6d-b65e-34a826675877",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "A mathematical operator with a physical interpretation."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "A mathematical operator with a physical interpretation.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "PhysicalOperator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "08fd7117-66ac-5b6d-b65e-34a826675877",
+      "en" : "PhysicalOperator"
+    },
+    "subClasses" : [ "14" ],
+    "comment" : {
+      "en" : "A mathematical operator with a physical interpretation."
+    },
+    "id" : "12",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_a8d08da5-cc89-4a50-83c1-e7f11e718bb5",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "The lowest-energy quantum state of a physical system."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "The lowest-energy quantum state of a physical system.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GroundState",
+        "type" : "label"
+      } ],
+      "EMMO_b6730304_cabc_4104_b415_14218466445c" : [ {
+        "identifier" : "EMMO_b6730304_cabc_4104_b415_14218466445c",
+        "language" : "en",
+        "value" : "Be aware that a locally found minimum is not necessarily the ground state.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_a8d08da5-cc89-4a50-83c1-e7f11e718bb5",
+      "en" : "GroundState"
+    },
+    "comment" : {
+      "en" : "The lowest-energy quantum state of a physical system."
+    },
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#b65fe3b6-8477-5508-a066-2f7edcf25126",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "The Schrödinger equation for a fictious \"Kohn-Sham\" system of non-interacting electrons that generates the same charge density as the real interacting system."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "The Schrödinger equation for a fictious \"Kohn-Sham\" system of non-interacting electrons that generates the same charge density as the real interacting system.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "KohnShamEquation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "b65fe3b6-8477-5508-a066-2f7edcf25126",
+      "en" : "KohnShamEquation"
+    },
+    "comment" : {
+      "en" : "The Schrödinger equation for a fictious \"Kohn-Sham\" system of non-interacting electrons that generates the same charge density as the real interacting system.",
+      "undefined" : "This is the equation that is solved with density functional theory."
+    },
+    "id" : "18",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_070efd9c_b971_44ee_bd45_8c548a80a65d",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "Forcefield-based simulation software."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "Forcefield-based simulation software.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ForceFieldSimulationSoftware",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "LAMMPS",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_070efd9c_b971_44ee_bd45_8c548a80a65d",
+      "en" : "ForceFieldSimulationSoftware"
+    },
+    "comment" : {
+      "en" : "Forcefield-based simulation software."
+    },
+    "id" : "19",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#fac61002-4a3d-5810-a430-ad5dad69c9a0",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "The full time-dependent Schrödinger equation."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "The full time-dependent Schrödinger equation.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "TimeDependentSchrodingerEquation",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "TimeDependentSchrödingerEquation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fac61002-4a3d-5810-a430-ad5dad69c9a0",
+      "en" : "TimeDependentSchrodingerEquation"
+    },
+    "comment" : {
+      "en" : "The full time-dependent Schrödinger equation."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#acaafcb6-b65f-5996-93ed-2f486f5f2b30",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "If the external potential does not depende on time, the Schrödinger\nequation can be reduced to this time-independent form."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "If the external potential does not depende on time, the Schrödinger\nequation can be reduced to this time-independent form.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "TimeIndependentSchrodingerEquation",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "TimeIndependentSchrödingerEquation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "acaafcb6-b65f-5996-93ed-2f486f5f2b30",
+      "en" : "TimeIndependentSchrodingerEquation"
+    },
+    "subClasses" : [ "18" ],
+    "comment" : {
+      "en" : "If the external potential does not depende on time, the Schrödinger\nequation can be reduced to this time-independent form."
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_47d1df6d-c997-4dc4-a0ae-3bcee7f92f02",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "A mathematical model that allows the quantum chemistry calculations to include the interactions between solvents and the quantum solute implicitly."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "A mathematical model that allows the quantum chemistry calculations to include the interactions between solvents and the quantum solute implicitly.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "SolvationModel",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_47d1df6d-c997-4dc4-a0ae-3bcee7f92f02",
+      "en" : "SolvationModel"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/emmo/domain/atomistic#cosmo",
+      "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+      "description" : {
+        "en" : "The cosmo solvatisation model."
+      },
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/emmo/domain/atomistic#",
+          "type" : "iri"
+        } ],
+        "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+          "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+          "language" : "en",
+          "value" : "The cosmo solvatisation model.",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "cosmo",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "The cosmo solvatisation model."
+      },
+      "labels" : {
+        "IRI-based" : "cosmo",
+        "en" : "cosmo"
+      }
+    } ],
+    "comment" : {
+      "en" : "A mathematical model that allows the quantum chemistry calculations to include the interactions between solvents and the quantum solute implicitly."
+    },
+    "id" : "35",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_abdf0104-0349-4c60-b4b8-91161660b2f4",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "A collection of mathematical functions used to represent molecular orbitals in quantum chemical calculations."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "A collection of mathematical functions used to represent molecular orbitals in quantum chemical calculations.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "BasisSet",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_abdf0104-0349-4c60-b4b8-91161660b2f4",
+      "en" : "BasisSet"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/emmo/domain/atomistic#aug-cc-pVDZ",
+      "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+      "description" : {
+        "en" : "The Dunning correlation-consistent polarized basis set with double-zeta for the valence orbitals."
+      },
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/emmo/domain/atomistic#",
+          "type" : "iri"
+        } ],
+        "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+          "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+          "language" : "en",
+          "value" : "The Dunning correlation-consistent polarized basis set with double-zeta for the valence orbitals.",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "aug-cc-pVDZ",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "The Dunning correlation-consistent polarized basis set with double-zeta for the valence orbitals."
+      },
+      "labels" : {
+        "IRI-based" : "aug-cc-pVDZ",
+        "en" : "aug-cc-pVDZ"
+      }
+    } ],
+    "comment" : {
+      "en" : "A collection of mathematical functions used to represent molecular orbitals in quantum chemical calculations."
+    },
+    "id" : "38",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_42f4778d-5d87-4d1f-86cb-46cd02693733",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "A solvent used in the solvation model, typically identified with a chemical name."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "A solvent used in the solvation model, typically identified with a chemical name.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "SolvationModelSolvent",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_42f4778d-5d87-4d1f-86cb-46cd02693733",
+      "en" : "SolvationModelSolvent"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/emmo/domain/atomistic#acetonitrile",
+      "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+      "description" : {
+        "en" : "The dielectric constant for acetonitrile."
+      },
+      "annotations" : {
+        "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+          "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+          "language" : "en",
+          "value" : "The dielectric constant for acetonitrile.",
+          "type" : "label"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/emmo/domain/atomistic#",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "acetonitrile",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "The dielectric constant for acetonitrile."
+      },
+      "labels" : {
+        "IRI-based" : "acetonitrile",
+        "en" : "acetonitrile"
+      }
+    } ],
+    "comment" : {
+      "en" : "A solvent used in the solvation model, typically identified with a chemical name."
+    },
+    "id" : "39",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_807b8909-f44c-43de-b7cc-45d1abd515eb",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "NWChem computation that includes cosmo as solvation model."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "NWChem computation that includes cosmo as solvation model.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "NWChemDFTModuleCOSMO",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_807b8909-f44c-43de-b7cc-45d1abd515eb",
+      "en" : "NWChemDFTModuleCOSMO"
+    },
+    "comment" : {
+      "en" : "NWChem computation that includes cosmo as solvation model."
+    },
+    "id" : "24",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_0f0feb84-14ef-4def-babb-718c9244f098",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "A specific electronic state of a quantum system. Often defined by its wavefunction."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "A specific electronic state of a quantum system. Often defined by its wavefunction.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ElectronicState",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_0f0feb84-14ef-4def-babb-718c9244f098",
+      "en" : "ElectronicState"
+    },
+    "subClasses" : [ "40", "16" ],
+    "comment" : {
+      "en" : "A specific electronic state of a quantum system. Often defined by its wavefunction."
+    },
+    "id" : "17",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_2be6633a-e701-41a7-a42b-0e89f262d82c",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "Geometry optimisation performed with NWChem"
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "Geometry optimisation performed with NWChem",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "NWChemGeometryOptimization",
+        "type" : "label"
+      } ],
+      "EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72" : [ {
+        "identifier" : "EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72",
+        "language" : "en",
+        "value" : "This is not necessarily an optimisation to the ground state, as can also be a saddle point.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_2be6633a-e701-41a7-a42b-0e89f262d82c",
+      "en" : "NWChemGeometryOptimization"
+    },
+    "comment" : {
+      "en" : "Geometry optimisation performed with NWChem"
+    },
+    "id" : "28",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_a66427d1_9932_4363_9ec5_7d91f2bfda1e"
+    },
+    "subClasses" : [ "45" ],
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_429430f4_00e9_4157_a636_6cf798139e40",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "DFT-based simulation software."
+    },
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "The software is not restricted to only DFT, i.e. also MP2 simulations are avilabel in NWChem",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "DFT-based simulation software.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "DFTSimulationSoftware",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "VASP, Quantum ESPRESSO, NWChem ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_429430f4_00e9_4157_a636_6cf798139e40",
+      "en" : "DFTSimulationSoftware"
+    },
+    "comment" : {
+      "en" : "DFT-based simulation software."
+    },
+    "id" : "21",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_29fd60b8-b709-4bc9-8e0e-19498abb5da0",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "Mathematicals used by an atomistic computational software, often defined as a setting in the input file."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "Mathematicals used by an atomistic computational software, often defined as a setting in the input file.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "AtomisticComputationMathematical",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_29fd60b8-b709-4bc9-8e0e-19498abb5da0",
+      "en" : "AtomisticComputationMathematical"
+    },
+    "subClasses" : [ "39", "38", "49", "35" ],
+    "comment" : {
+      "en" : "Mathematicals used by an atomistic computational software, often defined as a setting in the input file."
+    },
+    "id" : "32",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0"
+    },
+    "subClasses" : [ "32" ],
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2"
+    },
+    "attributes" : [ "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_1338c034-b1cb-478e-a60b-816b96280ac6",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "A functional that approximates the exchange-correlation of the electron density of the chosen system."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "A functional that approximates the exchange-correlation of the electron density of the chosen system.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Functional",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "DFTFunctional",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "FUNKY",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Hybrid functionals",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "LDA, GGA, GW",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_1338c034-b1cb-478e-a60b-816b96280ac6",
+      "en" : "Functional"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/emmo/domain/atomistic#pbe",
+      "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+      "description" : {
+        "en" : "The Predew-Burke-Ernzerhof exchange-correlation functional"
+      },
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/emmo/domain/atomistic#",
+          "type" : "iri"
+        } ],
+        "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+          "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+          "language" : "en",
+          "value" : "The Predew-Burke-Ernzerhof exchange-correlation functional",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "pbe",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "The Predew-Burke-Ernzerhof exchange-correlation functional"
+      },
+      "labels" : {
+        "IRI-based" : "pbe",
+        "en" : "pbe"
+      }
+    }, {
+      "iri" : "https://w3id.org/emmo/domain/atomistic#b3lyp",
+      "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+      "description" : {
+        "en" : "The Becke, 3-parameter, Lee-Yang-Parr hybrid exchange-correlation functional."
+      },
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/emmo/domain/atomistic#",
+          "type" : "iri"
+        } ],
+        "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+          "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+          "language" : "en",
+          "value" : "The Becke, 3-parameter, Lee-Yang-Parr hybrid exchange-correlation functional.",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "b3lyp",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "The Becke, 3-parameter, Lee-Yang-Parr hybrid exchange-correlation functional."
+      },
+      "labels" : {
+        "IRI-based" : "b3lyp",
+        "en" : "b3lyp"
+      }
+    } ],
+    "comment" : {
+      "en" : "A functional that approximates the exchange-correlation of the electron density of the chosen system."
+    },
+    "id" : "49",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_5dd63d84_57f5_4b79_b760_fe940c06680d",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_5dd63d84_57f5_4b79_b760_fe940c06680d"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#83a69cf2-00c1-58b8-915b-76cb3549890a",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "An efficient computional method for solving the many-electron\n(time-independent) Schrödinger equation."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "An efficient computional method for solving the many-electron\n(time-independent) Schrödinger equation.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "DensityFunctionalTheory",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "83a69cf2-00c1-58b8-915b-76cb3549890a",
+      "en" : "DensityFunctionalTheory"
+    },
+    "comment" : {
+      "en" : "An efficient computional method for solving the many-electron\n(time-independent) Schrödinger equation."
+    },
+    "id" : "61",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_21205421_5783_4d3e_81e5_10c5d894a88a"
+    },
+    "attributes" : [ "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "47",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#df750ce7-fda1-5e9b-ba32-db96ec170577",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "A mathematical description of the quantum state of an isolated\nquantum system. A wave function is a function of the degrees\nof freedom corresponding to some maximal set of commuting\nobservables. Once such a representation is chosen, the wave\nfunction can be derived from the quantum state."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "A mathematical description of the quantum state of an isolated\nquantum system. A wave function is a function of the degrees\nof freedom corresponding to some maximal set of commuting\nobservables. Once such a representation is chosen, the wave\nfunction can be derived from the quantum state.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "WaveFunction",
+        "type" : "label"
+      } ],
+      "EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d" : [ {
+        "identifier" : "EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Wave_function",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "df750ce7-fda1-5e9b-ba32-db96ec170577",
+      "en" : "WaveFunction"
+    },
+    "comment" : {
+      "en" : "A mathematical description of the quantum state of an isolated\nquantum system. A wave function is a function of the degrees\nof freedom corresponding to some maximal set of commuting\nobservables. Once such a representation is chosen, the wave\nfunction can be derived from the quantum state."
+    },
+    "id" : "45",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "66",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_5cbb7bfb_7ab8_4151_8ed1_13a5b7d5caa4",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_5cbb7bfb_7ab8_4151_8ed1_13a5b7d5caa4"
+    },
+    "attributes" : [ "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b"
+    },
+    "subClasses" : [ "17" ],
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_78e3ce89-632d-4a3e-a194-a051df2f5d5f",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Electronic computation performed with the NWChem software."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "undefined",
+        "value" : "Electronic computation performed with the NWChem software.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "NWChemComputation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_78e3ce89-632d-4a3e-a194-a051df2f5d5f",
+      "en" : "NWChemComputation"
+    },
+    "subClasses" : [ "24", "30", "28" ],
+    "comment" : {
+      "undefined" : "Electronic computation performed with the NWChem software."
+    },
+    "id" : "7",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "The superclass of physical-based electronic and forcefield simulation softwares."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "The superclass of physical-based electronic and forcefield simulation softwares.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "AtomisticSimulationSoftware",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "NWChem -  a physical based software that implements both DFT and higher order QM methods.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_3cd827b2_e9c6_4d08_a215_d22fd2a46298",
+      "en" : "AtomisticSimulationSoftware"
+    },
+    "subClasses" : [ "19", "21" ],
+    "comment" : {
+      "en" : "The superclass of physical-based electronic and forcefield simulation softwares."
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_8d4962d7_9608_44f7_a2f1_82a4bb173f4a",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_8d4962d7_9608_44f7_a2f1_82a4bb173f4a"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_f2dca06b-5987-4ff7-ac9e-9772b59b5c42",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "A numerically evaluated Hessian matrix computed using finite-difference methods within the NWChem software suite. May be used for frequency analysis."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "A numerically evaluated Hessian matrix computed using finite-difference methods within the NWChem software suite. May be used for frequency analysis.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "NWChemFiniteDifferenceHessian",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "NWChemFinite-differenceHessian",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_f2dca06b-5987-4ff7-ac9e-9772b59b5c42",
+      "en" : "NWChemFiniteDifferenceHessian"
+    },
+    "comment" : {
+      "en" : "A numerically evaluated Hessian matrix computed using finite-difference methods within the NWChem software suite. May be used for frequency analysis."
+    },
+    "id" : "30",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa"
+    },
+    "subClasses" : [ "12" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#42244404-98d1-582a-8fc0-3cdd2a9b3df6",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "An operator corresponding to the sum of the kinetic energies plus\nthe potential energies for all the particles in the system."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "An operator corresponding to the sum of the kinetic energies plus\nthe potential energies for all the particles in the system.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Hamiltonian",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "42244404-98d1-582a-8fc0-3cdd2a9b3df6",
+      "en" : "Hamiltonian"
+    },
+    "comment" : {
+      "en" : "An operator corresponding to the sum of the kinetic energies plus\nthe potential energies for all the particles in the system."
+    },
+    "id" : "14",
+    "superClasses" : [ "12", "15" ]
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11",
+    "baseIri" : "https://w3id.org/emmo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11"
+    },
+    "subClasses" : [ "61" ],
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_197db0fe-da46-4969-9410-4d5089e941ec",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "instances" : 0,
+    "description" : {
+      "en" : "A critical point on a potential energy surface representing a transition state in a chemical reaction."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "A critical point on a potential energy surface representing a transition state in a chemical reaction.",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "SaddlePoint",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_197db0fe-da46-4969-9410-4d5089e941ec",
+      "en" : "SaddlePoint"
+    },
+    "comment" : {
+      "en" : "A critical point on a potential energy surface representing a transition state in a chemical reaction."
+    },
+    "id" : "40",
+    "superClasses" : [ "17" ]
+  } ],
+  "property" : [ {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "64",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "65",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "72",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "9",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "9",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "7",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "26",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "7",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "7",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "32",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_c2da4973_b83d_4581_a4b4_87ab401b8f5b",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "range" : "42",
+    "description" : {
+      "en" : "Relates a material to the species it is made of."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "Relates a material to the species it is made of.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "hasSpecies",
+        "type" : "label"
+      } ],
+      "EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f" : [ {
+        "identifier" : "EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f",
+        "language" : "en",
+        "value" : "Intended for documeting what kind of atoms a material is made of.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_c2da4973_b83d_4581_a4b4_87ab401b8f5b",
+      "en" : "hasSpecies"
+    },
+    "superproperty" : [ "43" ],
+    "domain" : "11",
+    "comment" : {
+      "en" : "Intended for documeting what kind of atoms a material is made of."
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204",
+    "baseIri" : "https://w3id.org/emmo",
+    "range" : "47",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_e1097637_70d2_4895_973f_2396f04fa204"
+    },
+    "domain" : "47",
+    "subproperty" : [ "48" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "46"
+  }, {
+    "range" : "32",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "32",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "32",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "17",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "3",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "44",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe",
+    "baseIri" : "https://w3id.org/emmo",
+    "range" : "57",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"
+    },
+    "domain" : "0",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe",
+    "baseIri" : "https://w3id.org/emmo",
+    "range" : "14",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"
+    },
+    "domain" : "0",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_42812fef-145a-56e9-9c18-72bd32214455",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "range" : "57",
+    "description" : {
+      "en" : "Relates a mathematical (or physical) operator to its eigenvalue."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "Relates a mathematical (or physical) operator to its eigenvalue.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "hasEigenvalue",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_42812fef-145a-56e9-9c18-72bd32214455",
+      "en" : "hasEigenvalue"
+    },
+    "superproperty" : [ "46" ],
+    "domain" : "14",
+    "comment" : {
+      "en" : "Relates a mathematical (or physical) operator to its eigenvalue."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "65"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe",
+    "baseIri" : "https://w3id.org/emmo",
+    "range" : "69",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"
+    },
+    "domain" : "18",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe",
+    "baseIri" : "https://w3id.org/emmo",
+    "range" : "45",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"
+    },
+    "domain" : "0",
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/emmo#EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b",
+    "baseIri" : "https://w3id.org/emmo",
+    "range" : "47",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b"
+    },
+    "domain" : "47",
+    "subproperty" : [ "41" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/emmo/domain/atomistic#EMMO_42812fef-145a-56e9-9c18-72bd32214455",
+    "baseIri" : "https://w3id.org/emmo/domain/atomistic",
+    "range" : "66",
+    "description" : {
+      "en" : "Relates a mathematical (or physical) operator to its eigenvalue."
+    },
+    "annotations" : {
+      "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9" : [ {
+        "identifier" : "EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+        "language" : "en",
+        "value" : "Relates a mathematical (or physical) operator to its eigenvalue.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/emmo/domain/atomistic#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "hasEigenvalue",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EMMO_42812fef-145a-56e9-9c18-72bd32214455",
+      "en" : "hasEigenvalue"
+    },
+    "superproperty" : [ "46" ],
+    "domain" : "13",
+    "comment" : {
+      "en" : "Relates a mathematical (or physical) operator to its eigenvalue."
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "range" : "62",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  } ]
+}

@@ -1,0 +1,215 @@
+:orphan:
+
+
+================
+Properties Index
+================
+
+
+
+Atomistic
+=========
+
+
+
+.. _atomistic-annotation-properties:
+
+Annotation Properties
+---------------------
+
+.. raw:: html
+
+   <div id="chemicalFormula"></div>
+
+
+chemicalFormula
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#chemicalFormula' onclick="if(!document.getElementById('chemicalFormula')){window.location.href='https://w3id.org/emmo/domain/atomistic#chemicalFormula'; return false;}">https://w3id.org/emmo/domain/atomistic#chemicalFormula</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">chemicalFormula</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">The chemical formula of the species.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#AnnotationProperty'>AnnotationProperty</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+
+.. _atomistic-data-properties:
+
+Data Properties
+---------------
+
+.. raw:: html
+
+   <div id="hasNumberOfAtoms"></div>
+
+
+hasNumberOfAtoms
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#hasNumberOfAtoms' onclick="if(!document.getElementById('hasNumberOfAtoms')){window.location.href='https://w3id.org/emmo/domain/atomistic#hasNumberOfAtoms'; return false;}">https://w3id.org/emmo/domain/atomistic#hasNumberOfAtoms</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasNumberOfAtoms</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Number of atoms in the species.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#DatatypeProperty'>DatatypeProperty</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a'>MolecularEntity</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2001/XMLSchema#int'>xsd:int</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+
+.. _atomistic-object-properties:
+
+Object Properties
+-----------------
+
+.. raw:: html
+
+   <div id="EMMO_42812fef-145a-56e9-9c18-72bd32214455"></div>
+   <div id="hasEigenvalue"></div>
+
+hasEigenvalue
+^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#EMMO_42812fef-145a-56e9-9c18-72bd32214455' onclick="if(!document.getElementById('EMMO_42812fef-145a-56e9-9c18-72bd32214455')){window.location.href='https://w3id.org/emmo/domain/atomistic#EMMO_42812fef-145a-56e9-9c18-72bd32214455'; return false;}">https://w3id.org/emmo/domain/atomistic#EMMO_42812fef-145a-56e9-9c18-72bd32214455</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasEigenvalue</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">Relates a mathematical (or physical) operator to its eigenvalue.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='https://w3id.org/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204'>hasProperty</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/emmo#EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa'>MathematicalOperator</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="EMMO_c2da4973_b83d_4581_a4b4_87ab401b8f5b"></div>
+   <div id="hasSpecies"></div>
+
+hasSpecies
+^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#EMMO_c2da4973_b83d_4581_a4b4_87ab401b8f5b' onclick="if(!document.getElementById('EMMO_c2da4973_b83d_4581_a4b4_87ab401b8f5b')){window.location.href='https://w3id.org/emmo/domain/atomistic#EMMO_c2da4973_b83d_4581_a4b4_87ab401b8f5b'; return false;}">https://w3id.org/emmo/domain/atomistic#EMMO_c2da4973_b83d_4581_a4b4_87ab401b8f5b</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">hasSpecies</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">elucidation</span></td>
+    <td class="element-table-value">Relates a material to the species it is made of.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subPropertyOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#ObjectProperty'>ObjectProperty</a>, <a href='https://w3id.org/emmo#EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b'>hasRole</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Domain</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94'>Material</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Range</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a'>MolecularEntity</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. note::
+
+
+   Intended for documeting what kind of atoms a material is made of.
+
+
